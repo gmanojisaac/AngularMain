@@ -1,0 +1,1544 @@
+[0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+
+1.1.19
+
+TypeScript version used by Compodoc : 4.5.5
+
+TypeScript version of current project : 4.7.2
+
+Node.js version : v16.10.0
+
+Operating system : Windows 10
+
+[16:08:30] No configuration file found, switching to CLI flags.
+[16:08:30] Using tsconfig file : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\tsconfig.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.browserslistrc
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.gitignore
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.stackblitzrc
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\angular.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\build-storybook.log
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\package-lock.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\package.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\README.md
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\tsconfig.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\tsconfig.app.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\tsconfig.spec.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.editorconfig
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\karma.conf.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.storybook\main.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.storybook\preview.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.storybook\tsconfig.json
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.storybook\typings.d.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\3rdpartylicenses.txt
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.vscode\extensions.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\988.e4975bcdb02da503.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.vscode\launch.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.vscode\tasks.json
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\favicon.ico
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\index.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\main.c52373d4c9f9cfea.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\percolate.29451126d103398b.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\percolate.63090c278817081e.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\percolate.807c6ac8eaf93294.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\polyfills.73886ecabdc9e487.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\runtime.5fdd0ee4ab919959.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\styles.762f4208c1bd73d9.css
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\percolate.f52018f0d8e7bfe3.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\favicon.ico
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\index.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\test.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\main.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\polyfills.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\styles.scss
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\404.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\favicon.ico
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\index.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\percolate.29451126d103398b.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\340.0ca09b3471c41d16.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\3rdpartylicenses.txt
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\percolate.63090c278817081e.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\percolate.807c6ac8eaf93294.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\percolate.f52018f0d8e7bfe3.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\polyfills.73886ecabdc9e487.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\runtime.63c295f060786e9e.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app.component.scss
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app-routing.module.ts
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app.module.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\environments\environment.prod.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\environments\environment.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\.gitkeep
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\button.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\Button.stories.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\main.63ef8d0ad9a4a954.js
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\styles.762f4208c1bd73d9.css
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\Header.stories.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\header.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\page.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\button.css
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\Page.stories.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\User.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\header.css
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\Introduction.stories.mdx
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Light-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Light-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Light-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Light-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Regular-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Regular-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Regular-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\font\OpenSans-Regular-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\icon\percolate.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\icon\percolate.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\icon\percolate.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\docs\assets\icon\percolate.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs-routing.module.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\angularngxs.module.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\app-shared\app-shared.module.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\material\material.module.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\models\task.model.ts
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\service\userdata.service.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\state\task.state.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\service\userdata.service.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Light-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Light-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Light-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Light-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Regular-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Regular-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Regular-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\font\OpenSans-Regular-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\icon\percolate.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\icon\percolate.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\icon\percolate.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\assets\icon\percolate.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\colors.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\code-brackets.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\page.css
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\flow.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\comments.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\direction.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\plugin.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\stackalt.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\stories\assets\repo.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\ngxs-check\ngxs-check.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\ngxs-check\ngxs-check.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\ngxs-check\ngxs-check.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\ngxs-check\ngxs-check.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Light-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Light-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Regular-webfont.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Light-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Regular-webfont.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Regular-webfont.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Regular-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-task-list\pure-task-list.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-task-list\pure-task-list.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-task-list\pure-task-list.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task\task.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-task-list\pure-task-list.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task\task.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task\task.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task\task.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task-list\task-list.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task-list\task-list.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task-list\task-list.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\task-list\task-list.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\font\OpenSans-Light-webfont.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\icon\percolate.eot
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\icon\percolate.ttf
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\icon\percolate.woff
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-inbox-screen\pure-inbox-screen.component.html
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-inbox-screen\pure-inbox-screen.component.scss
+[16:08:30] Ignoring       : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-inbox-screen\pure-inbox-screen.component.spec.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\src\app\angularngxs\pure-inbox-screen\pure-inbox-screen.component.ts
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\dist\angular-gh-pages\assets\icon\percolate.svg
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\31d5a3c04fb1471154db10139bdce410a53525c6\0.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\31d5a3c04fb1471154db10139bdce410a53525c6\1.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\31d5a3c04fb1471154db10139bdce410a53525c6\2.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\31d5a3c04fb1471154db10139bdce410a53525c6\index.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\cb8fb4ed57184a743a45eb9b7037f13ae9ea199f\0.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\cb8fb4ed57184a743a45eb9b7037f13ae9ea199f\index.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\e5841d20d00ec1ebbd7255ae2793df689c0513a9\0.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\e5841d20d00ec1ebbd7255ae2793df689c0513a9\1.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\cb8fb4ed57184a743a45eb9b7037f13ae9ea199f\1.pack
+[16:08:30] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\angular-webpack\e5841d20d00ec1ebbd7255ae2793df689c0513a9\index.pack
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\01decbebd1999075878c83aaa30cb9e4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\022ef74ac0a2edeb5bb151ca265a04e1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\024116eccb66a9082b31062e80c08c02.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\00bfec44e60af57a063a7dc75aa47c2c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\03286e51707056619e00e71646250c80.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\02c6ed773b1e173eed02e88e57b86854.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\02dc9f04c9ab5d36d94968e015117956.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0347428b745debd07dd9511183c4a0c2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0502569f17d296d45011021061ef1353.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\052faed443a61ab73e6fd2afa2a88014.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\04345867cdeadb8de3c8d3aafcb6831e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0538ae2589cdaa5158d388caddadfcdc.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\055741a9258d1f3d72a458de75995378.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0673801fa31d69bc8c517751c1e0f9ad.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\06a73d00ffd6df1367444202fdc464aa.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\074fd370db242268dca773ce6a8a6438.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\07ea839fe9eb59fc967f69bce079bfd9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\03e744413eade9d5ba939bd4a57e0185.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\086b31e121695b29b46dc95a6ea208fb.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\00cde7a57322a284622034f74f296a9c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\08c68a52ea9de966c83e201db20ea880.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\05a74c6d8da8961f5a4423698868416e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\08b64911fa420f96a565087f3a97cc1a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\08ea556c55baa1cbc42005cc6d374c2a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0a8e8baacbd7aa13239ff6f8f2b334a3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\08951f1310f70598b21abf94f7ec1b9a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0b3f93715a94b21205a25bb1fc203bba.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0912732e98fd115422d70e76a9badce5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0b1d6459fe7662d77eab0f09abd27688.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0b416f44aaeff6759be6f348542b1eba.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0c4211f77960176ee3e9a4542294bd25.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0c8dd02b5137fa3b82ee484cc3bc99c6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0c6d11759b204f4e9b55f66b4c32ca27.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\09be81757f1fdcb04aa316e2f1056b60.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0c32626d02010d50dfa0efaef12dae54.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0e02482c549dd74de60850ddabec0f89.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0dcd21f41c11659eadfe950494758de2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0e3d39665c96a6d996ce075407559590.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0e2e5305a8af85f32c481ba51643074a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0f84602993aadadc2820a041844611a9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0d590a1ea0af5c4dccf4d1eabecfbea8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\110160298d52cbbd753cf47f58499f6e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\111d373d90b389c49110fd054878e829.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\115b117e1296479ac65ee0413086a66c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\11ad613a8738f6850067601c4241de05.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0f69ff6eafd896b2154a64dc14e511f4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1195e8c7d38de01f868ed6e09021ca55.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\12aba823adc871b1d117f9bf636ac30c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\122999df17809d2b30a09e4c29092cab.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1370d5d0091fdf01b8295d16bfbd3391.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\13eb5491b48a8a22433aa45f2e82c2f5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\131a46e37da3221642db4009a82ba1cb.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1410cfbf21ed4f4aa267ff2091b5dd48.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\14125b82904bc378fc687bea44783da6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1441e7ff83fc348e12e0ecd7784f77d0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\14cdf95a7f37e0a7e9d72530ca856d42.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\0d4cb4d3fd434f2f4f2ea993fffae0d5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\15bdab81dc8e80984a3a0657f9d0f2d0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\163cc4ed05657bce5e1f78015e3a6be8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\16e299e01422cb96232d8f5200537118.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\172bacf35402884057ddd30ab58d104c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1745d42e749f6e0a4cad90cbb92dd8b8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1785f35cba9493fc1e29de70938d153c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\17dae23efcc29a2c544cff7d8d8c0649.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\17dc552b5cfd99a2107df870a23b0ae8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\14d88d72fc98364f8ff2bb40da0d0a60.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\183609b94c07b40d89e98ac27e46a623.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\14b0fb2fa9ad401f5f3e1dcac0215a76.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1812e2a7e54b1e6805100bb2aecfef99.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\18a9697ab91605b5b19d5bfdd7a64bfc.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\16e2b31c6ff0f453dbce41d98a0f796b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\18a2b20f31e556513f180fd0b42f3639.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\18b85ed0f2dff327ce309d783929436a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\18bec944ee7d77b1909b90ec93bf9d00.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1a662a36f35bae04b4a4c49e03816641.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\19ce878eebe180bb9db1ddef9e54007c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1a08c7b13755ba4b954920361fed5acb.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1a10de3480cb762e9e4648cf844014d5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1b1c70ef1289884976fdacdb6e3b7b42.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1a66734df1aad0f5a7c5c4c5500c482e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1adfb5756013b3dd96be3190f704bab3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1b26cb68f12be4aa76429738c6f4252c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1bd67f043c2030fbf871610cbb3e3dba.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1c35a10c0d42baa0c5c30b745da1e82d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1ca48f188e2e92cc8962ac8b38f55f3b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1d4a034eecc6a68d55c3fd6cba3c0629.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1cc2fe32096e4b6a78d79d451c8afd19.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1ee5e4d2309cf9407a72237db0049d0a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1f782f913026326a7ec8b764151148f3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1cacd1c50d3555627999a0649a6a28a5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\209788af46a1cb77409ff00aceb89252.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\209fbe85c7eae83f1ff82f3294c7d50e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\203c54ad7ce4627ed659077833507477.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\20a7c178e801302f5ee7ec9fb8e201d0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\21137bd6c02f50b287d9f875c168a4ac.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\221e2f6de6ce53de6d1f74d31dcae05e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1b2fb93b150c29b4b7d3fb51058f4767.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\232a60702a9bf9da8f0d213319056ddc.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\22691beb40af5c403446407e9c185418.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\23be416a15dfc4c07f16cccf70c4100e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\23f60ab48389fbb176a5cea5c7c25b42.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2465370e05ba63f27bd4f35fec3be37b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2485ac0e7b81a3ecadf34b8a96fac9f0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\236eb7c05e8f62f01e478a8df09c540b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\24d092f86dbab74a50db6941d228fee7.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2554079a50a261fa5ac9f731f85b6404.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\25654c82637b54073f4fd6856e346576.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\25f284b94cfc9042ea63ce16bf46293c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\1e73dc2928b8a84e399679a818e4cb63.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2685deacaaae289dd1be914b7106fb3b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\27334974d08eb0c137b5d606e4a3c6d1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2739514f1484a60f70bfae1cedb96965.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2891d65a3797f722565b589aaccc6f81.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\28c51695f0bb0e5d7bafbf9ebd45e87e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\296229204f7b99a24afbf5bf20c85389.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\248c8d81c59f494ce2c89011d46f99f7.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\297b87de6bbf165c440c9c25d119d2e9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2a163652a8ddad5eee9dfb85f9e6a1db.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2ac2460b67acea49c49e492568322232.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2b621b03b020d114ff844c2b8d751e7a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2aebb0eab1ee033b788a8087883b74ea.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2bbe5f302eee0f4b6495209ecf1858fc.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2bb29adef20147a83d3d895bdb583eec.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2c7b9bef569e499bbac72dc61dd0c96c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2d01631154360a2d16473c20742a3f60.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2cfeade59e507ed8628e7345073f9e68.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2df13348c5244ad27bcfac50457a6d8a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2e892252bcec7383a8b107c13dba2ee1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\269a11fdf605f24fa39d2f9f0352e0f1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2ebb7752a146fe7be90c26ffcbd83135.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2eff17af090be8b5ca76e6372208c758.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2f60c5fe6ffd350fb25ea327a8350c3e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\311140e1dcceb80a867265839635c590.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2f1ad2e77588e03d52023f5d3d2cab0d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\315d8976ec94598dcac8908a9e52cc17.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\32c935b561961906827e0dcddfd7f181.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3327a46cf19ff581e5078336cb08dee4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3381308c275130b409796c89aa540bae.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\362f242015ea65ac551d0af5ad2ea93b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\36c0bf08d2003a70e9337e64de0babc0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\2d96dd04d1d7f17bd509b1ed79294149.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3783ea88e655c368aa64aca842c5f952.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\37975c0fcc943533683b4ce88a195d48.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\37be126120697114a92d684072dabfc1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\388b64083c2e9740278a866daa35cb20.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\39d113cc585e46f58d103f3648cffbd3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3803e8ba369d3f4db840b4a9bc42a7c5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3b7634ba4031f6cb5c60c668ebc7b93d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3ceda8720fee7547f1c38a7175a98f1b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3cf7d6a507e0f505bf16bf0aafcba4ee.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\318e93502f4785300b779c2bfe7bcd33.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3ed6c1f586ba81048a427e979fea6559.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3ef68afff2a46856bbde696653c8a47e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4007b000c66b694e338db26c37696cfa.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\40eb39a5c2b1e6cd0f80cfca5d998b34.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\41e87189a0066576b83d9503edb81f3c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\41f5e76b27fd0829821425dbfeb47bf7.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3d80e2e5e296b1bba5362c6121ac8456.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4284c27110bfc1e988d0a50b1d77f65e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\42c12f0a8fa14e9c15bc8afa3165989a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4330dd80b17442a8c8170558d6ca3ef5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\439ed4b20081b11f24832337bfaa1fbb.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\43da25e68b14b2301e6339124c232f80.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4468fd944affd06d52f42015612d8976.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\3de5c7cabaabf705bb25c113e2218789.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\44c691353b3db1ba7410a268c1a7ad12.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4516444d0b22330fbd6915e0cd0d2de0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\45244db24ea049d168950dd117bd56c0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\463a6db1f5d86de3db94fce72f5e8459.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4630d85d58541ba3b9c86f747971212a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\42828b15fa8a9d1756b549c89840a6e5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\481b5b52efcf73e8e9d5e315e64badfd.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\474b85aad8bd094946da3a42fcaa1da9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\47bcc4158d903dd8a39ec314837659d3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4829e642b04315464c1b2e5796a55867.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4874a1d84d25c3d2f5b0b78f0ec8c6f1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4892bfd1305c26364a5ece340c9ff73e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\48a1e7bb799d46e205f1f8c765061e28.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\492ba60337463d49121ca41e24be574a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\49020482f957cab5360308cf83bf96d3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\490d33fdf249b60d487be9aca50358f0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\49ae192d9d59150091b5e4a45540b756.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\49b7bd81efb358d8dc20f06892984332.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\49f4c8c3d808b4d7933ad13a7646001a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4a37da914f8f5838f9f854880e71670a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4c16bf57817054430fa6eb58a91c4717.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4a8837dfd23b2f1fdd70e1d10ec94aa0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4d1a2d35cc1d106851699f0e53c2d0b4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4dcce97cd0c1b966015016b209775f45.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4bb3e11be2950c3268aec801e77301d4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4c9da5c2a55e009c4d7d5590549fd909.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4dcd1c31ebf16b2c86f1d618965737a0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4fcc003b90d6827bf1d4ea51adc363d6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4fd0d518c3be8448a410d8bee86e200c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5011bad6b7c4715e8f7e5bfff06b241f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4ee25305ebfb5dc36ea7684a2fdf39a6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\4fa17a9ffbeacd1bf626339b3cc2e7ea.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5047892d8a39a42ca56cd8de9d59d5d4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\50dcc01415baad13cffe0522784517f3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\507fcf26fa5015e45ec7187fedb8987c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\509d4ea08cc9c27569b3a1af8497fd0c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\517823615fdbe2f0faabd205e3062400.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5195c0ac09cea363317b3920512a08c8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5280dab6672aef24ddb57a4cac74654a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\528ac9fdc20a4b1e4bf6e361852fc2b9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5277f647345800e3bd2b44cf14ebd0b6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\529b6affc930b45ad959917b006134a6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5329e0965fd1ba35a84d29eb0e04eaf1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\53424707ce686cad5cdb88b44af85d2d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5325f7cf3a390f6879b704ce0ed922ae.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\53adfcf46be9f1fc2f5d091285154d0f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\53b28706b5cfd71da9765e43c4ecd553.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5410401eed0746d8c99d956f9397bb84.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\542951fa2c7179722e9fa5b1c58ee156.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5498a8452a767251b3d9061547175f4d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5572b4304c98bbf350c1468d39777526.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\55c2e649fa1d38980282340fd386430f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\562e6dc89a38200418800d41fc45af22.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\56c8a6c2408839d3530875dc66875e6c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\56fa0532bb42ea5b63e0f3fe74bb0bed.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\571d260786c64b103b9d728627205f0d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\58c402b6c0e84ed98694b21f3c1f01e3.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\23295aade4d4279f737d1d7e6fee83a6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\593189816630ce07756b93c3a5eb1c6b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5945de71e8cd950af15e97d17546375c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\59414a4e145bbcb3ff5012d5fef26d0b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\59db1bc4c35095d875d0b2017bbad72d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5a62f063bffe5572b4a01246615c1db0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5b60a5dd2d66aa7425ffdd36bfee98b9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5bc2967f636c2f810fa7156fc9a32736.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5c4923afa5d7b06b9a3b3264b3fe033a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5c4f2e982a81859e4e1b1af698a5e705.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5c5787a4fceab64f88dbf876af4b97a2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\52dad872446538a1c1e23268a3de0b36.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5d4f512a3a20ad74064dbbc8399b7f6f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5b4a494e08943da07c15b9b04aff6f53.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5ce339ab92867f78e5fdd7ff73a94288.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5e7a5d86d8741cb343b4c9d8fec111c1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5f07ee1d60f66937d73e4bbfaffd49a0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\60781ba89b7e6e33c0a48bb9a3a41f49.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\5e374b7377c41d5e06855c3c7abe879d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\60f81f6a82cae6cc1ab233d41166450c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6125bac5420691f294e39cb73b354654.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\613c928875637ee8a2862e5215a88d32.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\55db7e7b0fbe639ec8d9673633f587e7.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\60875840a488846ffa05bbe6cd6f0dc8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6101b18a314388cd6fbc6c94d0b94c3b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6148e1883cd4b205af58a32088492ba4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6215031c4d50076243046dc371239775.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\62224775fa359449fc43e00e740a3783.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\617815813313038c640b30e122e41e40.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\630f9128a859bb0ebe7abde5c07c0a99.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\62574e326e4a9be349d86ff08060bb44.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\62d0f7716f909f70ad240626cc08d60e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\63395006bf56e4a851afcbab86217fcf.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\636c9283bb634369159eca55d830fe96.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6413d0641cb0df5082360bf99c750768.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6586a8b1c60c6ff020bc9cf9e7fd6019.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\676c4e86b61bf702a8b851397c030458.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\67e076e3135b8c0b4c393f67134a1429.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6152a45ed98faee0aa399582a2ebd5ea.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\64e02b66c19e87ddb6dd1551bb9e58d5.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\660f86df2db21d8c34b4ccc1e4aaac32.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6830f4a828ca7d97539bf7d934107c64.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\68e9524f59d7233f782221257a58f0cf.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\69ee6b7d8cc4d8e8dcf296d3a04c3bc4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\685b4e17973f1a6f762c2c5810c87c60.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\68cc204bd55d0ab5d21e689f16b8adf2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6a21bf747679cfd874c95c6a631b9ad2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6aae037f6a9d724cabf4cc16444deb6f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6a357529afb987b01c91c1b074fb0cb9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6c16613526cdb9c0cc24f5920e541c97.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6ce44df48f6a35a44c0701d2723e7204.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6dfa75951be47c1511b5ff1f51c40cde.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6e1753fb4ee83191b4bd9e3ad45de8f1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6d8c99d24e32b0aa5e375b69979f068e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6b0ba0a8e7bff5943b08287913c1ebe1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6f7b910a0e1014d6cc308407423114f0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6fe76d90bb4581da42fdd734cec75f90.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\704f184ef4fe02a544caa28b127c3b85.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\6c425e2fed14f337e2d79512c12b23a4.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7192d90cb96af8625b23c4d4225e06a8.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\71eb07d20536174c34c7c124cdd9627b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\71b7551134d75688878067cbb95aa224.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\71cfb852603c9d35d0b5e98800e4446d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\725759ef7f9e7f3fd8ea754c14172b5b.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\74b3f9f85d8633c00189943ca27263a2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7368839963ed848a7b4a5ac08c67f99e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\74c1aee171be1f777ad9a734fba3b56e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\74de6ca62a3798d2055462168c92af8c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\748b2f2d694fd507438698fb401ede85.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\755b532015509d5f197c5728002d895c.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\76ff228cf34aabd4e05b0a993a27b972.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\75ef7fcdb3f377f2e3883752b5878dfd.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\76ea2184dca7bf5d460a6088208eeed2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\778de6e21bd9b1b28c7cfd99ac8d0026.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\780e35669acb097f962998635edb84d0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\784185c2920dfebf0d5f81f16681278f.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\789a57672c1def699cc50cadfdc7fc7a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\78b246bb487e8dfbbb9720fb64e54b0a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\799d2495c1f6d2e1556a34180ab52190.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\79c5553945088ba22c6ac8690acce372.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7a3b01e968d3415b91faad5b297f4c33.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\79a4dabb2160dac92cf77cdc8edd2674.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7a51b975871955b08de74b4b148a1ce0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7b76dd7c840772f087c93cf2a61c1193.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7a68f8e41bfebfa0805f5f49773883c6.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7cded0a753dd2b31a977ec6051c070e0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7d31c285a4009931778923e81242a094.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7d36e6711094cfbc2410c8c84acf3b44.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7dae8d98419c209a3534fc1312552d37.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e1b45de21650da7afb7263a24f3573a.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e3a713f4ef6d9c224ff22014457bb74.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e504eb60ba03e730fe913aea1b3a17d.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e6ea13a4dee64d524fae14c42da3a51.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e739610d73a7f4a7b04588eb8eec4f0.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7e7908528e4ef47471e65fdb426766c9.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7ec9472c5b59cf183d8a232088b0e27e.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\76ae85f650ade4b09d8122ccdf2043e1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\7d500710037d14b6014307b6ad2b8ee1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\820c037fad9e51a3b989124259df45a1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\80e70b443da7dbed6ab84d1bdb72cce2.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\80ef0a20b32c400cc3631230c8c559f1.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8111d84a6c7f2be6dbe90736fd583d16.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\83e82902eff078b4e6df82aaa2b3ff51.json
+[16:08:31] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\83f7503172212a8aeb35e168aa6f709b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\846cd504620675c2971b917a9cecb8a7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8435a0a699328c2930aa51c1c8151b90.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\84f47ac46820dc71b0a68285f8fc3bef.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\84b72b170908b812c891ae46647b3e2c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8648e8a6c0efa4fce19443d8bcfbb509.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\86626241e09148a275dce667cebb9b3e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8695ce9207c9af842f19b55bacd99821.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\86a6df9c5aebd47072884f411033ecfe.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\86a4059031bc1459b8552da7d3dc3e97.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\85ddfe528dbd465e7327b5c0c330175f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\86efd668512a808a4f13273527bc1d30.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\87003a9f3ba1cc0f51607d90196c147c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\871fb918f79a9f9a199a6fc6cbc0a308.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\873eb5dcf92984583ac378bb39fb0fe4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\87a739ef6c9ad5494a1c79acaa81c2c4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\87b24ae347957f509805805efec3ea3f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8803ec39c2acaba98e14c799bd226210.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8842e5d97f6a4c6bcb23394232708e6e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8996e26fd5197437bef68fca66975451.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\893786e59a0b4e35ff840ad1403ba97c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\89a35130ea3848a34ca0db0743c1906e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\89be698695d410beb307ebfd568ca9ce.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\89d12b6da1a48c640552dbf3d29199df.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8a0a03147e509e8e105efa54eecd8bb0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8a69e53bc78dd28e5776fad1de75d2f9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8a884e1d19f5e97445ba207dc5dbecd0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8b0189cd6d7fb0ab0d554471d96d106c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8bf65db9d2f70e5a58cd1d1a17bd1214.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8c18e73d8423eddd786d623ef2bcb7b1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8c578d981ee12bdbe129c47e158f2954.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8c7537aa79ecd85f6a5b562cf7bdfd76.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8c8dd7320f7583f6c6cc679573d08110.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8ca2515f985445106dd3f543f82d8a66.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8d29852eb660197cfd439bdf0aef6312.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8d62a002b1f44b954aa9441421ceddb6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8d432150e8def6b8ac1644cd26dad088.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8e672a1909eac31c1d00bc8215cd6b4b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8f36c7f7604514afc2ac9320e4caec60.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8f97db5f76f0f58416da0c75bd1a9eec.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8887925f8bab655218cc68405dfd7a4f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9163fb62e064f398b6134ca8630c45e6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\920b2f604042adb5c89c48a1386baf42.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\923a8ad70abf8ffbb209eff19e47519b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\92f89fecd7bfcd41c276a65ce2d101dc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\93036e7946db8f33c28d6a2797486935.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\930e5df9dd45d308ac87ad67eb64bfe9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\932ad1454d274400ad2497c06b59313e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\910e92aff58f715dbdf869fdd01f52d0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\93d543d2a27e5d33dea090df9875bea3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\955075dac16f8753aafc093a2e9fefe0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\851db14856ab9ad668a3f85e0c2ceb65.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\95b326625a32c10eba571e12278ae7f6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\8e3eae969c5e3623068bdbe6f3aca933.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\96f81d3adb8bdd8cad93345e0fa8eaad.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\97069576c5be3d259b66df16e47554ae.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\93a371f61aaaf1c5f7e54fd81e05ac20.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\97410bde1f2cbc8c50524367ed155016.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\97d376bdc34b52600741c4d4c8fb3a3a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\97c7ca1476a95365bc4a939002447331.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\98535baca01b0228971a60f1d073d2dc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\988b17dda31762884e2b4b981bb44eb8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\99785ba3c216fce14f073b006d8bbe8c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\98f613f27211afcd95301ad118a3203c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\992dd965740b973c5da672549cafb066.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9a8974a1583a2ee7d3e4f7dd5d73eca7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9b385883ed66a63496dbf8a58669ed04.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9ab5e5a5d244cfb71a00ecf3c304ea45.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9ccaf0a5365bf20dc447d5b33b3ea0a3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9d5e4250dfd6f5c0c21c478ce6d55077.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9cdc21066e8af7d33e2c9ca470079811.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9bc41ea104f6945167a64400bbe79da1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9bd6920aab193a805b9b609f669825dc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9dc6607d04610ee08ea8e9e2a6d108ea.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a0920df1f9363a64b93e0c7707fe32ac.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9dff6f6df7df9fcd3762aa9855ca489d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a0d80f87314e6c0eea9c0063078c37b8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9e62d92645197e93125819c10bb99fc5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\9fbc6be7ede43875d10021703f4a55bc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a0cc73e4b7ce7693bc286b7a2dd43e0c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a0e75c6d2e4059c5c3ca469d97122a10.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a173b4f1d85f442e64c6f8c9a8a2ddcf.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a0f280745637d25cb5191f154e4e67e7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a3f86a6e7e0cd93daae8c42fc99720bb.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a5c43b4baf3c0b14f7c7bbfca3844ee4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a4072c3354b57012a5550cfe19d32fdf.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a3320efe62f4f5f210d1f4369ca2c908.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a558502041d2238552e21085f0d67643.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a604c5d7d89c1c956834cd9958759804.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a6752fc50af0747e4cb4fe4c8ab86abc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a8077cad6ac19eb9b7913b34e3041da9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a72984688dbf7a3882b08d8b73d4c910.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a938d25ea4fe16c672c1c729d7b063a7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a9833e2101d65383144181047cb33538.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\aa5d291b8951042fd1d3f31911efc68f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\aad3bba405479dd7b16a867e31688049.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ab35203296f7ed92d4ce4b703a7acf0a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ab9f4afe475312b6d3715f5c52c738f0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ad42720f4eadb5afd3b8bff2c65b86de.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ac682bbdc3981654918077d0f887afea.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\acac4cc4a75a204c2b2cd00b9b8d92dc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ad8b5d8aa99e3ba30b8fde060fca49cc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ad8d812e3fb10d570f7ddb090f714379.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ae348980363a139a97f148110a247cbf.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ae8523400acbf91ca44f2fc78044dbb5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\af0ee84f0edd5c30ed6f21692421ffd4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\af06f3b232639945a63da931032fa606.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\afdf0492a56b7f8a942078fa29c6877e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b074c7a2d4a0045f2a8a542506f84306.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b041a6e368e52035f372a3476f8e30ce.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b112c45c4c613db51612cf70e6bfc33c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b3da95324ca79db8f976738d50fa1b15.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b131871242b7e3e5ef59b9929e13eeab.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b46311baf69c5dafb50cc5fd141c7f9f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b4d75dbf74aa8d5c81a2e7b8c0229512.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b24db3b5292913a4890615f38a51d23e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b406588df1353e0afdd0d3e10ec8977c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b586388fca13749b859ae5a608e7f9ac.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b567d96f28a54c8de0aa0e6c53778a8a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b53cb50b877adc94f3fa10cb3006d098.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b702eaf19c0fdcfb49a135f42b40d1a4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b681affeb5d78a1182d6182a6989281e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b73675c60dfed7e5d74cbf9a8ce2c245.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b7055993497492108979eefa14e500f5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b7d61b82e168bc3f347ac4d9d907dec1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b8893b0d3f0ebe36fc6ac42bc52ec695.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b657c3b1697a4602e7e37ca4973b0cf5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b7937eafd22c83a7ecb9401d9f98726c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b932e1f8aa3e7d9e6a072b19fc9081d3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b937deb46b155f75735b237d9274ee91.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b979c22f47d4f57c9318cc9cde65d940.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b95c78882aa2b7be3d3e097a2303cec9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b9478c380782c8c4a885a97b33db9dc5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b9f5db7f23b5287957c5b4579e69b4e1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b9804c15895c1704e0750790a7536709.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ba4e4f120270efa9f1c10cc9c1a6ade3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\b99586285dd04f66c8bca2085c523cd7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bcea0b36789e4f1a45fbeec2bbbc4cfb.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bd470b9db8c4ec122c59aad91fa88e20.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bd5e2d69d56fc45ed48babaf625e9331.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bdc370e7048ef1a1702c20d8b3f27fd4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bdd25a1a33e413c295de58ad8d842106.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bdf67b7f4e86fd058572857181e380cc.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\be48530f13e43d9117d42ac8a9a4bb97.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\baecb601d0eefc72f9b2c792876c6775.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\a7c647bbef8ac26c8696787c6041ed51.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bededf1f47faab359f79e5a356a14dfe.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bf1b49677bf5d2e651858e892f70708b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bfeda1201e91b6ab477fa924b0187d07.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bb69261889c5a0f5eacb969eb0b74ef7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\bef36580039c65bfb54d56caa167b192.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c00bc3574bf33b0f211dd5872563ea77.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c15e4a3c631bff573dfc045e77b79db5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c0c7f416971d477c9fb5fae005868421.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c10e4b613b2f1eecd67b275a54ab5377.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c2a59511aab0ae8a4d44b6e51039d619.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c20a290dd8e8569e917568ed6606d7c9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c2b371caa4452e6fb91b0c500f322ccb.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c24c43ab8a6429ed5de3ce33b2b033b0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c2ae63f054605ce4bf01e1ce9bb5e606.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c34601e0acb8d899726f9179a3d4438c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c2defe1148426be009c1fc24e64600f0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c48f78c4c39c5e0a0b382ce3db501b90.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c4fe1a40df96575d094ee3163b67315c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c5c461ccaea7b3df987a3b970f6072da.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c42eccf9f811b14835605fb6996965f1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c6248dd56d90f2d6aecf490abb581f13.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c65bbd2a52330a5cda92e81de0f0a5d0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c602178f79941c39808a368974390635.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c70d6127ee780ed9adf2340f0d7cf0ce.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c747a0f9b1450bbb3fcf867fa76d037c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c962b9d4560c789b24da479eacf502ef.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c97e896c28845c93c4e7a028e6fa3eb5.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c75e60572666b6218e75a01e9d8ddbb3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c82fd59c2787ac0b0639951d426a5a1a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c98cae46b67a9da7a757e0e283282f43.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c9a33699c62b32728c880c12d21f088f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c9ead19ac513bba3e47d487bc85b2036.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c9ead2a48182821cd7bdcd4a3bf1f100.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ca38418561935c03ffef395a0d7d7ee2.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\c9d665f628eb4fca84a4e5024f356663.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ca7e81ecb10fff1ef1a1d1abcc049d51.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cac50452cc9d7806c417fa77f5feea66.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cb219b6e947a8eeba1bb199d2d681d54.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cba3c111141cf9f31d50e70076ef30b6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ccec1043412f63e9dc671604056de48f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ccffed6794614a9d47476d6f69fc7c1a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cd13f2f28d5ccee86f0922dceac175a2.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cc938ab538ddb22d622cb4f976cc1826.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cd1c4fa37cec7418c4b62e8e65ad6bbd.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cd3785f8f7843bf0ca14618dfbbb411e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cd708f666be006f243e2de567b2285e8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cd47c0fda221ca2747bc90852359871a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\cdedbb0c4c40d3256566acd16a5941fe.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\caea276bbca77a08859f578defc7e8b0.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ce1d265c54655823a49134c1ec96a00e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d096ad66e26c23a50f42a0f7e9818178.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d02908ca9b349e619a391a9419627cad.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d0dd83727f51789709269048184b55a3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d272cd25da4fbdf95551e5d68948966f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d1ae26e11213a8cdda625a67e632368c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d208a4c9cdbb18372993f967e9a72104.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d351ab6863fc76f3953499942b89a4f1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d37560407bd22d1c8f40cfa57bb42fa7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d387c44bc3f17fd391d43323fe6b6ea3.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d5b97c2a9ac507b770bfb1217e24ba7d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d422b6cfb51566ac2b3cd811307bda33.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d44b51960865775701655982fb16938f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d6c578ce6e2f7bd2b7540eaaa8510556.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d62eb51bea091bfe5e02fd1098211b32.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d7081014d877712fe069a73cd462b41e.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d88ec021da8937bd5e4d1b48c309a1aa.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d7c4fb102a219fbf74c312fd2d53c2a4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d8cdfcf7b3cbc8e7450eec597679b2fb.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d8f5428de5208fef0897ae5814031698.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d94a4acdfce7644caf7e1a5a88c6a912.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\da756ad55393c352292c124b7744806d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\da25b653d7db37414ca95e293f79ff32.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\d186ec331a2ef879472cffd393411afa.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\da873f771564156a04396cc8fc33c949.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dc94cf28a32bafa19e34bfa09d1616f7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\db1fb445fc1482bcfd1ab16074a008e8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\db48ffc588d24530977763abffdcbdac.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dc512390d385a702e3b314c865d5963d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dd0e7531ef7a53801e8977d5deed76ee.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dd4bd6b121a0639b7c718a81a98fda6c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dd59813f25d21b1300850b810756fc0f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dce90b191a1b11e502008d26b396ab5f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dd7662e2a34837d2c65f4d41b053f53c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ddf5dba4623d813692586c2e3a10319b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\dec94c613b359cfa0bc225c03a841fe2.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\df35f87548003958e7077cb1b0b539ec.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\df6e4bc5acb66f51c14a787edb7c17f4.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e23c11986e78ab8463d697593a76b733.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e2484062b8f3553d3b6ee1163fed8863.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e0b489909a76ed17a21909d7fa81cc36.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e2e45043014c93c815877229a44a9d01.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e3c21a0fd03ca6051409bfa9d42a2457.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e30dd22806fef72d8b1ac099519923f8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e3fc28384180c989cdaa665e9d3eb466.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e569d8a33067a932513b0117683d7921.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e589af988ba080429be269b93977e6c1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e66c81773db0cda2ab38d613bdf34329.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e6ec3d98b0a83a58232e88cf029b4c11.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e6f137b6f064df64fadacc93b1f9e179.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e7202d7801697db1d5e0956bad45912a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e757979187523eb4d936cf8e2af34c9b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e75bc92210da3e304d9225f231a6faf6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e7b4cf7b8298c1d9818b9de38fc9bb18.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e85dfd85160dcf68c80bc148b04e25b6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e862855146379da563038e3711677184.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e8f234e41ee31eeea3118b9a78fa6a58.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e967c69bff883081c60f5db007018260.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\df5084aab68a03f9bf16235899a241fd.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e3d1f15c32c6c5fb5390dc589ccb8775.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e9d24b81a12c3f4bada96346ae646ca7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ea1d5b60ab64630f6dc070b59db220d1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ea1dc63f4c9362fd1b6a3179aecaa589.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ea39e8b662051f06f2b4a3fe5bffcff6.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\eba301a668668c5a10ebacf6d977f86b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ec041d4969f818c696e3f7e71586adfd.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\e5539c8bf1a49dcc8369698ef0586f41.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ec32973c1576c1fdb8870158f2636797.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ec724e84f7a3ff012a59489e46b09d93.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ea9c9270adc681a021e938b4ca331282.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ed2cb3bbf84356a81406abf83ff5751b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ee2214984df8af90a80e0bec4673cbba.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\edb71416507ea67bae998b6d890d44ba.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ed3f16607baeebaa458ea2fda3e74428.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ed6d944745f0e7ab60451ad1b100e9ce.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ef54bef3e19615e39f6f1398c20b2e2b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ee27d540d630113f7e605941aedd9e73.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\efc08e1fd1588d75635d7a471ef3d431.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\efcf4b871b9320732ea1a766ac263068.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f005958a9a07447395fb8048f625edac.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\effaf2afb89f591cefd085dfd09f6e80.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\eea84a39f9f78ebc25418ecd9e514a7f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f1dd1a69a2854a27200d46503aef445d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f1af975a141a90c9d1c346b0ed50f666.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f1d7f4182dd247df9a68eb30316dbf7c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f3f56e4b318604138bff8b9d682618bf.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f4af0a247ca9c5ca0546590481a5ac9f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f3ac4be50ebdc2a0624977f7e157bb38.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f49069b2cc6807e8129753fa898de685.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f4c5be612701aff5df3fec596ebae6c9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f505af3af785860be55173514b1da326.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f4d98b12c84f225b4b3ef5a9f4692a7a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f5546fa8b2e75b33d665ba625238ed3b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f5a4b5a4a5439b82e8919266bf776b30.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f5d9e4175f8395a6699be02484ac3b2b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f63b562ac0e14b1fc12797f10c3fb79f.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f75c96a3497feb1167dba499d37c04ef.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f68d9e66fb5b85defcb0bd374fcd3796.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f80516832eaba1b83833aef033bdbc59.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f98b1388309cade6da17a786b89e5c19.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f8ff2b7a53f9f30e7fed55d831fd4c0a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f9be9e6c6256a686c1cbd2616dfbaf74.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f9c6e9149042dd467b4ddce83d7e53f7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fa286f18a7df342200d204a0a776d7f1.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fb12e6ed77af038153d0e3e59f7538aa.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fb24c8a2affa41bcf9e949f3166018f7.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fb9986802c050a08ed3891b72aefce83.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fc03aa021d16b962d99276031b70eef8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f9e7128f850ffd179b70e18263f4a84a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fa162ef4d06c0df742c3d84fa251c780.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\f39492eecd19060185a9cbafb338c234.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fd0f61936142069f67996569402c0575.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fc3f16ccd62f2c6e7b65adc27b2da315.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fd8abf7c54e809ae1d7cfcbc0f0bc993.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fc6ba315afeaad323826c03c46cc0f39.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fd8d3de04786378fecec170d7405976b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fcf86ddf025913c106b33124e0e0319a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fd38a1349baf7c7d2e31369772d5fde8.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fe8f8c89bd75127b3c023d3b7a323f95.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fda3f36ea65eb19bbaa746fa9489059d.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ff669dd7f85b557225d4cdf6ee6ed0b9.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\fde071f433b58928c47b43fb0be8302a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ffcb7f3ee127417af2758d5000b7152b.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ff84cc13c02d4617e67ea2434100059c.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ffe3468a53c3d3ae2feffefe98f9559a.json
+[16:08:32] Including      : C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.angular\cache\14.2.2\babel-webpack\ffe7bd40f690f3244cf797ecf1cbce8c.json
+[16:08:32] Searching package.json file
+[16:08:32] package.json file found
+[16:08:32] Processing package.json dependencies
+[16:08:32] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[16:08:32] README.md file found
+[16:08:32] Error during C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\CHANGELOG read
+[16:08:32] Continuing without CHANGELOG.md file
+[16:08:32] Error during C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\CONTRIBUTING read
+[16:08:32] Continuing without CONTRIBUTING.md file
+[16:08:32] Error during C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\LICENSE read
+[16:08:32] Continuing without LICENSE.md file
+[16:08:32] Error during C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\TODO read
+[16:08:32] Continuing without TODO.md file
+[16:08:32] Get dependencies data
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/test.ts
+[16:08:39] found          : require
+[16:08:39] found          : context
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/main.ts
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/polyfills.ts
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app-routing.module.ts
+[16:08:39] Analysing routes definitions and clean them if necessary
+[16:08:39] found          : AppRoutingModule
+[16:08:39]                : - imports:
+[16:08:39]                : 	- RouterModule
+[16:08:39]                : - exports:
+[16:08:39]                : 	- RouterModule
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app.component.ts
+[16:08:39] found          : AppComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app.module.ts
+[16:08:39] found          : AppModule
+[16:08:39]                : - imports:
+[16:08:39]                : 	- BrowserModule
+[16:08:39]                : 	- AppRoutingModule
+[16:08:39]                : 	- AppSharedModule
+[16:08:39]                : 	- BrowserAnimationsModule
+[16:08:39]                : 	- NgxsModule
+[16:08:39]                : 	- NgxsReduxDevtoolsPluginModule
+[16:08:39]                : 	- NgxsLoggerPluginModule
+[16:08:39]                : - declarations:
+[16:08:39]                : 	- AppComponent
+[16:08:39]                : - bootstrap:
+[16:08:39]                : 	- AppComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/environments/environment.prod.ts
+[16:08:39] found          : environment
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/environments/environment.ts
+[16:08:39] found          : environment
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/button.component.ts
+[16:08:39] found          : ButtonComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/Button.stories.ts
+[16:08:39] found          : Template
+[16:08:39] found          : Primary
+[16:08:39] found          : Secondary
+[16:08:39] found          : Large
+[16:08:39] found          : Small
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/Header.stories.ts
+[16:08:39] found          : Template
+[16:08:39] found          : LoggedIn
+[16:08:39] found          : LoggedOut
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/header.component.ts
+[16:08:39] found          : HeaderComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/page.component.ts
+[16:08:39] found          : PageComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/Page.stories.ts
+[16:08:39] found          : Template
+[16:08:39] found          : LoggedOut
+[16:08:39] found          : LoggedIn
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/stories/User.ts
+[16:08:39] found          : User
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs-routing.module.ts
+[16:08:39] Analysing routes definitions and clean them if necessary
+[16:08:39] found          : AngularngxsRoutingModule
+[16:08:39]                : - imports:
+[16:08:39]                : 	- RouterModule
+[16:08:39]                : - exports:
+[16:08:39]                : 	- RouterModule
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs.component.ts
+[16:08:39] found          : AngularngxsComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs.module.ts
+[16:08:39] found          : AngularngxsModule
+[16:08:39]                : - imports:
+[16:08:39]                : 	- CommonModule
+[16:08:39]                : 	- AngularngxsRoutingModule
+[16:08:39]                : 	- NgxsModule
+[16:08:39]                : - declarations:
+[16:08:39]                : 	- AngularngxsComponent
+[16:08:39]                : 	- TaskComponent
+[16:08:39]                : 	- PureTaskListComponent
+[16:08:39]                : 	- TaskListComponent
+[16:08:39]                : 	- PureInboxScreenComponent
+[16:08:39]                : 	- NgxsCheckComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app-shared/app-shared.module.ts
+[16:08:39] found          : AppSharedModule
+[16:08:39]                : - exports:
+[16:08:39]                : 	- CommonModule
+[16:08:39]                : 	- MaterialModule
+[16:08:39]                : 	- FlexLayoutModule
+[16:08:39]                : 	- FormsModule
+[16:08:39]                : 	- ReactiveFormsModule
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/material/material.module.ts
+[16:08:39] found          : MaterialModule
+[16:08:39]                : - exports:
+[16:08:39]                : 	- A11yModule
+[16:08:39]                : 	- ClipboardModule
+[16:08:39]                : 	- CdkStepperModule
+[16:08:39]                : 	- CdkTableModule
+[16:08:39]                : 	- CdkTreeModule
+[16:08:39]                : 	- DragDropModule
+[16:08:39]                : 	- MatAutocompleteModule
+[16:08:39]                : 	- MatBadgeModule
+[16:08:39]                : 	- MatBottomSheetModule
+[16:08:39]                : 	- MatButtonModule
+[16:08:39]                : 	- MatButtonToggleModule
+[16:08:39]                : 	- MatCardModule
+[16:08:39]                : 	- MatCheckboxModule
+[16:08:39]                : 	- MatChipsModule
+[16:08:39]                : 	- MatStepperModule
+[16:08:39]                : 	- MatDatepickerModule
+[16:08:39]                : 	- MatDialogModule
+[16:08:39]                : 	- MatDividerModule
+[16:08:39]                : 	- MatExpansionModule
+[16:08:39]                : 	- MatGridListModule
+[16:08:39]                : 	- MatIconModule
+[16:08:39]                : 	- MatInputModule
+[16:08:39]                : 	- MatListModule
+[16:08:39]                : 	- MatMenuModule
+[16:08:39]                : 	- MatNativeDateModule
+[16:08:39]                : 	- MatPaginatorModule
+[16:08:39]                : 	- MatProgressBarModule
+[16:08:39]                : 	- MatProgressSpinnerModule
+[16:08:39]                : 	- MatRadioModule
+[16:08:39]                : 	- MatRippleModule
+[16:08:39]                : 	- MatSelectModule
+[16:08:39]                : 	- MatSidenavModule
+[16:08:39]                : 	- MatSliderModule
+[16:08:39]                : 	- MatSlideToggleModule
+[16:08:39]                : 	- MatSnackBarModule
+[16:08:39]                : 	- MatSortModule
+[16:08:39]                : 	- MatTableModule
+[16:08:39]                : 	- MatTabsModule
+[16:08:39]                : 	- MatToolbarModule
+[16:08:39]                : 	- MatTooltipModule
+[16:08:39]                : 	- MatTreeModule
+[16:08:39]                : 	- OverlayModule
+[16:08:39]                : 	- PortalModule
+[16:08:39]                : 	- ScrollingModule
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/models/task.model.ts
+[16:08:39] found          : Task
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/state/task.state.ts
+[16:08:39] found          : actions
+[16:08:39] found          : ArchiveTask
+[16:08:39] found          : PinTask
+[16:08:39] found          : AppError
+[16:08:39] found          : defaultTasks
+[16:08:39] found          : TaskStateModel
+[16:08:39] found          : TasksState
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/service/userdata.service.ts
+[16:08:39] found          : UserdataService
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/ngxs-check/ngxs-check.component.ts
+[16:08:39] found          : NgxsCheckComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/pure-task-list/pure-task-list.component.ts
+[16:08:39] found          : PureTaskListComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/task/task.component.ts
+[16:08:39] found          : TaskComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/task-list/task-list.component.ts
+[16:08:39] found          : TaskListComponent
+[16:08:39] parsing        : C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/pure-inbox-screen/pure-inbox-screen.component.ts
+[16:08:39] found          : PureInboxScreenComponent
+[16:08:39] -------------------
+[16:08:39] Project statistics 
+[16:08:39] - files      : 794
+[16:08:39] - module     : 6
+[16:08:39] - component  : 10
+[16:08:39] - injectable : 2
+[16:08:39] - class      : 3
+[16:08:39] - interface  : 3
+[16:08:39] - route      : 4
+[16:08:39] -------------------
+[16:08:39] Prepare components
+[16:08:39]  AngularngxsComponent has a templateUrl, include it
+[16:08:39]  AngularngxsComponent has styleUrls, include them
+[16:08:39]  AppComponent has a templateUrl, include it
+[16:08:39]  AppComponent has styleUrls, include them
+[16:08:39]  ButtonComponent has styleUrls, include them
+[16:08:39]  HeaderComponent has styleUrls, include them
+[16:08:39]  NgxsCheckComponent has a templateUrl, include it
+[16:08:39]  NgxsCheckComponent has styleUrls, include them
+[16:08:39]  PageComponent has styleUrls, include them
+[16:08:39]  PureInboxScreenComponent has a templateUrl, include it
+[16:08:39]  PureInboxScreenComponent has styleUrls, include them
+[16:08:40]  PureTaskListComponent has a templateUrl, include it
+[16:08:40]  PureTaskListComponent has styleUrls, include them
+[16:08:40]  TaskComponent has a templateUrl, include it
+[16:08:40]  TaskComponent has styleUrls, include them
+[16:08:40]  TaskListComponent has a templateUrl, include it
+[16:08:40]  TaskListComponent has styleUrls, include them
+[16:08:40] Prepare modules
+[16:08:40] Prepare injectables
+[16:08:40] Process routes
+[16:08:40] Prepare classes
+[16:08:40] Prepare interfaces
+[16:08:40] Prepare miscellaneous
+[16:08:40] Process documentation coverage report
+[16:08:40] Generating documentation in export format json
+[16:08:40] Documentation generated in ./ in 24.014 seconds
+info @storybook/angular v6.5.12
+info 
+info => Cleaning outputDir: C:\\Users\\gmano\\AppData\\Local\\Temp\\chromatic--10088-ZoPh83f8kGv2
+info => Loading presets
+info => Compiling manager..
+info => Compiling preview..
+info Addon-docs: using MDX1
+info => Using implicit CSS loaders
+info => Loading angular-cli config for angular >= 13.0.0
+info => Using angular project with "tsConfig:C:\Users\gmano\OneDrive\Desktop\2022\AngularMain\.storybook\tsconfig.json"
+WARN Your Storybook startup uses a solution that will not be supported in version 7.0. 
+WARN You must use angular builder to have an explicit configuration on the project used in angular.json
+WARN Read more at:
+WARN - https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#sb-angular-builder)
+WARN - https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#angular13)
+info => Using angular project "AngularGhPages:build" for configuring Storybook
+info => Using default Webpack5 setup
+<s> [webpack.Progress] 0% 
+
+<s> [webpack.Progress] 1% setup before run
+<s> [webpack.Progress] 1% setup before run NodeEnvironmentPlugin
+<s> [webpack.Progress] 1% setup before run
+<s> [webpack.Progress] 2% setup run
+<s> [webpack.Progress] 2% setup run
+<s> [webpack.Progress] 4% setup normal module factory
+<s> [webpack.Progress] 4% setup normal module factory CaseSensitivePathsPlugin
+<s> [webpack.Progress] 4% setup normal module factory
+<s> [webpack.Progress] 5% setup context module factory
+<s> [webpack.Progress] 5% setup context module factory
+<s> [webpack.Progress] 6% setup before compile
+<s> [webpack.Progress] 6% setup before compile angular-compiler
+- @ngxs/store/internals/testing [fesm2015/esm2015] (git+https://github.com/ngxs/store.git)
+<s> [webpack.Progress] 6% setup before compile ProgressPlugin
+<s> [webpack.Progress] 6% setup before compile
+<s> [webpack.Progress] 7% setup compile
+<s> [webpack.Progress] 7% setup compile ExternalsPlugin
+<s> [webpack.Progress] 7% setup compile
+<s> [webpack.Progress] 8% setup compilation
+<s> [webpack.Progress] 8% setup compilation scripts-webpack-plugin
+<s> [webpack.Progress] 8% setup compilation CopyPlugin
+<s> [webpack.Progress] 8% setup compilation angular-compiler
+<s> [webpack.Progress] 8% setup compilation mini-css-extract-plugin
+<s> [webpack.Progress] 8% setup compilation ArrayPushCallbackChunkFormatPlugin
+<s> [webpack.Progress] 8% setup compilation JsonpChunkLoadingPlugin
+<s> [webpack.Progress] 8% setup compilation StartupChunkDependenciesPlugin
+<s> [webpack.Progress] 8% setup compilation ImportScriptsChunkLoadingPlugin
+<s> [webpack.Progress] 8% setup compilation FetchCompileWasmPlugin
+<s> [webpack.Progress] 8% setup compilation FetchCompileAsyncWasmPlugin
+<s> [webpack.Progress] 8% setup compilation WorkerPlugin
+<s> [webpack.Progress] 8% setup compilation SplitChunksPlugin
+<s> [webpack.Progress] 8% setup compilation RuntimeChunkPlugin
+<s> [webpack.Progress] 8% setup compilation ResolverCachePlugin
+<s> [webpack.Progress] 8% setup compilation HtmlWebpackPlugin
+<s> [webpack.Progress] 8% setup compilation
+<s> [webpack.Progress] 9% setup compilation
+<s> [webpack.Progress] 9% setup compilation named-chunks-plugin
+<s> [webpack.Progress] 9% setup compilation DedupeModuleResolvePlugin
+<s> [webpack.Progress] 9% setup compilation AnyComponentStyleBudgetChecker
+<s> [webpack.Progress] 9% setup compilation mini-css-extract-plugin
+<s> [webpack.Progress] 9% setup compilation SuppressExtractedTextChunks
+<s> [webpack.Progress] 9% setup compilation DefinePlugin
+<s> [webpack.Progress] 9% setup compilation ProvidePlugin
+<s> [webpack.Progress] 9% setup compilation ProgressPlugin
+<s> [webpack.Progress] 9% setup compilation ChunkPrefetchPreloadPlugin
+<s> [webpack.Progress] 9% setup compilation SourceMapDevToolPlugin
+<s> [webpack.Progress] 9% setup compilation JavascriptModulesPlugin
+<s> [webpack.Progress] 9% setup compilation JsonModulesPlugin
+<s> [webpack.Progress] 9% setup compilation AssetModulesPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation RuntimePlugin
+<s> [webpack.Progress] 9% setup compilation InferAsyncModulesPlugin
+<s> [webpack.Progress] 9% setup compilation DataUriPlugin
+<s> [webpack.Progress] 9% setup compilation FileUriPlugin
+<s> [webpack.Progress] 9% setup compilation CompatibilityPlugin
+<s> [webpack.Progress] 9% setup compilation HarmonyModulesPlugin
+<s> [webpack.Progress] 9% setup compilation AMDPlugin
+<s> [webpack.Progress] 9% setup compilation RequireJsStuffPlugin
+<s> [webpack.Progress] 9% setup compilation CommonJsPlugin
+<s> [webpack.Progress] 9% setup compilation LoaderPlugin
+<s> [webpack.Progress] 9% setup compilation LoaderPlugin
+<s> [webpack.Progress] 9% setup compilation NodeStuffPlugin
+<s> [webpack.Progress] 9% setup compilation APIPlugin
+<s> [webpack.Progress] 9% setup compilation ExportsInfoApiPlugin
+<s> [webpack.Progress] 9% setup compilation WebpackIsIncludedPlugin
+<s> [webpack.Progress] 9% setup compilation ConstPlugin
+<s> [webpack.Progress] 9% setup compilation UseStrictPlugin
+<s> [webpack.Progress] 9% setup compilation RequireIncludePlugin
+<s> [webpack.Progress] 9% setup compilation RequireEnsurePlugin
+<s> [webpack.Progress] 9% setup compilation RequireContextPlugin
+<s> [webpack.Progress] 9% setup compilation ImportPlugin
+<s> [webpack.Progress] 9% setup compilation RequireContextPlugin
+<s> [webpack.Progress] 9% setup compilation SystemPlugin
+<s> [webpack.Progress] 9% setup compilation ImportMetaPlugin
+<s> [webpack.Progress] 9% setup compilation URLPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsFactoryPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsPresetPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsPrinterPlugin
+<s> [webpack.Progress] 9% setup compilation JavascriptMetaInfoPlugin
+<s> [webpack.Progress] 9% setup compilation EnsureChunkConditionsPlugin
+<s> [webpack.Progress] 9% setup compilation RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 9% setup compilation MergeDuplicateChunksPlugin
+<s> [webpack.Progress] 9% setup compilation FlagIncludedChunksPlugin
+<s> [webpack.Progress] 9% setup compilation SideEffectsFlagPlugin
+<s> [webpack.Progress] 9% setup compilation FlagDependencyExportsPlugin
+<s> [webpack.Progress] 9% setup compilation FlagDependencyUsagePlugin
+<s> [webpack.Progress] 9% setup compilation InnerGraphPlugin
+<s> [webpack.Progress] 9% setup compilation MangleExportsPlugin
+<s> [webpack.Progress] 9% setup compilation ModuleConcatenationPlugin
+<s> [webpack.Progress] 9% setup compilation NoEmitOnErrorsPlugin
+<s> [webpack.Progress] 9% setup compilation RealContentHashPlugin
+<s> [webpack.Progress] 9% setup compilation WasmFinalizeExportsPlugin
+<s> [webpack.Progress] 9% setup compilation NamedModuleIdsPlugin
+<s> [webpack.Progress] 9% setup compilation DeterministicChunkIdsPlugin
+<s> [webpack.Progress] 9% setup compilation DefinePlugin
+<s> [webpack.Progress] 9% setup compilation TerserPlugin
+<s> [webpack.Progress] 9% setup compilation TemplatedPathPlugin
+<s> [webpack.Progress] 9% setup compilation RecordIdsPlugin
+<s> [webpack.Progress] 9% setup compilation WarnCaseSensitiveModulesPlugin
+<s> [webpack.Progress] 9% setup compilation IgnoreWarningsPlugin
+<s> [webpack.Progress] 9% setup compilation
+<s> [webpack.Progress] 10% building
+<s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/resolve-url-loader/index.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building 0/21 entries 1/21 dependencies 0/1 modules
+<s> [webpack.Progress] 10% building 0/21 entries 1/22 dependencies 0/1 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
+<s> [webpack.Progress] 10% building 0/21 entries 17/26 dependencies 0/17 modules
+<s> [webpack.Progress] 10% building 0/21 entries 22/27 dependencies 0/21 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/@ngtools/webpack/src/ivy/index.js
+<s> [webpack.Progress] 10% building 0/21 entries 23/27 dependencies 0/23 modules
+<s> [webpack.Progress] 10% building 0/21 entries 27/28 dependencies 0/27 modules
+<s> [webpack.Progress] 10% building 0/21 entries 27/32 dependencies 0/27 modules
+<s> [webpack.Progress] 10% building 0/21 entries 27/38 dependencies 0/27 modules
+<s> [webpack.Progress] 10% building 0/21 entries 41/67 dependencies 0/31 modules
+<s> [webpack.Progress] 12% building 1/21 entries 57/74 dependencies 9/46 modules
+<s> [webpack.Progress] 15% building 2/21 entries 57/74 dependencies 11/46 modules
+<s> [webpack.Progress] 17% building 3/21 entries 57/74 dependencies 13/46 modules
+<s> [webpack.Progress] 20% building 4/21 entries 57/74 dependencies 15/46 modules
+<s> [webpack.Progress] 23% building 5/21 entries 57/74 dependencies 17/46 modules
+<s> [webpack.Progress] 23% building 5/21 entries 60/78 dependencies 17/48 modules
+<s> [webpack.Progress] 23% building 5/21 entries 61/92 dependencies 17/49 modules
+<s> [webpack.Progress] 23% building import loader ./node_modules/@storybook/mdx1-csf/loader.js
+<s> [webpack.Progress] 23% building 5/21 entries 65/92 dependencies 17/53 modules
+<s> [webpack.Progress] 23% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
+<s> [webpack.Progress] 23% building 5/21 entries 72/96 dependencies 17/59 modules
+<s> [webpack.Progress] 23% building 5/21 entries 88/96 dependencies 18/66 modules
+<s> [webpack.Progress] 25% building 6/21 entries 88/96 dependencies 19/66 modules
+<s> [webpack.Progress] 25% building 6/21 entries 93/100 dependencies 19/71 modules
+<s> [webpack.Progress] 25% building 6/21 entries 96/105 dependencies 20/71 modules
+<s> [webpack.Progress] 25% building 6/21 entries 105/132 dependencies 22/75 modules
+<s> [webpack.Progress] 28% building 7/21 entries 105/132 dependencies 23/75 modules
+<s> [webpack.Progress] 30% building 8/21 entries 120/149 dependencies 25/88 modules
+<s> [webpack.Progress] 30% building 8/21 entries 130/183 dependencies 28/92 modules
+<s> [webpack.Progress] 30% building 8/21 entries 145/200 dependencies 35/105 modules
+<s> [webpack.Progress] 30% building 8/21 entries 179/218 dependencies 36/127 modules
+<s> [webpack.Progress] 30% building 8/21 entries 181/227 dependencies 37/128 modules
+<s> [webpack.Progress] 30% building 8/21 entries 244/400 dependencies 41/162 modules
+<s> [webpack.Progress] 30% building 8/21 entries 379/409 dependencies 44/247 modules
+<s> [webpack.Progress] 30% building 8/21 entries 400/691 dependencies 44/250 modules
+<s> [webpack.Progress] 30% building 8/21 entries 422/691 dependencies 45/269 modules
+<s> [webpack.Progress] 30% building 8/21 entries 517/800 dependencies 47/294 modules
+<s> [webpack.Progress] 30% building 8/21 entries 700/819 dependencies 54/338 modules
+<s> [webpack.Progress] 30% building 8/21 entries 836/900 dependencies 63/384 modules
+<s> [webpack.Progress] 30% building 8/21 entries 900/978 dependencies 69/395 modules
+<s> [webpack.Progress] 30% building 8/21 entries 937/978 dependencies 76/400 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1055/1200 dependencies 79/420 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1100/1261 dependencies 80/423 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1200/1261 dependencies 84/428 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1249/1300 dependencies 87/447 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1498/1600 dependencies 158/468 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1504/1800 dependencies 164/470 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1504/2200 dependencies 167/470 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1657/2300 dependencies 205/475 modules
+<s> [webpack.Progress] 30% building 8/21 entries 1771/2348 dependencies 223/500 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2100/2348 dependencies 227/678 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2318/2400 dependencies 234/704 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2459/2500 dependencies 303/720 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2500/2854 dependencies 305/726 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2505/2900 dependencies 306/727 modules
+<s> [webpack.Progress] 30% building 8/21 entries 2700/3033 dependencies 309/834 modules
+<s> [webpack.Progress] 30% building 8/21 entries 3030/3100 dependencies 326/980 modules
+<s> [webpack.Progress] 30% building 8/21 entries 3322/3400 dependencies 345/988 modules
+<s> [webpack.Progress] 30% building 8/21 entries 3363/3500 dependencies 367/988 modules
+<s> [webpack.Progress] 30% building 8/21 entries 3500/3786 dependencies 394/988 modules
+<s> [webpack.Progress] 30% building 8/21 entries 3889/3900 dependencies 430/1047 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4100/4136 dependencies 441/1051 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4169/4200 dependencies 447/1065 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4400/4452 dependencies 494/1076 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4456/4500 dependencies 496/1112 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4477/4558 dependencies 500/1113 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4500/4596 dependencies 531/1118 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4543/4700 dependencies 568/1118 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4551/4900 dependencies 568/1118 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4700/4919 dependencies 698/1137 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4932/5000 dependencies 707/1187 modules
+<s> [webpack.Progress] 30% building 8/21 entries 4946/5100 dependencies 743/1188 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5100/5122 dependencies 777/1242 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5123/5200 dependencies 786/1244 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5309/5400 dependencies 884/1289 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5349/5418 dependencies 888/1300 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5400/5442 dependencies 895/1322 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5500/5630 dependencies 950/1341 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5700/5740 dependencies 1050/1379 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5746/5800 dependencies 1082/1386 modules
+<s> [webpack.Progress] 30% building 8/21 entries 5776/5978 dependencies 1097/1400 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6000/6036 dependencies 1171/1541 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6044/6100 dependencies 1181/1574 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6100/6120 dependencies 1286/1593 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6117/6121 dependencies 1300/1608 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6164/6200 dependencies 1395/1614 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6236/6300 dependencies 1438/1623 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6400/6420 dependencies 1460/1654 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6458/6500 dependencies 1473/1668 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6557/6575 dependencies 1500/1675 modules
+info => Manager built (3.93 min)
+<s> [webpack.Progress] 30% building 8/21 entries 6657/6700 dependencies 1540/1688 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6777/6800 dependencies 1577/1711 modules
+<s> [webpack.Progress] 30% building 8/21 entries 6864/6872 dependencies 1600/1727 modules
+<s> [webpack.Progress] 33% building 9/21 entries 6869/6879 dependencies 1667/1727 modules
+<s> [webpack.Progress] 36% building 10/21 entries 6869/6879 dependencies 1668/1727 modules
+<s> [webpack.Progress] 38% building 11/21 entries 6869/6879 dependencies 1669/1727 modules
+<s> [webpack.Progress] 41% building 12/21 entries 6869/6879 dependencies 1670/1727 modules
+<s> [webpack.Progress] 44% building 13/21 entries 6869/6879 dependencies 1671/1727 modules
+<s> [webpack.Progress] 46% building 14/21 entries 6869/6879 dependencies 1672/1727 modules
+<s> [webpack.Progress] 49% building 15/21 entries 6869/6879 dependencies 1673/1727 modules
+<s> [webpack.Progress] 51% building 16/21 entries 6869/6879 dependencies 1674/1727 modules
+<s> [webpack.Progress] 54% building 17/21 entries 6869/6879 dependencies 1675/1727 modules
+<s> [webpack.Progress] 57% building 18/21 entries 6869/6879 dependencies 1676/1727 modules
+<s> [webpack.Progress] 59% building 19/21 entries 6959/6959 dependencies 1732/1748 modules
+<s> [webpack.Progress] 62% building 20/21 entries 6959/6959 dependencies 1732/1748 modules
+<s> [webpack.Progress] 65% building 21/21 entries 6960/6960 dependencies 1748/1748 modules
+<s> [webpack.Progress] 65% building
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing finish module graph angular-compiler
+<s> [webpack.Progress] 70% sealing finish module graph ResolverCachePlugin
+<s> [webpack.Progress] 70% sealing finish module graph InferAsyncModulesPlugin
+<s> [webpack.Progress] 70% sealing finish module graph FlagDependencyExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph InnerGraphPlugin
+<s> [webpack.Progress] 70% sealing finish module graph WasmFinalizeExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 70% sealing plugins WarnCaseSensitiveModulesPlugin
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing dependencies optimization SideEffectsFlagPlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization FlagDependencyUsagePlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 75% sealing chunk optimization EnsureChunkConditionsPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization MergeDuplicateChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization SplitChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization ModuleConcatenationPlugin
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 79% sealing module reviving RecordIdsPlugin
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 80% sealing module ids NamedModuleIdsPlugin
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 82% sealing chunk reviving RecordIdsPlugin
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids DeterministicChunkIdsPlugin
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 84% sealing chunk id optimization FlagIncludedChunksPlugin
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record modules RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 86% sealing record chunks RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 92% sealing asset processing scripts-webpack-plugin
+<s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
+<s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 92% sealing asset processing TerserPlugin
+<s> [webpack.Progress] 92% sealing asset processing scripts-webpack-plugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.dd5813ee.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.dd5813ee.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.f1c7614d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.f1c7614d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 747.8195177f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 747.8195177f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 332.f8e83a07.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 332.f8e83a07.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 850.f4b1e2bd.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 850.f4b1e2bd.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 345.d4a046ef.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 345.d4a046ef.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 874.0a771681.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 874.0a771681.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 147.46057fdd.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 147.46057fdd.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 700.c5febb15.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 700.c5febb15.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.141ce6d9.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.141ce6d9.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.css generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.css generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.a3c96538.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.a3c96538.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin scripts.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin scripts.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.a3c96538.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 141.a3c96538.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.18cf0144.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.18cf0144.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.197c9e35.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.197c9e35.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.5d89fc2c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.5d89fc2c.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 345.172f7cdf.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 345.172f7cdf.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 147.28f32b36.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 147.28f32b36.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 700.3b192b2b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 700.3b192b2b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 332.30aef9c1.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 332.30aef9c1.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 850.237d17d8.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 850.237d17d8.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 874.fb89536b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 874.fb89536b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.98f3ca48.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.98f3ca48.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing AnyComponentStyleBudgetChecker
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 98% emitting after emit SizeLimitsPlugin
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% done plugins CaseSensitivePathsPlugin
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% 
+
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 100% 
+
+info => Preview built (5.12 min)
+WARN Module Warning (from ./node_modules/postcss-loader/dist/cjs.js):
+WARN Warning
+WARN 
+WARN (29:3) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs-routing.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/angularngxs.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/ngxs-check/ngxs-check.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/pure-inbox-screen/pure-inbox-screen.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/pure-task-list/pure-task-list.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/task-list/task-list.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/angularngxs/task/task.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app-shared/app-shared.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/app.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/material/material.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/models/task.model.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/service/userdata.service.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/app/state/task.state.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/environments/environment.prod.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/environments/environment.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/gmano/OneDrive/Desktop/2022/AngularMain/src/main.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   scripts.js (1.55 MiB)
+WARN   850.237d17d8.iframe.bundle.js (794 KiB)
+WARN   141.a7665081.iframe.bundle.js (3.77 MiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (3.98 MiB)
+WARN       runtime~main.197c9e35.iframe.bundle.js
+WARN       141.css
+WARN       141.a7665081.iframe.bundle.js
+WARN       main.css
+WARN       main.18cf0144.iframe.bundle.js
+WARN   scripts (1.55 MiB)
+WARN       scripts.js
+WARN 
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 100% 
+
+info => Output directory: C:\\Users\\gmano\\AppData\\Local\\Temp\\chromatic--10088-ZoPh83f8kGv2

@@ -1,0 +1,279 @@
+<ng-template #pagedesign>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+          flowchart TD
+          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])
+
+          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])
+
+          id3([3.Add Shared Module])  --> id4([4.Add Material Design])
+      
+          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])
+
+          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])
+
+          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])
+        </pre
+    >
+  </markdown>
+</ng-template>
+<ng-template #angularComp>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+          flowchart TD
+          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])
+
+          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])
+
+          id3([3.Add Shared Module])  --> id4([4.Add Material Design])
+      
+          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])
+
+          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])
+
+          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])
+
+          id7([7.Add Reactive Forms]) -->  id8([8.Github-pages hosting npm install])
+
+          id8([8.Github-pages hosting npm install]) -->  id9([9. Prepare Stackblitz Environment])
+
+          id9([9. Prepare Stackblitz Environment]) -->  id10([10.Github-pages hosting])
+
+          id10([10.Github-pages hosting]) -->  id11([11. Steps to load the code in stackblitz and load static files from github])
+        </pre
+    >
+  </markdown>
+  <markdown
+    [src]="'../../assets/angularcomp.md'"
+    ngPreserveWhitespaces
+    clipboard
+    commandLine
+    [prompt]="'PS C:\Manoj>'"
+    [filterOutput]="'(out)'"
+  >
+  </markdown>
+
+  <markdown ngPreserveWhitespaces clipboard>
+    ## Check the code exported to stackblitz
+  </markdown>
+
+  <iframe
+    src="https://stackblitz.com/edit/node-jfhocj?embed=1&file=README.md&hideNavigation=1&view=editor"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <markdown ngPreserveWhitespaces clipboard>
+    ## Check the static files hosted in gh-pages
+  </markdown>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularComp/"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-template #storybookdesign>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+          flowchart TD
+          id0([Start from angular-env-setup]) -->  id1([Create a MDX file])
+
+          id1([Create a MDX file]) -->  id2([Give the correct component])
+
+          id2([Give the correct component]) -->  id3([Prepare the Meta data])
+
+          id3([Prepare the Meta data]) -->  id4([Create a Story from the component])
+
+          id4([Create a Story from the component]) -->  id5([Change the Order of the displayed stories])
+        </pre
+    >
+  </markdown>
+  <markdown
+    mermaid
+    [src]="'../assets/storydesign.md'"
+    ngPreserveWhitespaces
+    clipboard
+  ></markdown>
+  <iframe
+    src="https://stackblitz.com/edit/node-fjs3wh"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularStorybook/"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-template #angularsetup>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+        flowchart TD
+          id44([0.Get latest stackblitz env]) -->  id4([1.Prepare Git Environment])
+          id4([1.Prepare Git Environment]) -->  id5([2.Add repo and push in github])
+          id5([2.Add repo and push in github]) -->  id6([3.Prepare Stackblitz Environment])
+          id6([3.Prepare Stackblitz Environment])  -->  id7([4.Prepare for Storybook branch])
+          id7([4.Prepare for Storybook branch]) --> id8([5.Host static pages in gh-pages])
+          id8([5.Host static pages in gh-pages]) -->  id9([6.Run in stackblitz Environment])
+      </pre
+    >
+  </markdown>
+  <markdown
+    [src]="'../assets/angularsetup.md'"
+    ngPreserveWhitespaces
+    clipboard
+    commandLine
+    [prompt]="'PS C:\Manoj>'"
+    [filterOutput]="'(out)'"
+  >
+  </markdown>
+
+  <iframe
+    src="https://stackblitz.com/edit/node-dxjexi"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularEnv/"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-template #usingmermaid>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+        flowchart TD
+        id1([Mermaid works]) --> id2([In html])
+        id1([Mermaid works]) --> id3([From src])
+      </pre
+    >
+  </markdown>
+  <markdown ngPreserveWhitespaces clipboard>
+    --- ## Mermaid __works__!
+  </markdown>
+  <markdown
+    mermaid
+    [src]="'../assets/angularmermaid.md'"
+    ngPreserveWhitespaces
+    clipboard
+  ></markdown>
+
+  <iframe
+    src="https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularMarkdown/"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-template #usingmarkdown>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+        flowchart TD
+          id1([Markdown used in]) --> id2([In html])
+          id1([Markdown used in]) --> id3([In template])
+          id1([Markdown used in]) --> id4([In Component])
+          id1([Markdown used in]) --> id5([Load from src])
+          id1([Markdown used in]) --> id6([Load from .md file])
+      </pre
+    >
+  </markdown>
+  <markdown ngPreserveWhitespaces clipboard>
+    --- ## Markdown __works__!
+  </markdown>
+  <markdown
+    [src]="'../assets/angularmarkdown.md'"
+    ngPreserveWhitespaces
+    clipboard
+    commandLine
+    [prompt]="'PS C:\Manoj>'"
+    [filterOutput]="'(out)'"
+  >
+    ></markdown
+  >
+  <iframe
+    src="https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularMarkdown/"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-template #usingngxs>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown
+    mermaid
+    ngPreserveWhitespaces
+    clipboard
+    fxLayoutAlign="center center"
+  >
+    <pre class="mermaid">
+    flowchart TD
+      id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])
+      id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])
+      id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])
+      id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])
+      id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])
+      id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])
+      id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])
+      
+  </pre
+    >
+  </markdown>
+  <markdown ngPreserveWhitespaces clipboard> --- ## NgXs __works__! </markdown>
+  <div fxLayoutAlign="center center">
+    <markdown
+      mermaid
+      [src]="'../assets/angularngxs.md'"
+      ngPreserveWhitespaces
+      clipboard
+    ></markdown>
+  </div>
+  <iframe
+    src="https://stackblitz.com/edit/node-6idh7k?embed=1&file=README.md&hideNavigation=1&view=editor"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/Angularngxs/ngxs"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+<ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext">
+</ng-container>

@@ -1,0 +1,2434 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Task",
+            "id": "interface-Task-dea01f19cc4f3197f468c423dd383896382dd694ecae201546826d57e4c82284804c77708a2db650520e1ef175984f3257fd37eb97ec2507d822a635fd496d9e",
+            "file": "src/app/models/task.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Task {\r\n    id: string;\r\n    title: string;\r\n    state: string;\r\n  }\r\n  ",
+            "properties": [
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "state",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "TaskStateModel",
+            "id": "interface-TaskStateModel-0e8c385cc1879b5e35e8f068e526f3bbf78284297784a3aea23516d05ee274c12db1d1d63734bf0eae8f6d61f81099a8bf9abe015a0076f6741f207621f0ec77",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { patch, updateItem } from '@ngxs/store/operators';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = [\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n];\r\n\r\nexport interface TaskStateModel {\r\n  tasks: Task[];\r\n  status: 'idle' | 'loading' | 'success' | 'error';\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'taskbox',\r\n  defaults: {\r\n    tasks: defaultTasks,\r\n    status: 'idle',\r\n    error: false,\r\n  },\r\n})\r\n@Injectable()\r\nexport class TasksState {\r\n  // Defines a new selector for the error field\r\n  @Selector()\r\n  static getError(state: TaskStateModel): boolean {\r\n    return state.error;\r\n  }\r\n\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel): Task[] {\r\n    return state.tasks;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: PinTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_PINNED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (pinnedTask) => pinnedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: ArchiveTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_ARCHIVED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (archivedTask) => archivedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Function to handle how the state should be updated when the action is triggered\r\n  @Action(AppError)\r\n  setAppError(\r\n    { patchState, getState }: StateContext<TaskStateModel>,\r\n    { payload }: AppError\r\n  ) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "error",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
+                {
+                    "name": "status",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"idle\" | \"loading\" | \"success\" | \"error\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 41
+                },
+                {
+                    "name": "tasks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Task[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "TasksState",
+            "id": "injectable-TasksState-0e8c385cc1879b5e35e8f068e526f3bbf78284297784a3aea23516d05ee274c12db1d1d63734bf0eae8f6d61f81099a8bf9abe015a0076f6741f207621f0ec77",
+            "file": "src/app/state/task.state.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "archiveTask",
+                    "args": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "type": "ArchiveTask",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 92,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Action",
+                            "stringifiedArguments": "ArchiveTask"
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "type": "ArchiveTask",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getAllTasks",
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Task[]",
+                    "typeParameters": [],
+                    "line": 63,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Selector",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getError",
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Selector",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "pinTask",
+                    "args": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "type": "PinTask",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 69,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Action",
+                            "stringifiedArguments": "PinTask"
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "type": "PinTask",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setAppError",
+                    "args": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "type": "AppError",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 114,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Action",
+                            "stringifiedArguments": "AppError"
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "type": "AppError",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { patch, updateItem } from '@ngxs/store/operators';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = [\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n];\r\n\r\nexport interface TaskStateModel {\r\n  tasks: Task[];\r\n  status: 'idle' | 'loading' | 'success' | 'error';\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'taskbox',\r\n  defaults: {\r\n    tasks: defaultTasks,\r\n    status: 'idle',\r\n    error: false,\r\n  },\r\n})\r\n@Injectable()\r\nexport class TasksState {\r\n  // Defines a new selector for the error field\r\n  @Selector()\r\n  static getError(state: TaskStateModel): boolean {\r\n    return state.error;\r\n  }\r\n\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel): Task[] {\r\n    return state.tasks;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: PinTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_PINNED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (pinnedTask) => pinnedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: ArchiveTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_ARCHIVED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (archivedTask) => archivedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Function to handle how the state should be updated when the action is triggered\r\n  @Action(AppError)\r\n  setAppError(\r\n    { patchState, getState }: StateContext<TaskStateModel>,\r\n    { payload }: AppError\r\n  ) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "type": "injectable"
+        },
+        {
+            "name": "UserdataService",
+            "id": "injectable-UserdataService-51c7c6ce44d50243562da6605a45ef5d8c133b0595dae1da8eb917d758c57e4247ad0af659b4d94b889b376a79bf29584710f022315c1db29b304dad8f9d9c59",
+            "file": "src/app/service/userdata.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class UserdataService {\r\n\r\n  constructor() { }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "AppError",
+            "id": "class-AppError-0e8c385cc1879b5e35e8f068e526f3bbf78284297784a3aea23516d05ee274c12db1d1d63734bf0eae8f6d61f81099a8bf9abe015a0076f6741f207621f0ec77",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { patch, updateItem } from '@ngxs/store/operators';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = [\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n];\r\n\r\nexport interface TaskStateModel {\r\n  tasks: Task[];\r\n  status: 'idle' | 'loading' | 'success' | 'error';\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'taskbox',\r\n  defaults: {\r\n    tasks: defaultTasks,\r\n    status: 'idle',\r\n    error: false,\r\n  },\r\n})\r\n@Injectable()\r\nexport class TasksState {\r\n  // Defines a new selector for the error field\r\n  @Selector()\r\n  static getError(state: TaskStateModel): boolean {\r\n    return state.error;\r\n  }\r\n\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel): Task[] {\r\n    return state.tasks;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: PinTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_PINNED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (pinnedTask) => pinnedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: ArchiveTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_ARCHIVED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (archivedTask) => archivedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Function to handle how the state should be updated when the action is triggered\r\n  @Action(AppError)\r\n  setAppError(\r\n    { patchState, getState }: StateContext<TaskStateModel>,\r\n    { payload }: AppError\r\n  ) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "payload",
+                        "type": "boolean",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 26,
+                "jsdoctags": [
+                    {
+                        "name": "payload",
+                        "type": "boolean",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "payload",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "actions.ERROR",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "modifierKind": [
+                        124,
+                        144
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        },
+        {
+            "name": "ArchiveTask",
+            "id": "class-ArchiveTask-0e8c385cc1879b5e35e8f068e526f3bbf78284297784a3aea23516d05ee274c12db1d1d63734bf0eae8f6d61f81099a8bf9abe015a0076f6741f207621f0ec77",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { patch, updateItem } from '@ngxs/store/operators';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = [\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n];\r\n\r\nexport interface TaskStateModel {\r\n  tasks: Task[];\r\n  status: 'idle' | 'loading' | 'success' | 'error';\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'taskbox',\r\n  defaults: {\r\n    tasks: defaultTasks,\r\n    status: 'idle',\r\n    error: false,\r\n  },\r\n})\r\n@Injectable()\r\nexport class TasksState {\r\n  // Defines a new selector for the error field\r\n  @Selector()\r\n  static getError(state: TaskStateModel): boolean {\r\n    return state.error;\r\n  }\r\n\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel): Task[] {\r\n    return state.tasks;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: PinTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_PINNED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (pinnedTask) => pinnedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: ArchiveTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_ARCHIVED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (archivedTask) => archivedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Function to handle how the state should be updated when the action is triggered\r\n  @Action(AppError)\r\n  setAppError(\r\n    { patchState, getState }: StateContext<TaskStateModel>,\r\n    { payload }: AppError\r\n  ) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "payload",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "actions.ARCHIVE_TASK",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        124,
+                        144
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        },
+        {
+            "name": "PinTask",
+            "id": "class-PinTask-0e8c385cc1879b5e35e8f068e526f3bbf78284297784a3aea23516d05ee274c12db1d1d63734bf0eae8f6d61f81099a8bf9abe015a0076f6741f207621f0ec77",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { patch, updateItem } from '@ngxs/store/operators';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = [\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n];\r\n\r\nexport interface TaskStateModel {\r\n  tasks: Task[];\r\n  status: 'idle' | 'loading' | 'success' | 'error';\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'taskbox',\r\n  defaults: {\r\n    tasks: defaultTasks,\r\n    status: 'idle',\r\n    error: false,\r\n  },\r\n})\r\n@Injectable()\r\nexport class TasksState {\r\n  // Defines a new selector for the error field\r\n  @Selector()\r\n  static getError(state: TaskStateModel): boolean {\r\n    return state.error;\r\n  }\r\n\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel): Task[] {\r\n    return state.tasks;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: PinTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_PINNED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (pinnedTask) => pinnedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask(\r\n    { getState, setState }: StateContext<TaskStateModel>,\r\n    { payload }: ArchiveTask\r\n  ) {\r\n    const task = getState().tasks.find((task) => task.id === payload);\r\n    if (task) {\r\n      const updatedTask: Task = {\r\n        ...task,\r\n        state: 'TASK_ARCHIVED',\r\n      };\r\n      setState(\r\n        patch({\r\n          tasks: updateItem<Task>(\r\n            (archivedTask) => archivedTask?.id === payload,\r\n            updatedTask\r\n          ),\r\n        })\r\n      );\r\n    }\r\n  }\r\n  // Function to handle how the state should be updated when the action is triggered\r\n  @Action(AppError)\r\n  setAppError(\r\n    { patchState, getState }: StateContext<TaskStateModel>,\r\n    { payload }: AppError\r\n  ) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 20,
+                "jsdoctags": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "payload",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "actions.PIN_TASK",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "modifierKind": [
+                        124,
+                        144
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AboutMeComponent",
+            "id": "component-AboutMeComponent-a7ec0aef56ec64445cf3a24e17a990c462a03fd7f391557abd5bee6519223d9b045e348a2c71c4f456a0d2dc9f5afe3fac9b520cbee0892b821d5f9bb3371eb2",
+            "file": "src/app/about-me/about-me.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-about-me",
+            "styleUrls": [
+                "./about-me.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./about-me.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "myselectedtemp",
+                    "defaultValue": "'first'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "Career",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Career', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Development",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Development', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Introduction",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Introduction', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Lecturer",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Lecturer', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "myContext",
+                    "defaultValue": "{ $implicit: 'World', localSk: 'Svet' }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "Telecom",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Telecom', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "tems",
+                    "defaultValue": "this.Introduction",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-about-me',\n  templateUrl: './about-me.component.html',\n  styleUrls: ['./about-me.component.scss']\n})\nexport class AboutMeComponent implements OnInit, AfterContentInit {\n\n  @ViewChild('Introduction', { static: true })\n  Introduction!: TemplateRef<any>;\n\n  @ViewChild('Career', { static: true })\n  Career!: TemplateRef<any>;\n\n  @ViewChild('Development', { static: true })\n  Development!: TemplateRef<any>;\n\n  @ViewChild('Lecturer', { static: true })\n  Lecturer!: TemplateRef<any>;\n\n  @ViewChild('Telecom', { static: true })\n  Telecom!: TemplateRef<any>;\n\n  myContext = { $implicit: 'World', localSk: 'Svet' };\n  tems: TemplateRef<any> = this.Introduction;\n\n  @Input()\n  myselectedtemp: string = 'first';\n\n  ngAfterContentInit() {\n    switch (this.myselectedtemp) {\n      case 'Introduction':\n        this.tems = this.Introduction;\n        break;\n      case 'Career':\n        this.tems = this.Career;\n        break;\n      case 'Development':\n        this.tems = this.Development;\n        break;\n      case 'Lecturer':\n        this.tems = this.Lecturer;\n        break;\n      case 'Telecom':\n        this.tems = this.Telecom;\n        break;\n    }\n  }\n  ngOnInit(): void {\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./about-me.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit",
+                "AfterContentInit"
+            ],
+            "templateData": "<ng-template #Introduction >\n    <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Introduction.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Career >\n    <div class=\"markdown\" fxFlex=\"86vw\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Career.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Development >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Development.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Lecturer >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Lecturer.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Telecom >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Telecom.md'\"></markdown>\n     </div>\n</ng-template>\n\n\n<ng-container \n[ngTemplateOutlet]=\"tems\"\n[ngTemplateOutletContext]=\"myContext\"> "
+        },
+        {
+            "name": "AngularngxsComponent",
+            "id": "component-AngularngxsComponent-6fac1d4a2d3328b92186a797d03d8fd65bbbc373f3880c049a48483fdc295b868a0a0dc73d349db266926b887bc6a30d551ddc9892024f710bc109d9e3ce9c94",
+            "file": "src/app/angularngxs/angularngxs.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-angularngxs",
+            "styleUrls": [
+                "./angularngxs.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./angularngxs.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-angularngxs',\r\n  templateUrl: './angularngxs.component.html',\r\n  styleUrls: ['./angularngxs.component.scss']\r\n})\r\nexport class AngularngxsComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./angularngxs.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>angularngxs works!</p>\r\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-29ad2078d3676ac73031be4666cc936665c2d0775595aa7a9b55cab353eb68a667eddcd90bfa2071149525b43e70056c2869630195ed84beb4aff1b46c807cd9",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'AngularGhPages'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'AngularGhPages';\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<router-outlet></router-outlet>"
+        },
+        {
+            "name": "NgxsCheckComponent",
+            "id": "component-NgxsCheckComponent-e72861e4cdf4e1be3a23fe05f7508347191459229e474866b0984896398a7a06b6d36cd2ad8a1302e7b73e4a0b1ceb43768c104ac641d089e3599e57fd618b6d",
+            "file": "src/app/angularngxs/ngxs-check/ngxs-check.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-ngxs-check",
+            "styleUrls": [
+                "./ngxs-check.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./ngxs-check.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "error$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<boolean>",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { Store } from '@ngxs/store';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Component({\r\n  selector: 'app-ngxs-check',\r\n  templateUrl: './ngxs-check.component.html',\r\n  styleUrls: ['./ngxs-check.component.scss']\r\n})\r\nexport class NgxsCheckComponent {\r\n  error$: Observable<boolean>;\r\n  constructor(private store: Store) {\r\n    this.error$ = store.select((state) => state.taskbox.error);\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./ngxs-check.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "store",
+                        "type": "Store",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "store",
+                        "type": "Store",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<app-pure-inbox-screen [error]=\"error$ | async\"></app-pure-inbox-screen>"
+        },
+        {
+            "name": "PureInboxScreenComponent",
+            "id": "component-PureInboxScreenComponent-0d050a228331356ab9fb1837eb2fa6ab787c9c7b21ee340c8d41ef3c3393b496f81a12ec5473ad3a114672cf852656b70409f881bc4f9c7403a9ada7dbee09c6",
+            "file": "src/app/angularngxs/pure-inbox-screen/pure-inbox-screen.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-pure-inbox-screen",
+            "styleUrls": [
+                "./pure-inbox-screen.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./pure-inbox-screen.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "error",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-pure-inbox-screen',\r\n  templateUrl: './pure-inbox-screen.component.html',\r\n  styleUrls: ['./pure-inbox-screen.component.scss']\r\n})\r\nexport class PureInboxScreenComponent{\r\n  @Input() error: any;\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./pure-inbox-screen.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "\r\n    <div *ngIf=\"error\" class=\"page lists-show\">\r\n        <div class=\"wrapper-message\">\r\n          <span class=\"icon-face-sad\"></span>\r\n          <p class=\"title-message\">Oh no!</p>\r\n          <p class=\"subtitle-message\">Something went wrong</p>\r\n        </div>\r\n      </div>\r\n  \r\n      <div *ngIf=\"!error\" class=\"page lists-show\">\r\n        <nav>\r\n          <h1 class=\"title-page\">Taskbox</h1>\r\n        </nav>\r\n        <app-task-list></app-task-list>\r\n      </div>"
+        },
+        {
+            "name": "PureTaskListComponent",
+            "id": "component-PureTaskListComponent-8d52c8bbb63b5033a03ed99e2d731e6ce0b434344e14650dbc5e33e509fdc3425e0d48946cd9ca994ec5018f7d46e17d088e63b871910b09a546411ce0106c88",
+            "file": "src/app/angularngxs/pure-task-list/pure-task-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-pure-task-list",
+            "styleUrls": [
+                "./pure-task-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./pure-task-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "tasks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "Task[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onArchiveTask",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "EventEmitter<any>"
+                },
+                {
+                    "name": "onPinTask",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { Task } from '../../models/task.model';\r\n\r\n@Component({\r\n  selector: 'app-pure-task-list',\r\n  templateUrl: './pure-task-list.component.html',\r\n  styleUrls: ['./pure-task-list.component.scss']\r\n})\r\nexport class PureTaskListComponent {\r\n /**\r\n   * @ignore\r\n   * Component property to define ordering of tasks\r\n   */\r\n  tasksInOrder: Task[] = [];\r\n\r\n  @Input() loading = false;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output() onPinTask: EventEmitter<any> = new EventEmitter();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output() onArchiveTask: EventEmitter<any> = new EventEmitter();\r\n\r\n  @Input()\r\n  set tasks(arr: Task[]) {\r\n    const initialTasks = [\r\n      ...arr.filter((t) => t.state === 'TASK_PINNED'),\r\n      ...arr.filter((t) => t.state !== 'TASK_PINNED'),\r\n    ];\r\n    const filteredTasks = initialTasks.filter(\r\n      (t) => t.state === 'TASK_INBOX' || t.state === 'TASK_PINNED'\r\n    );\r\n    this.tasksInOrder = filteredTasks.filter(\r\n      (t) => t.state === 'TASK_INBOX' || t.state === 'TASK_PINNED'\r\n    );\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./pure-task-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "tasks": {
+                    "name": "tasks",
+                    "setSignature": {
+                        "name": "tasks",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "arr",
+                                "type": "Task[]",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 25,
+                        "jsdoctags": [
+                            {
+                                "name": "arr",
+                                "type": "Task[]",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "templateData": "\r\n    <div class=\"list-items\">\r\n        <app-task\r\n          *ngFor=\"let task of tasksInOrder\"\r\n          [task]=\"task\"\r\n          (onArchiveTask)=\"onArchiveTask.emit($event)\"\r\n          (onPinTask)=\"onPinTask.emit($event)\"\r\n        >\r\n        </app-task>\r\n        <div\r\n          *ngIf=\"tasksInOrder.length === 0 && !loading\"\r\n          class=\"wrapper-message\"\r\n        >\r\n          <span class=\"icon-check\"></span>\r\n          <p class=\"title-message\">You have no tasks</p>\r\n          <p class=\"subtitle-message\">Sit back and relax</p>\r\n        </div>\r\n        <div *ngIf=\"loading\">\r\n          <div *ngFor=\"let i of [1, 2, 3, 4, 5, 6]\" class=\"loading-item\">\r\n            <span class=\"glow-checkbox\"></span>\r\n            <span class=\"glow-text\">\r\n              <span>Loading</span> <span>cool</span> <span>state</span>\r\n            </span>\r\n          </div>\r\n        </div>\r\n      </div>"
+        },
+        {
+            "name": "SeptfifteenComponent",
+            "id": "component-SeptfifteenComponent-1963bd49c14b7e871e047fa5bc0fc07fb00666a0b56778eb8ac31a77f9075fcfdb4b9fb84afa56a65c9de85a818e74b9c753c0a4d4b43a836ee7060d9453a2a8",
+            "file": "src/app/youtube/Sep2022/septfifteen/septfifteen.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-septfifteen",
+            "styleUrls": [
+                "./septfifteen.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./septfifteen.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "myselectedtemp",
+                    "defaultValue": "'first'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "Angular",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Angular', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Flowchart",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Flowchart', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "myContext",
+                    "defaultValue": "{$implicit: 'World', localSk: 'Svet'}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "Output",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Output', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "PRUpdate",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 25,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'PRUpdate', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Storybook",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Storybook', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "tems",
+                    "defaultValue": "this.Title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "Title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Title', {static: true}"
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-septfifteen',\r\n  templateUrl: './septfifteen.component.html',\r\n  styleUrls: ['./septfifteen.component.scss']\r\n})\r\nexport class SeptfifteenComponent implements OnInit, AfterContentInit  {\r\n\r\n  @Input()\r\n  myselectedtemp: string = 'first';\r\n\r\n  @ViewChild('Title', { static: true })\r\n  Title!: TemplateRef<any>;\r\n  @ViewChild('Flowchart', { static: true })\r\n  Flowchart!: TemplateRef<any>;\r\n  \r\n  @ViewChild('Angular', { static: true })\r\n  Angular!: TemplateRef<any>;\r\n\r\n  @ViewChild('Storybook', { static: true })\r\n  Storybook!: TemplateRef<any>;\r\n\r\n  @ViewChild('PRUpdate', { static: true })\r\n  PRUpdate!: TemplateRef<any>;\r\n\r\n  @ViewChild('Output', { static: true })\r\n  Output!: TemplateRef<any>;\r\n\r\n  myContext = {$implicit: 'World', localSk: 'Svet'};\r\n\r\n  tems: TemplateRef<any> = this.Title;\r\n  \r\n  ngOnInit(){      \r\n  }\r\n  ngAfterContentInit() {\r\n    switch (this.myselectedtemp) {\r\n    case 'Title':        \r\n      this.tems = this.Title;\r\n    break;  \r\n    case 'Flowchart':        \r\n      this.tems = this.Flowchart;\r\n    break;     \r\n    case 'Angular':        \r\n    this.tems = this.Angular;\r\n    break;\r\n    case 'Storybook':        \r\n        this.tems = this.Storybook;\r\n    break;\r\n    case 'PRUpdate':        \r\n    this.tems = this.PRUpdate;\r\n    break;\r\n    case 'Output':        \r\n    this.tems = this.Output;\r\n    break;    \r\n    }\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./septfifteen.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit",
+                "AfterContentInit"
+            ],
+            "templateData": "<ng-template #Title>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"markdown\" fxLayoutAlign=\"center center\">\r\n    <markdown mermaid [src]=\"'../../assets/Sep2022/Title.md'\"></markdown>\r\n  </div>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"footer\">\r\n    <markdown\r\n      emoji\r\n      class=\"footer-text\"\r\n      fxLayout=\"row\"\r\n      fxLayoutAlign.gt-xs=\"center\"\r\n    >\r\n      Crafted with :heart: by **gmanojisaac**\r\n      <span style=\"margin:0 .15em;\">•</span> Follow on\r\n      [GitHub](https://github.com/gmanoj.isaac)\r\n    </markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Flowchart>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Flowchart.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Angular>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Angular.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Storybook>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Storybook.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #PRUpdate>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/UpdatePR.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Output>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"markdown\" fxLayoutAlign=\"center center\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../assets/Sep2022/stackblitzTitle.md'\"\r\n    ></markdown>\r\n  </div>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"footer\">\r\n    <markdown\r\n      emoji\r\n      class=\"footer-text\"\r\n      fxLayout=\"row\"\r\n      fxLayoutAlign.gt-xs=\"center\"\r\n    >\r\n      Crafted with :heart: by **gmanojisaac**\r\n      <span style=\"margin:0 .15em;\">•</span> Follow on\r\n      [GitHub](https://github.com/gmanoj.isaac)\r\n    </markdown>\r\n  </div>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../../assets/Sep2022/Output.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-guc5va\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularGithub/beforelogin\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n\r\n<ng-container\r\n  [ngTemplateOutlet]=\"tems\"\r\n  [ngTemplateOutletContext]=\"myContext\"\r\n></ng-container>\r\n"
+        },
+        {
+            "name": "TaskComponent",
+            "id": "component-TaskComponent-b0853a0abca8ff021962428ba2e9ff5c53acfe32155469f7b1394aa612d9c87a81861caca7566ff60c58e07d94fc24534bbc144554b2186bae8d078e670aff85",
+            "file": "src/app/angularngxs/task/task.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-task",
+            "styleUrls": [
+                "./task.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./task.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "task",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "Task",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onArchiveTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onPinTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onArchive",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nComponent method to trigger the onArchive event\n",
+                    "description": "<p>Component method to trigger the onArchive event</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": {
+                                "pos": 801,
+                                "end": 803,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "id"
+                            },
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "pos": 795,
+                                "end": 800,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>string</p>\n"
+                        }
+                    ]
+                },
+                {
+                    "name": "onPin",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nComponent method to trigger the onPin event\n",
+                    "description": "<p>Component method to trigger the onPin event</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": {
+                                "pos": 655,
+                                "end": 657,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "id"
+                            },
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "pos": 649,
+                                "end": 654,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>string</p>\n"
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';\r\nimport { Task } from '../../models/task.model';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  templateUrl: './task.component.html',\r\n  styleUrls: ['./task.component.scss']\r\n})\r\nexport class TaskComponent implements OnInit {\r\n\r\n  ngOnInit(): void {\r\n  }\r\n  @Input() \r\n  task!: Task;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n\r\n  /**\r\n   * Component method to trigger the onPin event\r\n   * @param id string\r\n   */\r\n  onPin(id: any) {\r\n    this.onPinTask.emit(id);\r\n  }\r\n  /**\r\n   * Component method to trigger the onArchive event\r\n   * @param id string\r\n   */\r\n  onArchive(id: any) {\r\n    this.onArchiveTask.emit(id);\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./task.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"list-item {{ task.state }}\">\r\n    <label\r\n      [attr.aria-label]=\"'archiveTask-' + task.id\"\r\n      for=\"checked-{{ task.id }}\"\r\n      class=\"checkbox\"\r\n    >\r\n      <input\r\n        type=\"checkbox\"\r\n        disabled=\"true\"\r\n        [defaultChecked]=\"task.state === 'TASK_ARCHIVED'\"\r\n        name=\"checked-{{ task.id }}\"\r\n        id=\"checked-{{ task.id }}\"\r\n      />\r\n      <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\"></span>\r\n    </label>\r\n    <label\r\n      [attr.aria-label]=\"task.title + ''\"\r\n      for=\"title-{{ task.id }}\"\r\n      class=\"title\"\r\n    >\r\n      <input\r\n        type=\"text\"\r\n        [value]=\"task.title\"\r\n        readonly=\"true\"\r\n        id=\"title-{{ task.id }}\"\r\n        name=\"title-{{ task.id }}\"\r\n        style=\"text-overflow: ellipsis;\"\r\n      />\r\n    </label>\r\n    <button\r\n      *ngIf=\"task.state !== 'TASK_ARCHIVED'\"\r\n      class=\"pin-button\"\r\n      [attr.aria-label]=\"'pinTask-' + task.id\"\r\n      (click)=\"onPin(task.id)\"\r\n    >\r\n      <span class=\"icon-star\"></span>\r\n    </button>\r\n  </div>"
+        },
+        {
+            "name": "TaskListComponent",
+            "id": "component-TaskListComponent-fcd06cbf4570773b7c7fefd61e67cbb05981bde5a96e1d2a49d5929ac90d4bdb07f94954ba201339d207a689097fd03223aa2ba39b514830471c5ed3f7e9b755",
+            "file": "src/app/angularngxs/task-list/task-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-task-list",
+            "styleUrls": [
+                "./task-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./task-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "tasks$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<any>",
+                    "optional": true,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "archiveTask",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nComponent method to trigger the archiveTask event\n",
+                    "description": "<p>Component method to trigger the archiveTask event</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "pinTask",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nComponent method to trigger the pinTask event\n",
+                    "description": "<p>Component method to trigger the pinTask event</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component} from '@angular/core';\r\nimport { Store } from '@ngxs/store';\r\nimport { ArchiveTask, PinTask } from '../../state/task.state';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Component({\r\n  selector: 'app-task-list',\r\n  templateUrl: './task-list.component.html',\r\n  styleUrls: ['./task-list.component.scss']\r\n})\r\nexport class TaskListComponent{\r\n  tasks$?: Observable<any>;\r\n\r\n  constructor(private store: Store) {\r\n    this.tasks$ = store.select((state) => state.taskbox.tasks);\r\n  }\r\n\r\n  /**\r\n   * Component method to trigger the archiveTask event\r\n   */\r\n  archiveTask(id: any) {\r\n    this.store.dispatch(new ArchiveTask(id));\r\n  }\r\n\r\n  /**\r\n   * Component method to trigger the pinTask event\r\n   */\r\n  pinTask(id: any) {\r\n    this.store.dispatch(new PinTask(id));\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./task-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "store",
+                        "type": "Store",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "store",
+                        "type": "Store",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "\r\n    <app-pure-task-list\r\n    [tasks]=\"tasks$ | async\"\r\n    (onArchiveTask)=\"archiveTask($event)\"\r\n    (onPinTask)=\"pinTask($event)\"\r\n  ></app-pure-task-list>    "
+        },
+        {
+            "name": "YoutubeMakingComponent",
+            "id": "component-YoutubeMakingComponent-39bf97142ecd5a909018f1f4d9a3c7e43c7c3399b64fc72696da6fc96c38035dd03a1abe1407cd221268709cb8db4d42aae223f61f7447c8a9f26bee8fdf721b",
+            "file": "src/app/youtube-making/youtube-making.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-youtube-making",
+            "styleUrls": [
+                "./youtube-making.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./youtube-making.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "myselectedtemp",
+                    "defaultValue": "'first'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 42,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "angularComp",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 35,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'angularComp', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "angularsetup",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 32,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'angularsetup', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "myContext",
+                    "defaultValue": "{$implicit: 'World', localSk: 'Svet'}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "pagedesign",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'pagedesign', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "storybookdesign",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'storybookdesign', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "tems",
+                    "defaultValue": "this.usingngxs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "usingmarkdown",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'usingmarkdown', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "usingmermaid",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'usingmermaid', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "usingngxs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'usingngxs', {static: true}"
+                        }
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\r\n  Component,\r\n  Input,\r\n  OnInit,\r\n  AfterContentInit,\r\n  ViewChild,\r\n  TemplateRef,\r\n} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-youtube-making',\r\n  templateUrl: './youtube-making.component.html',\r\n  styleUrls: ['./youtube-making.component.scss'],\r\n})\r\nexport class YoutubeMakingComponent implements OnInit {\r\n  @ViewChild('usingngxs', { static: true })\r\n  usingngxs!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmermaid', { static: true })\r\n  usingmermaid!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmarkdown', { static: true })\r\n  usingmarkdown!: TemplateRef<any>;\r\n\r\n  @ViewChild('pagedesign', { static: true })\r\n  pagedesign!: TemplateRef<any>;\r\n\r\n  @ViewChild('storybookdesign', { static: true })\r\n  storybookdesign!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularsetup', { static: true })\r\n  angularsetup!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularComp', { static: true })\r\n  angularComp!: TemplateRef<any>;\r\n\r\n  tems: TemplateRef<any> = this.usingngxs;\r\n\r\n  myContext = {$implicit: 'World', localSk: 'Svet'};\r\n  \r\n  @Input()\r\n  myselectedtemp: string = 'first';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n  ngAfterContentInit() {\r\n    switch (this.myselectedtemp) {\r\n      case 'usingmermaid':\r\n        this.tems = this.usingmermaid;\r\n        break;\r\n\r\n      case 'usingmarkdown':\r\n        this.tems = this.usingmarkdown;\r\n        break;\r\n      case 'pagedesign':\r\n        this.tems = this.pagedesign;\r\n        console.log('reached');\r\n        break;\r\n      case 'storybookdesign':\r\n        this.tems = this.storybookdesign;\r\n        break;\r\n      case 'angularsetup':\r\n        this.tems = this.angularsetup;\r\n        break;\r\n      case 'angularComp':\r\n        this.tems = this.angularComp;\r\n        break;\r\n      case 'usingngxs':\r\n        this.tems = this.usingngxs;\r\n        break;\r\n    }\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./youtube-making.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 42
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-template #pagedesign>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])\r\n\r\n          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])\r\n\r\n          id3([3.Add Shared Module])  --> id4([4.Add Material Design])\r\n      \r\n          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])\r\n\r\n          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])\r\n\r\n          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])\r\n        </pre\r\n    >\r\n  </markdown>\r\n</ng-template>\r\n<ng-template #angularComp>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])\r\n\r\n          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])\r\n\r\n          id3([3.Add Shared Module])  --> id4([4.Add Material Design])\r\n      \r\n          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])\r\n\r\n          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])\r\n\r\n          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])\r\n\r\n          id7([7.Add Reactive Forms]) -->  id8([8.Github-pages hosting npm install])\r\n\r\n          id8([8.Github-pages hosting npm install]) -->  id9([9. Prepare Stackblitz Environment])\r\n\r\n          id9([9. Prepare Stackblitz Environment]) -->  id10([10.Github-pages hosting])\r\n\r\n          id10([10.Github-pages hosting]) -->  id11([11. Steps to load the code in stackblitz and load static files from github])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../../assets/angularcomp.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the code exported to stackblitz\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-jfhocj?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the static files hosted in gh-pages\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularComp/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #storybookdesign>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id0([Start from angular-env-setup]) -->  id1([Create a MDX file])\r\n\r\n          id1([Create a MDX file]) -->  id2([Give the correct component])\r\n\r\n          id2([Give the correct component]) -->  id3([Prepare the Meta data])\r\n\r\n          id3([Prepare the Meta data]) -->  id4([Create a Story from the component])\r\n\r\n          id4([Create a Story from the component]) -->  id5([Change the Order of the displayed stories])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/storydesign.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-fjs3wh\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularStorybook/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #angularsetup>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id44([0.Get latest stackblitz env]) -->  id4([1.Prepare Git Environment])\r\n          id4([1.Prepare Git Environment]) -->  id5([2.Add repo and push in github])\r\n          id5([2.Add repo and push in github]) -->  id6([3.Prepare Stackblitz Environment])\r\n          id6([3.Prepare Stackblitz Environment])  -->  id7([4.Prepare for Storybook branch])\r\n          id7([4.Prepare for Storybook branch]) --> id8([5.Host static pages in gh-pages])\r\n          id8([5.Host static pages in gh-pages]) -->  id9([6.Run in stackblitz Environment])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularsetup.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-dxjexi\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularEnv/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingmermaid>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n        id1([Mermaid works]) --> id2([In html])\r\n        id1([Mermaid works]) --> id3([From src])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Mermaid __works__!\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/angularmermaid.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n</ng-template>\r\n<ng-template #usingmarkdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id1([Markdown used in]) --> id2([In html])\r\n          id1([Markdown used in]) --> id3([In template])\r\n          id1([Markdown used in]) --> id4([In Component])\r\n          id1([Markdown used in]) --> id5([Load from src])\r\n          id1([Markdown used in]) --> id6([Load from .md file])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Markdown __works__!\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularmarkdown.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n    ></markdown\r\n  >\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularMarkdown/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingngxs>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n    flowchart TD\r\n      id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])\r\n      id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])\r\n      id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])\r\n      id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])\r\n      id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])\r\n      id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])\r\n      id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])\r\n      \r\n  </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- ## NgXs __works__! </markdown>\r\n  <div fxLayoutAlign=\"center center\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../assets/angularngxs.md'\"\r\n      ngPreserveWhitespaces\r\n      clipboard\r\n    ></markdown>\r\n  </div>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-6idh7k?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/Angularngxs/ngxs\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\">\r\n</ng-container>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AngularngxsModule",
+            "id": "module-AngularngxsModule-ce4394e681d35e7fccc42b521c01045909abec6a0464cce29876316f5a92df2ace9727c250b0eea44e33c7a818141266e1ae673cb37a5391c93fbf38c6e22328",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/angularngxs/angularngxs.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { AngularngxsRoutingModule } from './angularngxs-routing.module';\r\nimport { AngularngxsComponent } from './angularngxs.component';\r\nimport { TaskComponent } from './task/task.component';\r\nimport { PureTaskListComponent } from './pure-task-list/pure-task-list.component';\r\nimport { TaskListComponent } from './task-list/task-list.component';\r\nimport { PureInboxScreenComponent } from './pure-inbox-screen/pure-inbox-screen.component';\r\nimport { NgxsCheckComponent } from './ngxs-check/ngxs-check.component';\r\n\r\nimport { TasksState } from '../state/task.state';\r\nimport { NgxsModule } from '@ngxs/store';\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AngularngxsComponent,\r\n    TaskComponent,\r\n    PureTaskListComponent,\r\n    TaskListComponent,\r\n    PureInboxScreenComponent,\r\n    NgxsCheckComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    AngularngxsRoutingModule,\r\n    NgxsModule.forFeature([TasksState])\r\n  ]\r\n})\r\nexport class AngularngxsModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AngularngxsComponent"
+                        },
+                        {
+                            "name": "NgxsCheckComponent"
+                        },
+                        {
+                            "name": "PureInboxScreenComponent"
+                        },
+                        {
+                            "name": "PureTaskListComponent"
+                        },
+                        {
+                            "name": "TaskComponent"
+                        },
+                        {
+                            "name": "TaskListComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AngularngxsRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AngularngxsRoutingModule",
+            "id": "module-AngularngxsRoutingModule-4a802f19e8d756317115d7ed66f577209ab5406188ab8c022eebbc8a1d3022154577475a5bcbed86592812bda9b3e3ab37246d7741ec8d025e3f17ead461f494",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/angularngxs/angularngxs-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { NgxsCheckComponent } from './ngxs-check/ngxs-check.component';\r\n\r\nconst routes: Routes = [{ path: '', component: NgxsCheckComponent }];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AngularngxsRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-dbc793b891c45a313bdc1fb8cf98769babe0004ad6c29def4a84ed751fb1df628eda62fd0c570f613d81a337801cf1584cd83c636c72d6aa19a60a5f34816b97",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\n\r\nimport { AppSharedModule } from './app-shared/app-shared.module';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { environment } from '../environments/environment';\r\nimport { NgxsModule } from '@ngxs/store';\r\nimport { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';\r\nimport { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';\r\n\r\nimport { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\n import {SeptfifteenComponent} from './youtube/Sep2022/septfifteen/septfifteen.component';\r\nimport { AboutMeComponent } from './about-me/about-me.component';\r\nimport { YoutubeMakingComponent } from './youtube-making/youtube-making.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    SeptfifteenComponent,\r\n    AboutMeComponent,\r\n    YoutubeMakingComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    AppSharedModule,\r\n    BrowserAnimationsModule,\r\n    NgxsModule.forRoot([], {\r\n      developmentMode: !environment.production,\r\n    }),\r\n    NgxsReduxDevtoolsPluginModule.forRoot(),\r\n    NgxsLoggerPluginModule.forRoot({\r\n      disabled: environment.production,\r\n    }),\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient })\r\n  ],\r\n  providers: [MarkdownService],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AboutMeComponent"
+                        },
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "SeptfifteenComponent"
+                        },
+                        {
+                            "name": "YoutubeMakingComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "AppSharedModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-f947d241c4a98ad79ef53861d788171cef4dbe99fe5671e439c2e344e6df9c7e4dd4c19606508b05d02eaa860f1df64f2ea3ecd90fca19a00c8e166968fe7ce9",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [{ path: '', redirectTo: 'ngxs', pathMatch: 'full' },\r\n{ path: 'ngxs', loadChildren: () => \"import('./angularngxs/angularngxs.module').then(m => m.AngularngxsModule)\" }];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppSharedModule",
+            "id": "module-AppSharedModule-1b60d7501f2adbb48801e3461394b775e80035cbbf7f32fa4b80e7a7a6dac8d3d2ce84868da870b781764919f3eade3fd4e89d222a03ce3ec950c3c9b82169dd",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-shared/app-shared.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { MaterialModule } from '../material/material.module';\r\nimport { FlexLayoutModule } from '@angular/flex-layout';\r\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  exports: [\r\n    CommonModule,\r\n    MaterialModule,\r\n    FlexLayoutModule,\r\n    FormsModule, ReactiveFormsModule\r\n         ]\r\n})\r\nexport class AppSharedModule { }",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "MaterialModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MaterialModule",
+            "id": "module-MaterialModule-968fb0a77400e9ffc258dd5f16eb604b9799314c1961c890a3452795ed2cee5295a9f146bdb718df2f5a18dd2cb9b1b6ec6b8b3201cca41710d4ff5192015dd1",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/material/material.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { A11yModule } from '@angular/cdk/a11y';\r\nimport { ClipboardModule } from '@angular/cdk/clipboard';\r\nimport { DragDropModule } from '@angular/cdk/drag-drop';\r\nimport { PortalModule } from '@angular/cdk/portal';\r\nimport { ScrollingModule } from '@angular/cdk/scrolling';\r\nimport { CdkStepperModule } from '@angular/cdk/stepper';\r\nimport { CdkTableModule } from '@angular/cdk/table';\r\nimport { CdkTreeModule } from '@angular/cdk/tree';\r\nimport { MatAutocompleteModule } from '@angular/material/autocomplete';\r\nimport { MatBadgeModule } from '@angular/material/badge';\r\nimport { MatBottomSheetModule } from '@angular/material/bottom-sheet';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatButtonToggleModule } from '@angular/material/button-toggle';\r\nimport { MatCardModule } from '@angular/material/card';\r\nimport { MatCheckboxModule } from '@angular/material/checkbox';\r\nimport { MatChipsModule } from '@angular/material/chips';\r\nimport { MatStepperModule } from '@angular/material/stepper';\r\nimport { MatDatepickerModule } from '@angular/material/datepicker';\r\nimport { MatDialogModule } from '@angular/material/dialog';\r\nimport { MatDividerModule } from '@angular/material/divider';\r\nimport { MatExpansionModule } from '@angular/material/expansion';\r\nimport { MatGridListModule } from '@angular/material/grid-list';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatInputModule } from '@angular/material/input';\r\nimport { MatListModule } from '@angular/material/list';\r\nimport { MatMenuModule } from '@angular/material/menu';\r\nimport { MatNativeDateModule, MatRippleModule } from '@angular/material/core';\r\nimport { MatPaginatorModule } from '@angular/material/paginator';\r\nimport { MatProgressBarModule } from '@angular/material/progress-bar';\r\nimport { MatProgressSpinnerModule } from '@angular/material/progress-spinner';\r\nimport { MatRadioModule } from '@angular/material/radio';\r\nimport { MatSelectModule } from '@angular/material/select';\r\nimport { MatSidenavModule } from '@angular/material/sidenav';\r\nimport { MatSliderModule } from '@angular/material/slider';\r\nimport { MatSlideToggleModule } from '@angular/material/slide-toggle';\r\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\r\nimport { MatSortModule } from '@angular/material/sort';\r\nimport { MatTableModule } from '@angular/material/table';\r\nimport { MatTabsModule } from '@angular/material/tabs';\r\nimport { MatToolbarModule } from '@angular/material/toolbar';\r\nimport { MatTooltipModule } from '@angular/material/tooltip';\r\nimport { MatTreeModule } from '@angular/material/tree';\r\nimport { OverlayModule } from '@angular/cdk/overlay';\r\n\r\n@NgModule({\r\n exports: [\r\n   A11yModule,\r\n   ClipboardModule,\r\n   CdkStepperModule,\r\n   CdkTableModule,\r\n   CdkTreeModule,\r\n   DragDropModule,\r\n   MatAutocompleteModule,\r\n   MatBadgeModule,\r\n   MatBottomSheetModule,\r\n   MatButtonModule,\r\n   MatButtonToggleModule,\r\n   MatCardModule,\r\n   MatCheckboxModule,\r\n   MatChipsModule,\r\n   MatStepperModule,\r\n   MatDatepickerModule,\r\n   MatDialogModule,\r\n   MatDividerModule,\r\n   MatExpansionModule,\r\n   MatGridListModule,\r\n   MatIconModule,\r\n   MatInputModule,\r\n   MatListModule,\r\n   MatMenuModule,\r\n   MatNativeDateModule,\r\n   MatPaginatorModule,\r\n   MatProgressBarModule,\r\n   MatProgressSpinnerModule,\r\n   MatRadioModule,\r\n   MatRippleModule,\r\n   MatSelectModule,\r\n   MatSidenavModule,\r\n   MatSliderModule,\r\n   MatSlideToggleModule,\r\n   MatSnackBarModule,\r\n   MatSortModule,\r\n   MatTableModule,\r\n   MatTabsModule,\r\n   MatToolbarModule,\r\n   MatTooltipModule,\r\n   MatTreeModule,\r\n   OverlayModule,\r\n   PortalModule,\r\n   ScrollingModule,\r\n ]\r\n})\r\nexport class MaterialModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "actions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/state/task.state.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n}"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "defaultTasks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/state/task.state.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n]"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: true\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false\r\n}"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/state/task.state.ts": [
+                {
+                    "name": "actions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/state/task.state.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR',\r\n}"
+                },
+                {
+                    "name": "defaultTasks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/state/task.state.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n]"
+                }
+            ],
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "redirectTo": "ngxs",
+                        "pathMatch": "full"
+                    },
+                    {
+                        "path": "ngxs",
+                        "loadChildren": "./angularngxs/angularngxs.module#AngularngxsModule",
+                        "children": [
+                            {
+                                "kind": "module",
+                                "children": [
+                                    {
+                                        "name": "routes",
+                                        "filename": "src/app/angularngxs/angularngxs-routing.module.ts",
+                                        "module": "AngularngxsRoutingModule",
+                                        "children": [
+                                            {
+                                                "path": "",
+                                                "component": "NgxsCheckComponent"
+                                            }
+                                        ],
+                                        "kind": "module"
+                                    }
+                                ],
+                                "module": "AngularngxsModule"
+                            }
+                        ]
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/about-me/about-me.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AboutMeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/angularngxs/angularngxs.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AngularngxsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/angularngxs/ngxs-check/ngxs-check.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NgxsCheckComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/angularngxs/pure-inbox-screen/pure-inbox-screen.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PureInboxScreenComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/angularngxs/pure-task-list/pure-task-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PureTaskListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/angularngxs/task-list/task-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TaskListComponent",
+                "coveragePercent": 40,
+                "coverageCount": "2/5",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/angularngxs/task/task.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TaskComponent",
+                "coveragePercent": 28,
+                "coverageCount": "2/7",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/task.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Task",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/service/userdata.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UserdataService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppError",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "ArchiveTask",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "PinTask",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TasksState",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TaskStateModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "actions",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "defaultTasks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/youtube-making/youtube-making.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "YoutubeMakingComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/youtube/Sep2022/septfifteen/septfifteen.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SeptfifteenComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

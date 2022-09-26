@@ -11,9 +11,20 @@ import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
+ import {SeptfifteenComponent} from './youtube/Sep2022/septfifteen/septfifteen.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { YoutubeMakingComponent } from './youtube-making/youtube-making.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SeptfifteenComponent,
+    AboutMeComponent,
+    YoutubeMakingComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +37,11 @@ import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot({
       disabled: environment.production,
-    })
+    }),
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
-  providers: [],
+  providers: [MarkdownService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

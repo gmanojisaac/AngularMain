@@ -1,0 +1,40 @@
+import { moduleMetadata } from '@storybook/angular';
+import { Story, Meta, ArgsTable } from '@storybook/addon-docs';
+import {SeptfifteenComponent} from '../../app/youtube/Sep2022/septfifteen/septfifteen.component';
+import { linkTo } from '@storybook/addon-links';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AppSharedModule } from '../../app/app-shared/app-shared.module';
+
+# Run Angular Program
+Run in Windows Environment and also in Stackblitz cloud nodeJs environment.
+
+<Meta title="Youtube15sep22/RunAngular"   
+  parameters={{
+      viewMode: 'docs',
+      previewTabs: { 
+        canvas: { hidden: true } 
+      },
+  }}
+  decorators={[
+moduleMetadata({
+  declarations: [SeptfifteenComponent],
+      imports: [
+        AppSharedModule,
+        HttpClientModule,
+        MarkdownModule.forRoot({ loader: HttpClient }),
+      ],
+      providers: [MarkdownService],
+    }),
+    
+    ]} />
+
+
+<Story name="RunAngular">
+  {{
+   template: `<app-septfifteen [myselectedtemp]= "myselectedtemp"></app-septfifteen>`,
+    props: {
+    myselectedtemp : 'Angular'
+    },
+  }}
+</Story>

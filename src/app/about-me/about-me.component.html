@@ -1,0 +1,34 @@
+<ng-template #Introduction >
+    <div class="markdown" fxFlexOffset="15vw" fxLayout="row">
+        <markdown mermaid [src]="'../../../../assets/AboutMe/Introduction.md'"></markdown>
+     </div>
+</ng-template>
+
+<ng-template #Career >
+    <div class="markdown" fxFlex="86vw">
+        <markdown mermaid [src]="'../../../../assets/AboutMe/Career.md'"></markdown>
+     </div>
+</ng-template>
+
+<ng-template #Development >
+    <div class="markdown">
+        <markdown mermaid [src]="'../../../../assets/AboutMe/Development.md'"></markdown>
+     </div>
+</ng-template>
+
+<ng-template #Lecturer >
+    <div class="markdown">
+        <markdown mermaid [src]="'../../../../assets/AboutMe/Lecturer.md'"></markdown>
+     </div>
+</ng-template>
+
+<ng-template #Telecom >
+    <div class="markdown">
+        <markdown mermaid [src]="'../../../../assets/AboutMe/Telecom.md'"></markdown>
+     </div>
+</ng-template>
+
+
+<ng-container 
+[ngTemplateOutlet]="tems"
+[ngTemplateOutletContext]="myContext"> 

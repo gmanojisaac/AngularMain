@@ -1,0 +1,42 @@
+import { moduleMetadata } from '@storybook/angular';
+import { Story, Meta, ArgsTable } from '@storybook/addon-docs';
+import { YoutubeMakingComponent } from '../../app/youtube-making/youtube-making.component';
+import { linkTo } from '@storybook/addon-links';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AppSharedModule } from '../../app/app-shared/app-shared.module';
+
+# Angular Component creation and setup 
+Use angular-cli to create the necessary features
+
+# The Steps are
+
+<Meta title="YoutubeMaking/AngularCompSetup"   
+  parameters={{
+      viewMode: 'docs',
+      previewTabs: { 
+        canvas: { hidden: true } 
+      },
+  }}
+  decorators={[
+moduleMetadata({
+  declarations: [YoutubeMakingComponent],
+      imports: [
+        AppSharedModule,
+        HttpClientModule,
+        MarkdownModule.forRoot({ loader: HttpClient }),
+      ],
+      providers: [MarkdownService],
+    }),
+    
+    ]} />
+
+
+<Story name="AngularCompSetup">
+  {{
+    template: `<app-youtube-making [myselectedtemp]= "myselectedtemp"></app-youtube-making>`,
+    props: {
+    myselectedtemp : 'angularComp'
+    },
+  }}
+</Story>

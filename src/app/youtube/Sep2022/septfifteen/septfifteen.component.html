@@ -1,0 +1,99 @@
+<ng-template #Title>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div class="markdown" fxLayoutAlign="center center">
+    <markdown mermaid [src]="'../../assets/Sep2022/Title.md'"></markdown>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div class="footer">
+    <markdown
+      emoji
+      class="footer-text"
+      fxLayout="row"
+      fxLayoutAlign.gt-xs="center"
+    >
+      Crafted with :heart: by **gmanojisaac**
+      <span style="margin:0 .15em;">•</span> Follow on
+      [GitHub](https://github.com/gmanoj.isaac)
+    </markdown>
+  </div>
+</ng-template>
+
+<ng-template #Flowchart>
+  <div class="markdown" fxFlexOffset="15vw" fxLayout="row">
+    <markdown
+      mermaid
+      [src]="'../../../../assets/Sep2022/Flowchart.md'"
+    ></markdown>
+  </div>
+</ng-template>
+
+<ng-template #Angular>
+  <div class="markdown" fxFlexOffset="15vw" fxLayout="row">
+    <markdown
+      mermaid
+      [src]="'../../../../assets/Sep2022/Angular.md'"
+    ></markdown>
+  </div>
+</ng-template>
+
+<ng-template #Storybook>
+  <div class="markdown" fxFlexOffset="15vw" fxLayout="row">
+    <markdown
+      mermaid
+      [src]="'../../../../assets/Sep2022/Storybook.md'"
+    ></markdown>
+  </div>
+</ng-template>
+
+<ng-template #PRUpdate>
+  <div class="markdown" fxFlexOffset="15vw" fxLayout="row">
+    <markdown
+      mermaid
+      [src]="'../../../../assets/Sep2022/UpdatePR.md'"
+    ></markdown>
+  </div>
+</ng-template>
+
+<ng-template #Output>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div class="markdown" fxLayoutAlign="center center">
+    <markdown
+      mermaid
+      [src]="'../../assets/Sep2022/stackblitzTitle.md'"
+    ></markdown>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div class="footer">
+    <markdown
+      emoji
+      class="footer-text"
+      fxLayout="row"
+      fxLayoutAlign.gt-xs="center"
+    >
+      Crafted with :heart: by **gmanojisaac**
+      <span style="margin:0 .15em;">•</span> Follow on
+      [GitHub](https://github.com/gmanoj.isaac)
+    </markdown>
+  </div>
+  <markdown
+    mermaid
+    [src]="'../../assets/Sep2022/Output.md'"
+    ngPreserveWhitespaces
+    clipboard
+  ></markdown>
+
+  <iframe
+    src="https://stackblitz.com/edit/node-guc5va"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+
+  <iframe
+    src="https://gmanojisaac.github.io/AngularGithub/beforelogin"
+    style="width: 50em; min-height: 30em; margin-top: 10vh;"
+  ></iframe>
+</ng-template>
+
+<ng-container
+  [ngTemplateOutlet]="tems"
+  [ngTemplateOutletContext]="myContext"
+></ng-container>
