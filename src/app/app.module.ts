@@ -18,13 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
  import {SeptfifteenComponent} from './youtube/Sep2022/septfifteen/septfifteen.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { YoutubeMakingComponent } from './youtube-making/youtube-making.component';
+import { SepttwensevenComponent } from './youtube/Sep2022/septtwenseven/septtwenseven.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SeptfifteenComponent,
     AboutMeComponent,
-    YoutubeMakingComponent
+    YoutubeMakingComponent,
+    SepttwensevenComponent
   ],
   imports: [
     BrowserModule,

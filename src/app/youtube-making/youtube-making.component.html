@@ -1,34 +1,11 @@
-<ng-template #pagedesign>
-  <markdown
-    mermaid
-    ngPreserveWhitespaces
-    clipboard
-    fxLayoutAlign="center center"
-  >
-    <pre class="mermaid">
-          flowchart TD
-          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])
-
-          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])
-
-          id3([3.Add Shared Module])  --> id4([4.Add Material Design])
-      
-          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])
-
-          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])
-
-          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])
-        </pre
-    >
-  </markdown>
-</ng-template>
 <ng-template #angularComp>
   <markdown ngPreserveWhitespaces clipboard> --- </markdown>
   <markdown
+    fxFlex="row"
+    fxFlex="100vw"
     mermaid
     ngPreserveWhitespaces
     clipboard
-    fxLayoutAlign="center center"
   >
     <pre class="mermaid">
           flowchart TD
@@ -54,7 +31,7 @@
         </pre
     >
   </markdown>
-  <markdown
+  <markdown    fxFlex="row"     fxFlex="100vh"
     [src]="'../../assets/angularcomp.md'"
     ngPreserveWhitespaces
     clipboard

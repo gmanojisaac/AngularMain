@@ -91,7 +91,14 @@ imports:[
 
 # Markdown tag contains mermaid keyword and injected with code using pretty tag and class mermaid
 
-# Mermaid works from template same way
+# Use FlexLayout to center the diagrams
+
+  ```typescript
+    <div class="markdown" fxLayoutAlign="center center">
+      <markdown mermaid [src]="'../../assets/Sep2022/Title.md'"></markdown>
+    </div>
+  ```
+
 
 ---
 

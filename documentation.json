@@ -545,7 +545,7 @@
     "components": [
         {
             "name": "AboutMeComponent",
-            "id": "component-AboutMeComponent-a7ec0aef56ec64445cf3a24e17a990c462a03fd7f391557abd5bee6519223d9b045e348a2c71c4f456a0d2dc9f5afe3fac9b520cbee0892b821d5f9bb3371eb2",
+            "id": "component-AboutMeComponent-6a927f65c92006b99c06d26c818f1c48b88fd0546d56598a9d9256c44c4c25c2372c7ef2444a22f12e47be184afe9c15bd79c7245b45cfffae273e235c214f0b",
             "file": "src/app/about-me/about-me.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -699,7 +699,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-about-me',\n  templateUrl: './about-me.component.html',\n  styleUrls: ['./about-me.component.scss']\n})\nexport class AboutMeComponent implements OnInit, AfterContentInit {\n\n  @ViewChild('Introduction', { static: true })\n  Introduction!: TemplateRef<any>;\n\n  @ViewChild('Career', { static: true })\n  Career!: TemplateRef<any>;\n\n  @ViewChild('Development', { static: true })\n  Development!: TemplateRef<any>;\n\n  @ViewChild('Lecturer', { static: true })\n  Lecturer!: TemplateRef<any>;\n\n  @ViewChild('Telecom', { static: true })\n  Telecom!: TemplateRef<any>;\n\n  myContext = { $implicit: 'World', localSk: 'Svet' };\n  tems: TemplateRef<any> = this.Introduction;\n\n  @Input()\n  myselectedtemp: string = 'first';\n\n  ngAfterContentInit() {\n    switch (this.myselectedtemp) {\n      case 'Introduction':\n        this.tems = this.Introduction;\n        break;\n      case 'Career':\n        this.tems = this.Career;\n        break;\n      case 'Development':\n        this.tems = this.Development;\n        break;\n      case 'Lecturer':\n        this.tems = this.Lecturer;\n        break;\n      case 'Telecom':\n        this.tems = this.Telecom;\n        break;\n    }\n  }\n  ngOnInit(): void {\n  }\n}\n",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-about-me',\r\n  templateUrl: './about-me.component.html',\r\n  styleUrls: ['./about-me.component.scss']\r\n})\r\nexport class AboutMeComponent implements OnInit, AfterContentInit {\r\n\r\n  @ViewChild('Introduction', { static: true })\r\n  Introduction!: TemplateRef<any>;\r\n\r\n  @ViewChild('Career', { static: true })\r\n  Career!: TemplateRef<any>;\r\n\r\n  @ViewChild('Development', { static: true })\r\n  Development!: TemplateRef<any>;\r\n\r\n  @ViewChild('Lecturer', { static: true })\r\n  Lecturer!: TemplateRef<any>;\r\n\r\n  @ViewChild('Telecom', { static: true })\r\n  Telecom!: TemplateRef<any>;\r\n\r\n  myContext = { $implicit: 'World', localSk: 'Svet' };\r\n  tems: TemplateRef<any> = this.Introduction;\r\n\r\n  @Input()\r\n  myselectedtemp: string = 'first';\r\n\r\n  ngAfterContentInit() {\r\n    switch (this.myselectedtemp) {\r\n      case 'Introduction':\r\n        this.tems = this.Introduction;\r\n        break;\r\n      case 'Career':\r\n        this.tems = this.Career;\r\n        break;\r\n      case 'Development':\r\n        this.tems = this.Development;\r\n        break;\r\n      case 'Lecturer':\r\n        this.tems = this.Lecturer;\r\n        break;\r\n      case 'Telecom':\r\n        this.tems = this.Telecom;\r\n        break;\r\n    }\r\n  }\r\n  ngOnInit(): void {\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -712,7 +712,7 @@
                 "OnInit",
                 "AfterContentInit"
             ],
-            "templateData": "<ng-template #Introduction >\n    <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Introduction.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Career >\n    <div class=\"markdown\" fxFlex=\"86vw\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Career.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Development >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Development.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Lecturer >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Lecturer.md'\"></markdown>\n     </div>\n</ng-template>\n\n<ng-template #Telecom >\n    <div class=\"markdown\">\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Telecom.md'\"></markdown>\n     </div>\n</ng-template>\n\n\n<ng-container \n[ngTemplateOutlet]=\"tems\"\n[ngTemplateOutletContext]=\"myContext\"> "
+            "templateData": "<ng-template #Introduction >\r\n    <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Introduction.md'\"></markdown>\r\n     </div>\r\n</ng-template>\r\n\r\n<ng-template #Career >\r\n    <div class=\"markdown\" fxFlex=\"86vw\">\r\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Career.md'\"></markdown>\r\n     </div>\r\n</ng-template>\r\n\r\n<ng-template #Development >\r\n    <div class=\"markdown\">\r\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Development.md'\"></markdown>\r\n     </div>\r\n</ng-template>\r\n\r\n<ng-template #Lecturer >\r\n    <div class=\"markdown\">\r\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Lecturer.md'\"></markdown>\r\n     </div>\r\n</ng-template>\r\n\r\n<ng-template #Telecom >\r\n    <div class=\"markdown\">\r\n        <markdown mermaid [src]=\"'../../../../assets/AboutMe/Telecom.md'\"></markdown>\r\n     </div>\r\n</ng-template>\r\n\r\n\r\n<ng-container \r\n[ngTemplateOutlet]=\"tems\"\r\n[ngTemplateOutletContext]=\"myContext\"> "
         },
         {
             "name": "AngularngxsComponent",
@@ -1246,6 +1246,146 @@
             "templateData": "<ng-template #Title>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"markdown\" fxLayoutAlign=\"center center\">\r\n    <markdown mermaid [src]=\"'../../assets/Sep2022/Title.md'\"></markdown>\r\n  </div>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"footer\">\r\n    <markdown\r\n      emoji\r\n      class=\"footer-text\"\r\n      fxLayout=\"row\"\r\n      fxLayoutAlign.gt-xs=\"center\"\r\n    >\r\n      Crafted with :heart: by **gmanojisaac**\r\n      <span style=\"margin:0 .15em;\">•</span> Follow on\r\n      [GitHub](https://github.com/gmanoj.isaac)\r\n    </markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Flowchart>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Flowchart.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Angular>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Angular.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Storybook>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/Storybook.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #PRUpdate>\r\n  <div class=\"markdown\" fxFlexOffset=\"15vw\" fxLayout=\"row\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../../../assets/Sep2022/UpdatePR.md'\"\r\n    ></markdown>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #Output>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"markdown\" fxLayoutAlign=\"center center\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../../assets/Sep2022/stackblitzTitle.md'\"\r\n    ></markdown>\r\n  </div>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <div class=\"footer\">\r\n    <markdown\r\n      emoji\r\n      class=\"footer-text\"\r\n      fxLayout=\"row\"\r\n      fxLayoutAlign.gt-xs=\"center\"\r\n    >\r\n      Crafted with :heart: by **gmanojisaac**\r\n      <span style=\"margin:0 .15em;\">•</span> Follow on\r\n      [GitHub](https://github.com/gmanoj.isaac)\r\n    </markdown>\r\n  </div>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../../assets/Sep2022/Output.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-guc5va\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularGithub/beforelogin\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n\r\n<ng-container\r\n  [ngTemplateOutlet]=\"tems\"\r\n  [ngTemplateOutletContext]=\"myContext\"\r\n></ng-container>\r\n"
         },
         {
+            "name": "SepttwensevenComponent",
+            "id": "component-SepttwensevenComponent-b2073f9165690179d4177f780662243adf32043efa16c2e76a3f7e6462f52cfdd46cc12195b6e8bbe00f114655a0fe72117faf6ecbb2762bb94ded79f17bad44",
+            "file": "src/app/youtube/Sep2022/septtwenseven/septtwenseven.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-septtwenseven",
+            "styleUrls": [
+                "./septtwenseven.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./septtwenseven.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "myselectedtemp",
+                    "defaultValue": "'first'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "myContext",
+                    "defaultValue": "{$implicit: 'World', localSk: 'Svet'}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "Plan",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Plan', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "RunNodeJS",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'RunNodeJS', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Start",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Start', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "tems",
+                    "defaultValue": "this.Start",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-septtwenseven',\n  templateUrl: './septtwenseven.component.html',\n  styleUrls: ['./septtwenseven.component.scss']\n})\nexport class SepttwensevenComponent implements OnInit {\n\n  @Input()\n  myselectedtemp: string = 'first';\n\n  @ViewChild('Start', { static: true })\n  Start!: TemplateRef<any>;\n\n  @ViewChild('Plan', { static: true })\n  Plan!: TemplateRef<any>;\n  \n  @ViewChild('RunNodeJS', { static: true })\n  RunNodeJS!: TemplateRef<any>;\n\n  \n\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n\n  tems: TemplateRef<any> = this.Start;\n  \n  ngOnInit(){      \n  }\n  ngAfterContentInit() {\n    switch (this.myselectedtemp) {\n    case 'Start':        \n      this.tems = this.Start;\n    break;    \n    case 'Plan':        \n      this.tems = this.Plan;\n    break;    \n    case 'RunNodeJS':    \n    console.log('R1');    \n    this.tems = this.RunNodeJS;\n  break;    \n    \n\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./septtwenseven.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-template #Start>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayoutAlign=\"center center\">\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n          flowchart TD\n              id1(((Access Zerodha API from Angular App )))\n              style id1 fill:#f9f,stroke:#333,stroke-width:10px, font-size: 13px,padding-top: 4px\n          </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div class=\"footer\">\n    <markdown emoji class=\"footer-text\" fxLayout=\"row\" fxLayoutAlign.gt-xs=\"center\">\n      Crafted with :heart: by **gmanojisaac**\n      <span style=\"margin:0 .15em;\">•</span> Follow on\n      [GitHub](https://github.com/gmanoj.isaac)\n    </markdown>\n  </div>\n</ng-template>\n\n<ng-template #Plan>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n        graph TD\n            id1(Start)-->id2(1.Run Angular)\n            style id1 fill:lightblue,stroke:#333,stroke-width:4px\n            style id2 fill:#f9f,stroke:#333,stroke-width:4px\n            id2(1.Run Angular) --> id3(Windows Env)\n            \n            id2(1.Run Angular) --> id4(NodeJs App)\n            \n            id2(1.Run Angular) --> id5(Angular with kiteConnectjs)\n            \n            id5(Angular with kiteConnectjs) --> id6(Access the instrument Quote)\n            style id3 fill:#f9f,stroke:#333,stroke-width:4px\n            style id4 fill:#f9f,stroke:#333,stroke-width:4px\n            style id5 fill:orange,stroke:#333,stroke-width:4px\n        \n            id5(Angular with kiteConnectjs) --> id7(Apply logic to generate signals)\n            style id6 fill:orange,stroke:#333,stroke-width:4px\n            style id7 fill:orange,stroke:#333,stroke-width:4px\n        \n            id7(Apply logic to generate signals) --> id8(Push the Triggers to Firebase)\n        \n            id8(Push the Triggers to Firebase)-->id9(Stop)\n            style id8 fill:yellow,stroke:#333,stroke-width:4px\n            style id9 fill:lightblue,stroke:#333,stroke-width:4px\n        </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n</ng-template>\n\n<ng-template #RunNodeJS>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown ngPreserveWhitespaces clipboard>\n      ## Create a express Application by globally installing the generator\n\n      ```typescript\n      npm install -g express-generator\n      ```\n\n      ## Scaffold a new Express application called myExpressApp by running\n      # go to the new folder and execute npm install:\n      ```typescript\n      express myExpressApp --view pug\n      npm install\n      ```\n\n      # From a terminal in the Express application folder\n\n      ```typescript\n      npm start\n      ```\n\n      # The official Javascript node client for communicating with the Kite Connect API.\n      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day\n\n      ```typescript\n      npm i kiteconnect\n      https://kite.zerodha.com/connect/login?v=3&api_key=XXX\n      ```\n    </markdown>\n\n    <span fxFlex=\"100vh\" fxLayoutAlign=\"center center\">\n      <markdown mermaid>\n        <pre class=\"mermaid\">\n      graph TD\n        id1(Create kc Object)-->id2(Valid Access code)\n        style id1 fill:lightblue,stroke:#333,stroke-width:4px\n        style id2 fill:#f9f,stroke:#333,stroke-width:4px\n        id1(Create kc Object) --> id3(Invalid Access code)\n        style id3 fill:cyan,stroke:#333,stroke-width:4px\n        </pre>\n      </markdown>\n    </span>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n\n  <markdown ngPreserveWhitespaces clipboard>\n    ## Kc Object is created using\n\n    ```typescript\n    var KiteConnect = require(\"kiteconnect\").KiteConnect;\n\n    var api_key = \"909lcbtyglf6ks4o\",\n      secret = \"xcmxsyn41ro183qmj4r9uzzx76xlcdf4\",\n      request_token = \"J1sBbg0GrCxcDH7gi0xQ2bMUK9K3qs6R\",\n      access_token = \"QMzRubq2K85tdur6z2s2aEpXcF6tcsrn\";\n    \n    var options = {\n      \"api_key\": api_key,\n      \"debug\": false\n    };\n    \n    let  kc = new KiteConnect(options);\n    ```\n\n    ## Scaffold a new Express application called myExpressApp by running\n    # go to the new folder and execute npm install:\n    \n    ```typescript\n    express myExpressApp --view pug\n    npm install\n    ```\n  </markdown>\n\n\n</ng-template>\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\"></ng-container>"
+        },
+        {
             "name": "TaskComponent",
             "id": "component-TaskComponent-b0853a0abca8ff021962428ba2e9ff5c53acfe32155469f7b1394aa612d9c87a81861caca7566ff60c58e07d94fc24534bbc144554b2186bae8d078e670aff85",
             "file": "src/app/angularngxs/task/task.component.ts",
@@ -1554,7 +1694,7 @@
         },
         {
             "name": "YoutubeMakingComponent",
-            "id": "component-YoutubeMakingComponent-39bf97142ecd5a909018f1f4d9a3c7e43c7c3399b64fc72696da6fc96c38035dd03a1abe1407cd221268709cb8db4d42aae223f61f7447c8a9f26bee8fdf721b",
+            "id": "component-YoutubeMakingComponent-993edb0e53aaa803a9270fb50ae752f33a8e3c2ec8a5b24c397ba1b4617ae53fe4658fb330ef9593825dc54f65ef337a0c314029b0538c447bbac86000cdad17",
             "file": "src/app/youtube-making/youtube-making.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1576,7 +1716,7 @@
                     "defaultValue": "'first'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 42,
+                    "line": 39,
                     "type": "string",
                     "decorators": []
                 }
@@ -1590,7 +1730,7 @@
                     "type": "TemplateRef<any>",
                     "optional": false,
                     "description": "",
-                    "line": 35,
+                    "line": 32,
                     "decorators": [
                         {
                             "name": "ViewChild",
@@ -1605,7 +1745,7 @@
                     "type": "TemplateRef<any>",
                     "optional": false,
                     "description": "",
-                    "line": 32,
+                    "line": 29,
                     "decorators": [
                         {
                             "name": "ViewChild",
@@ -1621,22 +1761,7 @@
                     "type": "object",
                     "optional": false,
                     "description": "",
-                    "line": 39
-                },
-                {
-                    "name": "pagedesign",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "TemplateRef<any>",
-                    "optional": false,
-                    "description": "",
-                    "line": 26,
-                    "decorators": [
-                        {
-                            "name": "ViewChild",
-                            "stringifiedArguments": "'pagedesign', {static: true}"
-                        }
-                    ]
+                    "line": 36
                 },
                 {
                     "name": "storybookdesign",
@@ -1645,7 +1770,7 @@
                     "type": "TemplateRef<any>",
                     "optional": false,
                     "description": "",
-                    "line": 29,
+                    "line": 26,
                     "decorators": [
                         {
                             "name": "ViewChild",
@@ -1661,7 +1786,7 @@
                     "type": "TemplateRef<any>",
                     "optional": false,
                     "description": "",
-                    "line": 37
+                    "line": 34
                 },
                 {
                     "name": "usingmarkdown",
@@ -1716,7 +1841,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 47,
+                    "line": 44,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1726,7 +1851,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 46,
+                    "line": 43,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1738,7 +1863,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {\r\n  Component,\r\n  Input,\r\n  OnInit,\r\n  AfterContentInit,\r\n  ViewChild,\r\n  TemplateRef,\r\n} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-youtube-making',\r\n  templateUrl: './youtube-making.component.html',\r\n  styleUrls: ['./youtube-making.component.scss'],\r\n})\r\nexport class YoutubeMakingComponent implements OnInit {\r\n  @ViewChild('usingngxs', { static: true })\r\n  usingngxs!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmermaid', { static: true })\r\n  usingmermaid!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmarkdown', { static: true })\r\n  usingmarkdown!: TemplateRef<any>;\r\n\r\n  @ViewChild('pagedesign', { static: true })\r\n  pagedesign!: TemplateRef<any>;\r\n\r\n  @ViewChild('storybookdesign', { static: true })\r\n  storybookdesign!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularsetup', { static: true })\r\n  angularsetup!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularComp', { static: true })\r\n  angularComp!: TemplateRef<any>;\r\n\r\n  tems: TemplateRef<any> = this.usingngxs;\r\n\r\n  myContext = {$implicit: 'World', localSk: 'Svet'};\r\n  \r\n  @Input()\r\n  myselectedtemp: string = 'first';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n  ngAfterContentInit() {\r\n    switch (this.myselectedtemp) {\r\n      case 'usingmermaid':\r\n        this.tems = this.usingmermaid;\r\n        break;\r\n\r\n      case 'usingmarkdown':\r\n        this.tems = this.usingmarkdown;\r\n        break;\r\n      case 'pagedesign':\r\n        this.tems = this.pagedesign;\r\n        console.log('reached');\r\n        break;\r\n      case 'storybookdesign':\r\n        this.tems = this.storybookdesign;\r\n        break;\r\n      case 'angularsetup':\r\n        this.tems = this.angularsetup;\r\n        break;\r\n      case 'angularComp':\r\n        this.tems = this.angularComp;\r\n        break;\r\n      case 'usingngxs':\r\n        this.tems = this.usingngxs;\r\n        break;\r\n    }\r\n  }\r\n}\r\n",
+            "sourceCode": "import {\r\n  Component,\r\n  Input,\r\n  OnInit,\r\n  AfterContentInit,\r\n  ViewChild,\r\n  TemplateRef,\r\n} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-youtube-making',\r\n  templateUrl: './youtube-making.component.html',\r\n  styleUrls: ['./youtube-making.component.scss'],\r\n})\r\nexport class YoutubeMakingComponent implements OnInit {\r\n  @ViewChild('usingngxs', { static: true })\r\n  usingngxs!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmermaid', { static: true })\r\n  usingmermaid!: TemplateRef<any>;\r\n\r\n  @ViewChild('usingmarkdown', { static: true })\r\n  usingmarkdown!: TemplateRef<any>;\r\n\r\n  @ViewChild('storybookdesign', { static: true })\r\n  storybookdesign!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularsetup', { static: true })\r\n  angularsetup!: TemplateRef<any>;\r\n\r\n  @ViewChild('angularComp', { static: true })\r\n  angularComp!: TemplateRef<any>;\r\n\r\n  tems: TemplateRef<any> = this.usingngxs;\r\n\r\n  myContext = {$implicit: 'World', localSk: 'Svet'};\r\n  \r\n  @Input()\r\n  myselectedtemp: string = 'first';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n  ngAfterContentInit() {\r\n    switch (this.myselectedtemp) {\r\n      case 'usingmermaid':\r\n        this.tems = this.usingmermaid;\r\n        break;\r\n\r\n      case 'usingmarkdown':\r\n        this.tems = this.usingmarkdown;\r\n        break;\r\n      case 'storybookdesign':\r\n        this.tems = this.storybookdesign;\r\n        break;\r\n      case 'angularsetup':\r\n        this.tems = this.angularsetup;\r\n        break;\r\n      case 'angularComp':\r\n        this.tems = this.angularComp;\r\n        break;\r\n      case 'usingngxs':\r\n        this.tems = this.usingngxs;\r\n        break;\r\n    }\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1753,12 +1878,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 42
+                "line": 39
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<ng-template #pagedesign>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])\r\n\r\n          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])\r\n\r\n          id3([3.Add Shared Module])  --> id4([4.Add Material Design])\r\n      \r\n          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])\r\n\r\n          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])\r\n\r\n          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])\r\n        </pre\r\n    >\r\n  </markdown>\r\n</ng-template>\r\n<ng-template #angularComp>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])\r\n\r\n          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])\r\n\r\n          id3([3.Add Shared Module])  --> id4([4.Add Material Design])\r\n      \r\n          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])\r\n\r\n          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])\r\n\r\n          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])\r\n\r\n          id7([7.Add Reactive Forms]) -->  id8([8.Github-pages hosting npm install])\r\n\r\n          id8([8.Github-pages hosting npm install]) -->  id9([9. Prepare Stackblitz Environment])\r\n\r\n          id9([9. Prepare Stackblitz Environment]) -->  id10([10.Github-pages hosting])\r\n\r\n          id10([10.Github-pages hosting]) -->  id11([11. Steps to load the code in stackblitz and load static files from github])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../../assets/angularcomp.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the code exported to stackblitz\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-jfhocj?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the static files hosted in gh-pages\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularComp/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #storybookdesign>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id0([Start from angular-env-setup]) -->  id1([Create a MDX file])\r\n\r\n          id1([Create a MDX file]) -->  id2([Give the correct component])\r\n\r\n          id2([Give the correct component]) -->  id3([Prepare the Meta data])\r\n\r\n          id3([Prepare the Meta data]) -->  id4([Create a Story from the component])\r\n\r\n          id4([Create a Story from the component]) -->  id5([Change the Order of the displayed stories])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/storydesign.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-fjs3wh\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularStorybook/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #angularsetup>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id44([0.Get latest stackblitz env]) -->  id4([1.Prepare Git Environment])\r\n          id4([1.Prepare Git Environment]) -->  id5([2.Add repo and push in github])\r\n          id5([2.Add repo and push in github]) -->  id6([3.Prepare Stackblitz Environment])\r\n          id6([3.Prepare Stackblitz Environment])  -->  id7([4.Prepare for Storybook branch])\r\n          id7([4.Prepare for Storybook branch]) --> id8([5.Host static pages in gh-pages])\r\n          id8([5.Host static pages in gh-pages]) -->  id9([6.Run in stackblitz Environment])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularsetup.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-dxjexi\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularEnv/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingmermaid>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n        id1([Mermaid works]) --> id2([In html])\r\n        id1([Mermaid works]) --> id3([From src])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Mermaid __works__!\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/angularmermaid.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n</ng-template>\r\n<ng-template #usingmarkdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id1([Markdown used in]) --> id2([In html])\r\n          id1([Markdown used in]) --> id3([In template])\r\n          id1([Markdown used in]) --> id4([In Component])\r\n          id1([Markdown used in]) --> id5([Load from src])\r\n          id1([Markdown used in]) --> id6([Load from .md file])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Markdown __works__!\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularmarkdown.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n    ></markdown\r\n  >\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularMarkdown/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingngxs>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n    flowchart TD\r\n      id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])\r\n      id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])\r\n      id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])\r\n      id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])\r\n      id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])\r\n      id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])\r\n      id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])\r\n      \r\n  </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- ## NgXs __works__! </markdown>\r\n  <div fxLayoutAlign=\"center center\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../assets/angularngxs.md'\"\r\n      ngPreserveWhitespaces\r\n      clipboard\r\n    ></markdown>\r\n  </div>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-6idh7k?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/Angularngxs/ngxs\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\">\r\n</ng-container>\r\n"
+            "templateData": "<ng-template #angularComp>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    fxFlex=\"row\"\r\n    fxFlex=\"100vw\"\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id1([1.Setup Windows Env]) -->  id2([2.Run Local Hello World Angular])\r\n\r\n          id2([2.Run Local Hello World Angular]) -->  id3([3.Add Shared Module])\r\n\r\n          id3([3.Add Shared Module])  --> id4([4.Add Material Design])\r\n      \r\n          id4([4.Add Material Design]) -->  id5([5.Add FlexLayout])\r\n\r\n          id5([5.Add FlexLayout]) -->  id6([6.Add Lazy Loaded Module/ Service])\r\n\r\n          id6([6.Add Lazy Loaded Module/ Service]) -->  id7([7.Add Reactive Forms])\r\n\r\n          id7([7.Add Reactive Forms]) -->  id8([8.Github-pages hosting npm install])\r\n\r\n          id8([8.Github-pages hosting npm install]) -->  id9([9. Prepare Stackblitz Environment])\r\n\r\n          id9([9. Prepare Stackblitz Environment]) -->  id10([10.Github-pages hosting])\r\n\r\n          id10([10.Github-pages hosting]) -->  id11([11. Steps to load the code in stackblitz and load static files from github])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown    fxFlex=\"row\"     fxFlex=\"100vh\"\r\n    [src]=\"'../../assets/angularcomp.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the code exported to stackblitz\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-jfhocj?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    ## Check the static files hosted in gh-pages\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularComp/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #storybookdesign>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n          flowchart TD\r\n          id0([Start from angular-env-setup]) -->  id1([Create a MDX file])\r\n\r\n          id1([Create a MDX file]) -->  id2([Give the correct component])\r\n\r\n          id2([Give the correct component]) -->  id3([Prepare the Meta data])\r\n\r\n          id3([Prepare the Meta data]) -->  id4([Create a Story from the component])\r\n\r\n          id4([Create a Story from the component]) -->  id5([Change the Order of the displayed stories])\r\n        </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/storydesign.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-fjs3wh\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularStorybook/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #angularsetup>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id44([0.Get latest stackblitz env]) -->  id4([1.Prepare Git Environment])\r\n          id4([1.Prepare Git Environment]) -->  id5([2.Add repo and push in github])\r\n          id5([2.Add repo and push in github]) -->  id6([3.Prepare Stackblitz Environment])\r\n          id6([3.Prepare Stackblitz Environment])  -->  id7([4.Prepare for Storybook branch])\r\n          id7([4.Prepare for Storybook branch]) --> id8([5.Host static pages in gh-pages])\r\n          id8([5.Host static pages in gh-pages]) -->  id9([6.Run in stackblitz Environment])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularsetup.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n  </markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-dxjexi\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularEnv/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingmermaid>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n        id1([Mermaid works]) --> id2([In html])\r\n        id1([Mermaid works]) --> id3([From src])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Mermaid __works__!\r\n  </markdown>\r\n  <markdown\r\n    mermaid\r\n    [src]=\"'../assets/angularmermaid.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n  ></markdown>\r\n\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularMarkdown/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingmarkdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n        flowchart TD\r\n          id1([Markdown used in]) --> id2([In html])\r\n          id1([Markdown used in]) --> id3([In template])\r\n          id1([Markdown used in]) --> id4([In Component])\r\n          id1([Markdown used in]) --> id5([Load from src])\r\n          id1([Markdown used in]) --> id6([Load from .md file])\r\n      </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard>\r\n    --- ## Markdown __works__!\r\n  </markdown>\r\n  <markdown\r\n    [src]=\"'../assets/angularmarkdown.md'\"\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    commandLine\r\n    [prompt]=\"'PS C:\\Manoj>'\"\r\n    [filterOutput]=\"'(out)'\"\r\n  >\r\n    ></markdown\r\n  >\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-m2fhve?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/AngularMarkdown/\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-template #usingngxs>\r\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\r\n  <markdown\r\n    mermaid\r\n    ngPreserveWhitespaces\r\n    clipboard\r\n    fxLayoutAlign=\"center center\"\r\n  >\r\n    <pre class=\"mermaid\">\r\n    flowchart TD\r\n      id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])\r\n      id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])\r\n      id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])\r\n      id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])\r\n      id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])\r\n      id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])\r\n      id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])\r\n      \r\n  </pre\r\n    >\r\n  </markdown>\r\n  <markdown ngPreserveWhitespaces clipboard> --- ## NgXs __works__! </markdown>\r\n  <div fxLayoutAlign=\"center center\">\r\n    <markdown\r\n      mermaid\r\n      [src]=\"'../assets/angularngxs.md'\"\r\n      ngPreserveWhitespaces\r\n      clipboard\r\n    ></markdown>\r\n  </div>\r\n  <iframe\r\n    src=\"https://stackblitz.com/edit/node-6idh7k?embed=1&file=README.md&hideNavigation=1&view=editor\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n\r\n  <iframe\r\n    src=\"https://gmanojisaac.github.io/Angularngxs/ngxs\"\r\n    style=\"width: 50em; min-height: 30em; margin-top: 10vh;\"\r\n  ></iframe>\r\n</ng-template>\r\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\">\r\n</ng-container>\r\n"
         }
     ],
     "modules": [
@@ -1859,13 +1984,13 @@
         },
         {
             "name": "AppModule",
-            "id": "module-AppModule-dbc793b891c45a313bdc1fb8cf98769babe0004ad6c29def4a84ed751fb1df628eda62fd0c570f613d81a337801cf1584cd83c636c72d6aa19a60a5f34816b97",
+            "id": "module-AppModule-91a397811f2a688e3d091dc93a8159b4829f875e93ff81f022511137dd481926c2cfe8e8213839286990a7d5155fff8ea4bca321d873a5eb90dcd557855d2648",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\n\r\nimport { AppSharedModule } from './app-shared/app-shared.module';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { environment } from '../environments/environment';\r\nimport { NgxsModule } from '@ngxs/store';\r\nimport { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';\r\nimport { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';\r\n\r\nimport { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\n import {SeptfifteenComponent} from './youtube/Sep2022/septfifteen/septfifteen.component';\r\nimport { AboutMeComponent } from './about-me/about-me.component';\r\nimport { YoutubeMakingComponent } from './youtube-making/youtube-making.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    SeptfifteenComponent,\r\n    AboutMeComponent,\r\n    YoutubeMakingComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    AppSharedModule,\r\n    BrowserAnimationsModule,\r\n    NgxsModule.forRoot([], {\r\n      developmentMode: !environment.production,\r\n    }),\r\n    NgxsReduxDevtoolsPluginModule.forRoot(),\r\n    NgxsLoggerPluginModule.forRoot({\r\n      disabled: environment.production,\r\n    }),\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient })\r\n  ],\r\n  providers: [MarkdownService],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\n\r\nimport { AppSharedModule } from './app-shared/app-shared.module';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { environment } from '../environments/environment';\r\nimport { NgxsModule } from '@ngxs/store';\r\nimport { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';\r\nimport { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';\r\n\r\nimport { MarkdownModule, MarkdownService } from 'ngx-markdown';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { HttpClientModule } from '@angular/common/http';\r\n\r\n import {SeptfifteenComponent} from './youtube/Sep2022/septfifteen/septfifteen.component';\r\nimport { AboutMeComponent } from './about-me/about-me.component';\r\nimport { YoutubeMakingComponent } from './youtube-making/youtube-making.component';\nimport { SepttwensevenComponent } from './youtube/Sep2022/septtwenseven/septtwenseven.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    SeptfifteenComponent,\r\n    AboutMeComponent,\r\n    YoutubeMakingComponent,\r\n    SepttwensevenComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    AppSharedModule,\r\n    BrowserAnimationsModule,\r\n    NgxsModule.forRoot([], {\r\n      developmentMode: !environment.production,\r\n    }),\r\n    NgxsReduxDevtoolsPluginModule.forRoot(),\r\n    NgxsLoggerPluginModule.forRoot({\r\n      disabled: environment.production,\r\n    }),\r\n    HttpClientModule,\r\n    MarkdownModule.forRoot({ loader: HttpClient })\r\n  ],\r\n  providers: [MarkdownService],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1882,6 +2007,9 @@
                         },
                         {
                             "name": "SeptfifteenComponent"
+                        },
+                        {
+                            "name": "SepttwensevenComponent"
                         },
                         {
                             "name": "YoutubeMakingComponent"
@@ -2377,7 +2505,7 @@
                 "linktype": "component",
                 "name": "YoutubeMakingComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/14",
+                "coverageCount": "0/13",
                 "status": "low"
             },
             {
@@ -2387,6 +2515,15 @@
                 "name": "SeptfifteenComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/youtube/Sep2022/septtwenseven/septtwenseven.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SepttwensevenComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {

@@ -22,9 +22,6 @@ export class YoutubeMakingComponent implements OnInit {
   @ViewChild('usingmarkdown', { static: true })
   usingmarkdown!: TemplateRef<any>;
 
-  @ViewChild('pagedesign', { static: true })
-  pagedesign!: TemplateRef<any>;
-
   @ViewChild('storybookdesign', { static: true })
   storybookdesign!: TemplateRef<any>;
 
@@ -52,10 +49,6 @@ export class YoutubeMakingComponent implements OnInit {
 
       case 'usingmarkdown':
         this.tems = this.usingmarkdown;
-        break;
-      case 'pagedesign':
-        this.tems = this.pagedesign;
-        console.log('reached');
         break;
       case 'storybookdesign':
         this.tems = this.storybookdesign;

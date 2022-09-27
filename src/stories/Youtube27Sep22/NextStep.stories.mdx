@@ -1,17 +1,14 @@
 import { moduleMetadata } from '@storybook/angular';
 import { Story, Meta, ArgsTable } from '@storybook/addon-docs';
-import { YoutubeMakingComponent } from '../../app/youtube-making/youtube-making.component';
+import {SepttwensevenComponent} from '../../app/youtube/Sep2022/septtwenseven/septtwenseven.component';
 import { linkTo } from '@storybook/addon-links';
 import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppSharedModule } from '../../app/app-shared/app-shared.module';
 
-# Angular Setup in Windows Environment
-Use Windows 64bit Laptop connected with Internet.
+# Use Zerodha API to access the trading platform
 
-# Use gh-pages / stackblitz / push github
-
-<Meta title="YoutubeMaking/EnvironmentSetup"   
+<Meta title="Youtube27sep22/Next"   
   parameters={{
       viewMode: 'docs',
       previewTabs: { 
@@ -20,7 +17,7 @@ Use Windows 64bit Laptop connected with Internet.
   }}
   decorators={[
 moduleMetadata({
-  declarations: [YoutubeMakingComponent],
+  declarations: [SepttwensevenComponent],
       imports: [
         AppSharedModule,
         HttpClientModule,
@@ -31,11 +28,12 @@ moduleMetadata({
     
     ]} />
 
-<Story name="EnvironmentSetup">
+
+<Story name="Next">
   {{
-    template: `<app-youtube-making [myselectedtemp]= "myselectedtemp"></app-youtube-making>`,
+   template: `<app-septtwenseven [myselectedtemp]= "myselectedtemp"></app-septtwenseven>`,
     props: {
-    myselectedtemp : 'angularsetup'
+    myselectedtemp : 'Next'
     },
   }}
 </Story>

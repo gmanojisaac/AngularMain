@@ -1,0 +1,209 @@
+<ng-template #Start>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div fxLayoutAlign="center center">
+    <markdown mermaid>
+      <pre class="mermaid">
+          flowchart TD
+              id1(((Access Zerodha API from Angular App )))
+              style id1 fill:#f9f,stroke:#333,stroke-width:10px, font-size: 13px,padding-top: 4px
+          </pre>
+    </markdown>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div class="footer">
+    <markdown emoji class="footer-text" fxLayout="row" fxLayoutAlign.gt-xs="center">
+      Crafted with :heart: by **gmanojisaac**
+      <span style="margin:0 .15em;">•</span> Follow on
+      [GitHub](https://github.com/gmanoj.isaac)
+    </markdown>
+  </div>
+</ng-template>
+
+<ng-template #Plan>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div>
+    <markdown mermaid>
+      <pre class="mermaid">
+        graph TD
+            id1(Start)-->id2(1.Run Angular)
+            style id1 fill:lightblue,stroke:#333,stroke-width:4px
+            style id2 fill:#f9f,stroke:#333,stroke-width:4px
+            id2(1.Run Angular) --> id3(Windows Env)
+            
+            id2(1.Run Angular) --> id4(NodeJs App)
+            
+            id2(1.Run Angular) --> id5(Angular with kiteConnectjs)
+            
+            id5(Angular with kiteConnectjs) --> id6(Access the instrument Quote)
+            style id3 fill:#f9f,stroke:#333,stroke-width:4px
+            style id4 fill:#f9f,stroke:#333,stroke-width:4px
+            style id5 fill:orange,stroke:#333,stroke-width:4px
+        
+            id5(Angular with kiteConnectjs) --> id7(Apply logic to generate signals)
+            style id6 fill:orange,stroke:#333,stroke-width:4px
+            style id7 fill:orange,stroke:#333,stroke-width:4px
+        
+            id7(Apply logic to generate signals) --> id8(Push the Triggers to Firebase)
+        
+            id8(Push the Triggers to Firebase)-->id9(Stop)
+            style id8 fill:yellow,stroke:#333,stroke-width:4px
+            style id9 fill:lightblue,stroke:#333,stroke-width:4px
+        </pre>
+    </markdown>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+</ng-template>
+
+<ng-template #RunNodeJS>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div fxLayout="row">
+    <markdown ngPreserveWhitespaces clipboard fxFlex="nogrow">
+      ## Create a express Application by globally installing the generator
+
+      ```typescript
+      npm install -g express-generator
+      ```
+
+      ## Scaffold a new Express application called myExpressApp by running
+      # go to the new folder and execute npm install:
+      ```typescript
+      express myExpressApp --view pug
+      npm install
+      ```
+
+      # From a terminal in the Express application folder
+
+      ```typescript
+      npm start
+      ```
+
+      # The official Javascript node client for communicating with the Kite Connect API.
+      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day
+
+      ```typescript
+      npm i kiteconnect
+      https://kite.zerodha.com/connect/login?v=3&api_key=XXX
+      ```
+    </markdown>
+
+    <div>
+      <markdown mermaid fxFlex="50vw" fxLayoutAlign="center center">
+        <pre class="mermaid">
+      graph TD
+        id1(Create kc Object)-->id2(Valid <br> Access code)
+        style id1 fill:lightblue,stroke:#333,stroke-width:4px
+        style id2 fill:#f9f,stroke:#333,stroke-width:4px
+        id1(Create kc Object) --> id3(Invalid <br> Access code)
+        style id3 fill:cyan,stroke:#333,stroke-width:4px
+        </pre>
+      </markdown>
+    </div>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div fxLayout="row">
+    <markdown [src]="'../../assets/Sep2022/RunNodeJs.md'" ngPreserveWhitespaces clipboard fxFlex="nogrow">
+    </markdown>
+
+    <div fxLayoutAlign="center center" fxFlex="50vw">
+      <markdown mermaid>
+        <pre class="mermaid">
+        graph TD
+          id1(Create kc Object)-->id2(Access code  <br> Already created)
+          style id1 fill:lightblue,stroke:#333,stroke-width:4px
+          style id2 fill:#f9f,stroke:#333,stroke-width:4px
+          id1(Create kc Object) --> id3(Access code  <br> not created)
+          style id3 fill:cyan,stroke:#333,stroke-width:4px
+      </pre>
+      </markdown>
+    </div>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown [src]="'../../assets/Sep2022/RunNodeJs1.md'" ngPreserveWhitespaces clipboard>
+  </markdown>
+
+</ng-template>
+
+<ng-template #RunAngular>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div>
+    <markdown ngPreserveWhitespaces clipboard>
+      ## Create a Angular app
+
+      ```typescript
+      ng new kiteAngular
+      ```
+
+      ## Create a new Repo and push the master
+      # go to the new folder and execute npm install:
+      ```typescript
+      git remote remove origin
+      git remote add origin https://github.com/gmanojisaac/AngularZerodha.git
+      git remote -v show
+      git status
+      git log --oneline
+      git add .
+      git commit -am “Setup Github”
+      git push -u origin master
+      ```
+
+      # From a terminal in the Angular application folder
+
+      ```typescript
+      ng build
+      ng serve
+      ```
+
+      # The official Javascript node client for communicating with the Kite Connect API.
+      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day
+
+      ```typescript
+      npm i kiteconnect-ts
+      https://kite.zerodha.com/connect/login?v=3&api_key=XXX
+      ```
+    </markdown>
+
+    <span fxFlex="100vh" fxLayoutAlign="center center">
+      <markdown mermaid>
+        <pre class="mermaid">
+      graph TD
+        id1(Create kiteTicker Object)-->id2(Add Valid Instruments)
+        style id1 fill:lightblue,stroke:#333,stroke-width:4px
+        style id2 fill:#f9f,stroke:#333,stroke-width:4px
+        id2(Add Valid Instruments) --> id3(Ticker Connect)
+        style id3 fill:cyan,stroke:#333,stroke-width:4px
+        id3(Ticker Connect) --> id4(Receive Ticks)
+        style id4 fill:green,stroke:#333,stroke-width:4px
+        </pre>
+      </markdown>
+    </span>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown [src]="'../../assets/Sep2022/RunAngular.md'" ngPreserveWhitespaces clipboard>
+  </markdown>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+</ng-template>
+
+<ng-template #Next>
+  <div fxLayoutAlign="center center">
+    <markdown mermaid fxFlex="75%">
+      <pre class="mermaid">
+        graph TD
+        id1(Start)-->id2(1.Get NSE Index Feed)
+        style id1 fill:lightblue,stroke:#333,stroke-width:4px
+        style id2 fill:#f9f,stroke:#333,stroke-width:4px
+        id2(1.Get NSE Index Feed) --> id3(Calculate the flex point)
+        
+        id2(1.Get NSE Index Feed) --> id4(Populate the instrument array)
+        
+        id2(1.Get NSE Index Feed) --> id5(Generate the signals)
+        
+        id5(Generate the signals) --> id6(Push into Firebase Db)
+        style id3 fill:#f9f,stroke:#333,stroke-width:4px
+        style id4 fill:#f9f,stroke:#333,stroke-width:4px
+        style id5 fill:orange,stroke:#333,stroke-width:4px
+          </pre>
+    </markdown>
+  </div>
+
+</ng-template>
+<ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext"></ng-container>
