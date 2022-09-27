@@ -186,6 +186,7 @@
 <ng-template #Next>
   <div fxLayoutAlign="center center">
     <markdown mermaid fxFlex="75%">
+     
       <pre class="mermaid">
         graph TD
         id1(Start)-->id2(1.Get NSE Index Feed)
@@ -204,6 +205,24 @@
           </pre>
     </markdown>
   </div>
-
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div fxLayoutAlign="center center">
+    <markdown [src]="'../../assets/Sep2022/RunNext.md'" ngPreserveWhitespaces clipboard fxFlex="75%">
+    </markdown>
+  </div>
+  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <div fxLayoutAlign="center center">
+    <markdown mermaid fxFlex="75%">
+     
+      <pre class="mermaid">
+        graph TD
+          id1(Track 2 min NIFTY data along with CE PE ranges) -->  id2(End of 2 nd min: Get the Direction and point)
+          id2(End of 2 nd min: Get the Direction and point) --> id3(3rd min : Print the trade) 
+          id3(3rd min : Print the trade)  --> id4(Wait for the trade to turn red)
+          id4(Wait for the trade to turn red) --> id5(Exit loss trade and Save the triggers in both directions.)
+          id5(Exit loss trade and Save the triggers in both directions.) --> id6(Check if the loss trade percentage gain is exceeded.)
+</pre>
+</markdown>
+</div>
 </ng-template>
 <ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext"></ng-container>

@@ -1247,7 +1247,7 @@
         },
         {
             "name": "SepttwensevenComponent",
-            "id": "component-SepttwensevenComponent-b2073f9165690179d4177f780662243adf32043efa16c2e76a3f7e6462f52cfdd46cc12195b6e8bbe00f114655a0fe72117faf6ecbb2762bb94ded79f17bad44",
+            "id": "component-SepttwensevenComponent-752e9e8d2b9ff166724e24890e9e0279ef5a65a5eb2c6c92e9f9aa8d10033df9f7afb86a601301dfd0c91726246c43e51932b81968cb0c50b59ad694e8a4ab90",
             "file": "src/app/youtube/Sep2022/septtwenseven/septtwenseven.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1284,7 +1284,22 @@
                     "type": "object",
                     "optional": false,
                     "description": "",
-                    "line": 24
+                    "line": 28
+                },
+                {
+                    "name": "Next",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'Next', {static: true}"
+                        }
+                    ]
                 },
                 {
                     "name": "Plan",
@@ -1298,6 +1313,21 @@
                         {
                             "name": "ViewChild",
                             "stringifiedArguments": "'Plan', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "RunAngular",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TemplateRef<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'RunAngular', {static: true}"
                         }
                     ]
                 },
@@ -1339,7 +1369,7 @@
                     "type": "TemplateRef<any>",
                     "optional": false,
                     "description": "",
-                    "line": 26
+                    "line": 30
                 }
             ],
             "methodsClass": [
@@ -1349,7 +1379,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 30,
+                    "line": 34,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1359,7 +1389,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 28,
+                    "line": 32,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1371,7 +1401,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-septtwenseven',\n  templateUrl: './septtwenseven.component.html',\n  styleUrls: ['./septtwenseven.component.scss']\n})\nexport class SepttwensevenComponent implements OnInit {\n\n  @Input()\n  myselectedtemp: string = 'first';\n\n  @ViewChild('Start', { static: true })\n  Start!: TemplateRef<any>;\n\n  @ViewChild('Plan', { static: true })\n  Plan!: TemplateRef<any>;\n  \n  @ViewChild('RunNodeJS', { static: true })\n  RunNodeJS!: TemplateRef<any>;\n\n  \n\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n\n  tems: TemplateRef<any> = this.Start;\n  \n  ngOnInit(){      \n  }\n  ngAfterContentInit() {\n    switch (this.myselectedtemp) {\n    case 'Start':        \n      this.tems = this.Start;\n    break;    \n    case 'Plan':        \n      this.tems = this.Plan;\n    break;    \n    case 'RunNodeJS':    \n    console.log('R1');    \n    this.tems = this.RunNodeJS;\n  break;    \n    \n\n    }\n  }\n}\n",
+            "sourceCode": "import { OnInit, AfterContentInit, ViewChild, TemplateRef, Input, Component } from '@angular/core';\n\n@Component({\n  selector: 'app-septtwenseven',\n  templateUrl: './septtwenseven.component.html',\n  styleUrls: ['./septtwenseven.component.scss']\n})\nexport class SepttwensevenComponent implements OnInit {\n\n  @Input()\n  myselectedtemp: string = 'first';\n\n  @ViewChild('Start', { static: true })\n  Start!: TemplateRef<any>;\n\n  @ViewChild('Plan', { static: true })\n  Plan!: TemplateRef<any>;\n  \n  @ViewChild('RunNodeJS', { static: true })\n  RunNodeJS!: TemplateRef<any>;\n\n  @ViewChild('RunAngular', { static: true })\n  RunAngular!: TemplateRef<any>;\n  \n  @ViewChild('Next', { static: true })\n  Next!: TemplateRef<any>;  \n\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n\n  tems: TemplateRef<any> = this.Start;\n  \n  ngOnInit(){      \n  }\n  ngAfterContentInit() {\n    switch (this.myselectedtemp) {\n    case 'Start':        \n      this.tems = this.Start;\n    break;    \n    case 'Plan':        \n      this.tems = this.Plan;\n    break;    \n    case 'RunNodeJS':    \n    this.tems = this.RunNodeJS;\n    break;    \n    case 'RunAngular':    \n    this.tems = this.RunAngular;\n    break;    \n    case 'Next':    \n    this.tems = this.Next;\n    break;   \n    \n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1383,7 +1413,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<ng-template #Start>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayoutAlign=\"center center\">\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n          flowchart TD\n              id1(((Access Zerodha API from Angular App )))\n              style id1 fill:#f9f,stroke:#333,stroke-width:10px, font-size: 13px,padding-top: 4px\n          </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div class=\"footer\">\n    <markdown emoji class=\"footer-text\" fxLayout=\"row\" fxLayoutAlign.gt-xs=\"center\">\n      Crafted with :heart: by **gmanojisaac**\n      <span style=\"margin:0 .15em;\">•</span> Follow on\n      [GitHub](https://github.com/gmanoj.isaac)\n    </markdown>\n  </div>\n</ng-template>\n\n<ng-template #Plan>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n        graph TD\n            id1(Start)-->id2(1.Run Angular)\n            style id1 fill:lightblue,stroke:#333,stroke-width:4px\n            style id2 fill:#f9f,stroke:#333,stroke-width:4px\n            id2(1.Run Angular) --> id3(Windows Env)\n            \n            id2(1.Run Angular) --> id4(NodeJs App)\n            \n            id2(1.Run Angular) --> id5(Angular with kiteConnectjs)\n            \n            id5(Angular with kiteConnectjs) --> id6(Access the instrument Quote)\n            style id3 fill:#f9f,stroke:#333,stroke-width:4px\n            style id4 fill:#f9f,stroke:#333,stroke-width:4px\n            style id5 fill:orange,stroke:#333,stroke-width:4px\n        \n            id5(Angular with kiteConnectjs) --> id7(Apply logic to generate signals)\n            style id6 fill:orange,stroke:#333,stroke-width:4px\n            style id7 fill:orange,stroke:#333,stroke-width:4px\n        \n            id7(Apply logic to generate signals) --> id8(Push the Triggers to Firebase)\n        \n            id8(Push the Triggers to Firebase)-->id9(Stop)\n            style id8 fill:yellow,stroke:#333,stroke-width:4px\n            style id9 fill:lightblue,stroke:#333,stroke-width:4px\n        </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n</ng-template>\n\n<ng-template #RunNodeJS>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown ngPreserveWhitespaces clipboard>\n      ## Create a express Application by globally installing the generator\n\n      ```typescript\n      npm install -g express-generator\n      ```\n\n      ## Scaffold a new Express application called myExpressApp by running\n      # go to the new folder and execute npm install:\n      ```typescript\n      express myExpressApp --view pug\n      npm install\n      ```\n\n      # From a terminal in the Express application folder\n\n      ```typescript\n      npm start\n      ```\n\n      # The official Javascript node client for communicating with the Kite Connect API.\n      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day\n\n      ```typescript\n      npm i kiteconnect\n      https://kite.zerodha.com/connect/login?v=3&api_key=XXX\n      ```\n    </markdown>\n\n    <span fxFlex=\"100vh\" fxLayoutAlign=\"center center\">\n      <markdown mermaid>\n        <pre class=\"mermaid\">\n      graph TD\n        id1(Create kc Object)-->id2(Valid Access code)\n        style id1 fill:lightblue,stroke:#333,stroke-width:4px\n        style id2 fill:#f9f,stroke:#333,stroke-width:4px\n        id1(Create kc Object) --> id3(Invalid Access code)\n        style id3 fill:cyan,stroke:#333,stroke-width:4px\n        </pre>\n      </markdown>\n    </span>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n\n  <markdown ngPreserveWhitespaces clipboard>\n    ## Kc Object is created using\n\n    ```typescript\n    var KiteConnect = require(\"kiteconnect\").KiteConnect;\n\n    var api_key = \"909lcbtyglf6ks4o\",\n      secret = \"xcmxsyn41ro183qmj4r9uzzx76xlcdf4\",\n      request_token = \"J1sBbg0GrCxcDH7gi0xQ2bMUK9K3qs6R\",\n      access_token = \"QMzRubq2K85tdur6z2s2aEpXcF6tcsrn\";\n    \n    var options = {\n      \"api_key\": api_key,\n      \"debug\": false\n    };\n    \n    let  kc = new KiteConnect(options);\n    ```\n\n    ## Scaffold a new Express application called myExpressApp by running\n    # go to the new folder and execute npm install:\n    \n    ```typescript\n    express myExpressApp --view pug\n    npm install\n    ```\n  </markdown>\n\n\n</ng-template>\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\"></ng-container>"
+            "templateData": "<ng-template #Start>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayoutAlign=\"center center\">\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n          flowchart TD\n              id1(((Access Zerodha API from Angular App )))\n              style id1 fill:#f9f,stroke:#333,stroke-width:10px, font-size: 13px,padding-top: 4px\n          </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div class=\"footer\">\n    <markdown emoji class=\"footer-text\" fxLayout=\"row\" fxLayoutAlign.gt-xs=\"center\">\n      Crafted with :heart: by **gmanojisaac**\n      <span style=\"margin:0 .15em;\">•</span> Follow on\n      [GitHub](https://github.com/gmanoj.isaac)\n    </markdown>\n  </div>\n</ng-template>\n\n<ng-template #Plan>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown mermaid>\n      <pre class=\"mermaid\">\n        graph TD\n            id1(Start)-->id2(1.Run Angular)\n            style id1 fill:lightblue,stroke:#333,stroke-width:4px\n            style id2 fill:#f9f,stroke:#333,stroke-width:4px\n            id2(1.Run Angular) --> id3(Windows Env)\n            \n            id2(1.Run Angular) --> id4(NodeJs App)\n            \n            id2(1.Run Angular) --> id5(Angular with kiteConnectjs)\n            \n            id5(Angular with kiteConnectjs) --> id6(Access the instrument Quote)\n            style id3 fill:#f9f,stroke:#333,stroke-width:4px\n            style id4 fill:#f9f,stroke:#333,stroke-width:4px\n            style id5 fill:orange,stroke:#333,stroke-width:4px\n        \n            id5(Angular with kiteConnectjs) --> id7(Apply logic to generate signals)\n            style id6 fill:orange,stroke:#333,stroke-width:4px\n            style id7 fill:orange,stroke:#333,stroke-width:4px\n        \n            id7(Apply logic to generate signals) --> id8(Push the Triggers to Firebase)\n        \n            id8(Push the Triggers to Firebase)-->id9(Stop)\n            style id8 fill:yellow,stroke:#333,stroke-width:4px\n            style id9 fill:lightblue,stroke:#333,stroke-width:4px\n        </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n</ng-template>\n\n<ng-template #RunNodeJS>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayout=\"row\">\n    <markdown ngPreserveWhitespaces clipboard fxFlex=\"nogrow\">\n      ## Create a express Application by globally installing the generator\n\n      ```typescript\n      npm install -g express-generator\n      ```\n\n      ## Scaffold a new Express application called myExpressApp by running\n      # go to the new folder and execute npm install:\n      ```typescript\n      express myExpressApp --view pug\n      npm install\n      ```\n\n      # From a terminal in the Express application folder\n\n      ```typescript\n      npm start\n      ```\n\n      # The official Javascript node client for communicating with the Kite Connect API.\n      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day\n\n      ```typescript\n      npm i kiteconnect\n      https://kite.zerodha.com/connect/login?v=3&api_key=XXX\n      ```\n    </markdown>\n\n    <div>\n      <markdown mermaid fxFlex=\"50vw\" fxLayoutAlign=\"center center\">\n        <pre class=\"mermaid\">\n      graph TD\n        id1(Create kc Object)-->id2(Valid <br> Access code)\n        style id1 fill:lightblue,stroke:#333,stroke-width:4px\n        style id2 fill:#f9f,stroke:#333,stroke-width:4px\n        id1(Create kc Object) --> id3(Invalid <br> Access code)\n        style id3 fill:cyan,stroke:#333,stroke-width:4px\n        </pre>\n      </markdown>\n    </div>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayout=\"row\">\n    <markdown [src]=\"'../../assets/Sep2022/RunNodeJs.md'\" ngPreserveWhitespaces clipboard fxFlex=\"nogrow\">\n    </markdown>\n\n    <div fxLayoutAlign=\"center center\" fxFlex=\"50vw\">\n      <markdown mermaid>\n        <pre class=\"mermaid\">\n        graph TD\n          id1(Create kc Object)-->id2(Access code  <br> Already created)\n          style id1 fill:lightblue,stroke:#333,stroke-width:4px\n          style id2 fill:#f9f,stroke:#333,stroke-width:4px\n          id1(Create kc Object) --> id3(Access code  <br> not created)\n          style id3 fill:cyan,stroke:#333,stroke-width:4px\n      </pre>\n      </markdown>\n    </div>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <markdown [src]=\"'../../assets/Sep2022/RunNodeJs1.md'\" ngPreserveWhitespaces clipboard>\n  </markdown>\n\n</ng-template>\n\n<ng-template #RunAngular>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div>\n    <markdown ngPreserveWhitespaces clipboard>\n      ## Create a Angular app\n\n      ```typescript\n      ng new kiteAngular\n      ```\n\n      ## Create a new Repo and push the master\n      # go to the new folder and execute npm install:\n      ```typescript\n      git remote remove origin\n      git remote add origin https://github.com/gmanojisaac/AngularZerodha.git\n      git remote -v show\n      git status\n      git log --oneline\n      git add .\n      git commit -am “Setup Github”\n      git push -u origin master\n      ```\n\n      # From a terminal in the Angular application folder\n\n      ```typescript\n      ng build\n      ng serve\n      ```\n\n      # The official Javascript node client for communicating with the Kite Connect API.\n      # Pay the Kite API Charges and activate it, use browser to generate the access code for the day\n\n      ```typescript\n      npm i kiteconnect-ts\n      https://kite.zerodha.com/connect/login?v=3&api_key=XXX\n      ```\n    </markdown>\n\n    <span fxFlex=\"100vh\" fxLayoutAlign=\"center center\">\n      <markdown mermaid>\n        <pre class=\"mermaid\">\n      graph TD\n        id1(Create kiteTicker Object)-->id2(Add Valid Instruments)\n        style id1 fill:lightblue,stroke:#333,stroke-width:4px\n        style id2 fill:#f9f,stroke:#333,stroke-width:4px\n        id2(Add Valid Instruments) --> id3(Ticker Connect)\n        style id3 fill:cyan,stroke:#333,stroke-width:4px\n        id3(Ticker Connect) --> id4(Receive Ticks)\n        style id4 fill:green,stroke:#333,stroke-width:4px\n        </pre>\n      </markdown>\n    </span>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <markdown [src]=\"'../../assets/Sep2022/RunAngular.md'\" ngPreserveWhitespaces clipboard>\n  </markdown>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n</ng-template>\n\n<ng-template #Next>\n  <div fxLayoutAlign=\"center center\">\n    <markdown mermaid fxFlex=\"75%\">\n     \n      <pre class=\"mermaid\">\n        graph TD\n        id1(Start)-->id2(1.Get NSE Index Feed)\n        style id1 fill:lightblue,stroke:#333,stroke-width:4px\n        style id2 fill:#f9f,stroke:#333,stroke-width:4px\n        id2(1.Get NSE Index Feed) --> id3(Calculate the flex point)\n        \n        id2(1.Get NSE Index Feed) --> id4(Populate the instrument array)\n        \n        id2(1.Get NSE Index Feed) --> id5(Generate the signals)\n        \n        id5(Generate the signals) --> id6(Push into Firebase Db)\n        style id3 fill:#f9f,stroke:#333,stroke-width:4px\n        style id4 fill:#f9f,stroke:#333,stroke-width:4px\n        style id5 fill:orange,stroke:#333,stroke-width:4px\n          </pre>\n    </markdown>\n  </div>\n  <markdown ngPreserveWhitespaces clipboard> --- </markdown>\n  <div fxLayoutAlign=\"center center\">\n    <markdown [src]=\"'../../assets/Sep2022/RunNext.md'\" ngPreserveWhitespaces clipboard fxFlex=\"75%\">\n    </markdown>\n  </div>\n</ng-template>\n<ng-container [ngTemplateOutlet]=\"tems\" [ngTemplateOutletContext]=\"myContext\"></ng-container>"
         },
         {
             "name": "TaskComponent",
@@ -2523,7 +2553,7 @@
                 "linktype": "component",
                 "name": "SepttwensevenComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
