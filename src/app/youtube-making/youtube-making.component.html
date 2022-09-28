@@ -152,7 +152,8 @@
     >
   </markdown>
   <markdown ngPreserveWhitespaces clipboard>
-    --- ## Mermaid __works__!
+    --- 
+    ## Mermaid __works__!
   </markdown>
   <markdown
     mermaid
@@ -176,9 +177,7 @@
   <markdown
     mermaid
     ngPreserveWhitespaces
-    clipboard
-    fxLayoutAlign="center center"
-  >
+    clipboard>
     <pre class="mermaid">
         flowchart TD
           id1([Markdown used in]) --> id2([In html])
@@ -186,11 +185,11 @@
           id1([Markdown used in]) --> id4([In Component])
           id1([Markdown used in]) --> id5([Load from src])
           id1([Markdown used in]) --> id6([Load from .md file])
-      </pre
-    >
+      </pre>
   </markdown>
   <markdown ngPreserveWhitespaces clipboard>
-    --- ## Markdown __works__!
+    --- 
+    ## Markdown __works__!
   </markdown>
   <markdown
     [src]="'../assets/angularmarkdown.md'"
@@ -214,26 +213,22 @@
 </ng-template>
 <ng-template #usingngxs>
   <markdown ngPreserveWhitespaces clipboard> --- </markdown>
-  <markdown
-    mermaid
-    ngPreserveWhitespaces
-    clipboard
-    fxLayoutAlign="center center"
-  >
+  <markdown     mermaid     ngPreserveWhitespaces     clipboard >
     <pre class="mermaid">
-    flowchart TD
-      id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])
-      id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])
-      id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])
-      id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])
-      id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])
-      id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])
-      id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])
-      
-  </pre
-    >
+      flowchart TD
+        id1([1. Ngxs setup]) --> id2([2. Create HTML Task component ])
+        id2([2. Create HTML Task component ]) --> id3([3. Define Task Component Array and States ])
+        id3([3. Define Task Component Array and States ]) --> id4([4. Display logic for Task States from Store])
+        id4([4. Display logic for Task States from Store]) --> id5([5. Load All Task States from Store])
+        id5([5. Load All Task States from Store]) --> id6([6. Logic for Error State and normal state])
+        id6([6. Logic for Error State and normal state]) --> id7([7. Update Error State from Store])
+        id7([7. Update Error State from Store]) --> id8([8. Load the github code to stackblitz also Load the static-pages])
+      </pre>
   </markdown>
-  <markdown ngPreserveWhitespaces clipboard> --- ## NgXs __works__! </markdown>
+  <markdown ngPreserveWhitespaces clipboard> 
+    --- 
+    ## NgXs __works__! 
+  </markdown>
   <div fxLayoutAlign="center center">
     <markdown
       mermaid

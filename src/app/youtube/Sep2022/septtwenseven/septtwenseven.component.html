@@ -186,7 +186,7 @@
 <ng-template #Next>
   <div fxLayoutAlign="center center">
     <markdown mermaid fxFlex="75%">
-     
+
       <pre class="mermaid">
         graph TD
         id1(Start)-->id2(1.Get NSE Index Feed)
@@ -210,19 +210,39 @@
     <markdown [src]="'../../assets/Sep2022/RunNext.md'" ngPreserveWhitespaces clipboard fxFlex="75%">
     </markdown>
   </div>
-  <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+  <markdown  ngPreserveWhitespaces clipboard>
+    ## Current working model
+    ---
+    </markdown>
   <div fxLayoutAlign="center center">
     <markdown mermaid fxFlex="75%">
-     
       <pre class="mermaid">
         graph TD
-          id1(Track 2 min NIFTY data along with CE PE ranges) -->  id2(End of 2 nd min: Get the Direction and point)
-          id2(End of 2 nd min: Get the Direction and point) --> id3(3rd min : Print the trade) 
-          id3(3rd min : Print the trade)  --> id4(Wait for the trade to turn red)
-          id4(Wait for the trade to turn red) --> id5(Exit loss trade and Save the triggers in both directions.)
-          id5(Exit loss trade and Save the triggers in both directions.) --> id6(Check if the loss trade percentage gain is exceeded.)
-</pre>
-</markdown>
-</div>
+          id1(Get the new Request Token from link) -->  id2(Delete the old Access code)
+          id2(Delete the old Access code) --> id3(Run the nodeJS program and get the access token from log) 
+          id3(Run the nodeJS program and get the access token from log)  --> id4(Copy the access token from log)
+          id4(Copy the access token from log) --> id5(Program works correctly to get quote)
+          id5(Program works correctly to get quote) --> id6(END)
+      </pre>
+    </markdown>
+  </div>
+  <markdown  ngPreserveWhitespaces clipboard>
+    ## Write code for this
+    ---
+    </markdown>
+  <div fxLayoutAlign="center center">
+    <markdown mermaid fxFlex="75%">
+      <pre class="mermaid">
+        graph TD
+          id1(2 min Sleep) -->  id2(Last sec-> Wake up for sleep Tracking)
+          id2(Last sec-> Wake up for sleep Tracking) --> id3(Take Trade and 2 min sleep) 
+          id3(Take Trade and 2 min sleep)  --> id4(Go into continuos Tracking with boundaries)
+          id4(Go into continuos Tracking with boundaries) --> id5(Boundary breach take trade and 2 min sleep)
+          id5(Boundary breach take trade and 2 min sleep) --> id5(Boundary breach take trade and 2 min sleep)
+          id5(Boundary breach take trade and 2 min sleep) --> id6(Boundary breach on both sides no trade for day)
+          id6(Boundary breach on both sides no trade for day) --> id7(END)
+      </pre>
+    </markdown>
+  </div>
 </ng-template>
 <ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext"></ng-container>

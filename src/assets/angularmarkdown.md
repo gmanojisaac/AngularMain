@@ -120,25 +120,25 @@ npm install @types/clipboard @types/marked @types/mermaid @types/prismjs --save-
 # filterOutput will not show the prompt
 
 ```typescript
-  In html
-  <markdown [src]="'../../assets/markdown.md'"
-  commandLine
-  [prompt]="'PS C:\Users\Manoj>'"
-  [filterOutput]="'(out)'">
-  </markdown>
-
-  In the markdown.md
-  (out)  import { Component } from '@angular/core';
-  (out)
-  (out)    @Component({
-  (out)      selector: 'app-root',
-  (out)      templateUrl: './app.component.html',
-  (out)      styleUrls: ['./app.component.scss']
-  (out)    })
-  (out)    export class AppComponent {
-  (out)      title = 'AngularComp';
-  (out)    }
-  (out)
+(out)  In html
+(out)  <markdown [src]="'../../assets/markdown.md'"
+(out)  commandLine
+(out)  [prompt]="'PS C:\Users\Manoj>'"
+(out)  [filterOutput]="'(out)'">
+(out)  </markdown>
+(out)
+(out) In the markdown.md
+(out)  import { Component } from '@angular/core';
+(out)
+(out)    @Component({
+(out)      selector: 'app-root',
+(out)      templateUrl: './app.component.html',
+(out)      styleUrls: ['./app.component.scss']
+(out)    })
+(out)    export class AppComponent {
+(out)      title = 'AngularComp';
+(out)    }
+(out)
 ```
 
 ### Markdown working from template
