@@ -1,15 +1,74 @@
-# First Page contains a mermaid diagram with style
+## Install F-Droid
+# F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform
+
 ```typescript
-<pre class="mermaid">
-flowchart TD
-    id1(((Run Angular fab:fa-twitter in StackBlitz-NodeJS and Issues)))
-    style id1 fill:#f9f,stroke:#333,stroke-width:10px, font-size: 13px,padding-top: 4px
-</pre>
+    https://f-droid.org/packages/org.fdroid.fdroid/
+```
+## Update F-Droid
+# F-Droid platform first need to be updated before trying to down load apps
+
+```typescript
+    Update F-Droid
+```
+## Dev Tools Search Termux and install
+# Search for Termux in Dev Tools section and Download and install it
+
+```typescript
+    Termux application install and open it
 ```
 
-# First Page contains a markdown emoji
+## Change Repo
+# Change the repo and select the preferred mirror
+
 ```typescript
-<markdown emoji class="footer-text" fxLayout="row" fxLayoutAlign.gt-xs="center">
-Crafted with :heart: by **gmanojisaac** <span style="margin:0 .15em;">•</span> Follow on [GitHub](https://github.com/gmanoj.isaac)
-</markdown>
+    termux-change-repo
+    as mentioned in https://github.com/termux/termux-packages/issues/6726
 ```
+
+## Select Grimler Mirror
+# This Mirror is selected as per the issue above
+
+```typescript
+    Grimler Mirror
+```
+
+## apt upgrade && apt update
+# As soon as the mirror is changed upgrade and update the contents
+
+```typescript
+    apt upgrade && apt update
+```
+
+## pkg install nodejs
+# Install nodejs packages with lts
+
+```typescript
+    pkg install nodejs
+```
+
+## apt install git
+# Install git for downloading the code
+
+```typescript
+    apt install git
+```
+
+## apt install openssl-tool
+# Oenssl is needed for running kiteconnect
+
+```typescript
+    apt install openssl-tool
+```
+
+## git clone Express Starter repo and install and run start
+# Get the code from github and install and run node start
+
+```typescript
+    git clone https://github.com/gmanojisaac/ZerodhaSanity.git
+    cd ZerodhaSanity
+    npm install
+    npm run start
+```
+
+## After cloning make github repo private
+# To prevent the keys from being hacked
