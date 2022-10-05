@@ -162,16 +162,55 @@
 # Normally alpabetical order is followed
 # If seperate .mdx files are used the preview.js will not control the order
 
+# create a new file in the correct folder - XXX.stories.mdx
+
 ```powershell
-<Story name="StorybookDesign">
-{{
-template: `<app-storybookdesign [myselectedtemp]= "myselectedtemp"></app-storybookdesign>`,
-props: {
-myselectedtemp : 'storydesign'
-},
-}}
-</Story>
+  import { moduleMetadata } from '@storybook/angular';
+  import { Story, Meta, ArgsTable } from '@storybook/addon-docs';
+  import { YoutubeMakingComponent } from '../../app/youtube-making/youtube-making.component';
+  import { linkTo } from '@storybook/addon-links';
+  import { MarkdownModule, MarkdownService } from 'ngx-markdown';
+  import { HttpClient, HttpClientModule } from '@angular/common/http';
+  import { AppSharedModule } from '../../app/app-shared/app-shared.module';
+
+  # Angular Component creation and setup 
+  Use angular-cli to create the necessary features
+
+  # The Steps are
+
+  <Meta title="YoutubeMaking/ComponentSetup"   
+    parameters={{
+        viewMode: 'docs',
+        previewTabs: { 
+          canvas: { hidden: true } 
+        },
+    }}
+    decorators={[
+  moduleMetadata({
+    declarations: [YoutubeMakingComponent],
+        imports: [
+          AppSharedModule,
+          HttpClientModule,
+          MarkdownModule.forRoot({ loader: HttpClient }),
+        ],
+        providers: [MarkdownService],
+      }),
+      
+      ]} />
 ```
+# Add the story here
+
+```powershell
+  <Story name="StorybookDesign">
+  {{
+  template: `<app-storybookdesign [myselectedtemp]= "myselectedtemp"></app-storybookdesign>`,
+  props: {
+  myselectedtemp : 'storydesign'
+  },
+  }}
+  </Story>
+```
+
 # This is the design of the Page
 # Storybook mdx feature is used extensively
 # The order of the strories can be set in the preview.js -> parameters

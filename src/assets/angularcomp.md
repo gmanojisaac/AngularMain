@@ -94,7 +94,7 @@ Goto https://unpkg.com/browse/@angular/core@14.1.3/package.json
 
 ## To Update the latest angular-cli, prepare the npm Environment, Restart the laptop
 
-Open Explorer and type %APPDATA% and go to that location
+# Open Explorer and type %APPDATA% and go to that location
 
 ```powershell
 npm uninstall -g @angular/cli
@@ -104,6 +104,15 @@ rimraf -rf ./npm-cache/
 npm cache clean --force
 npm cache verify
 shutdown -r
+```
+# Go to the new angular project and add repo to the angular project
+
+```powershell
+git remote remove origin
+git remote add origin https://github.com/gmanojisaac/XXX.git
+git remote -v show
+git status
+git log --oneline
 ```
 
 ## 2. Run Local Hello World Angular

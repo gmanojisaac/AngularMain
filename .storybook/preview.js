@@ -8,6 +8,8 @@ export const parameters = {
       order: [
         'AboutMe',
         ['Introduction', 'Career', 'Lecturer', 'Telecom', 'Development'],
+        'Youtube05oct22',
+        ['Termux'],
         'Youtube27sep22',
         ['Start','Plan', 'RunNodeJS', 'RunAngular' ],
         'Youtube15sep22',

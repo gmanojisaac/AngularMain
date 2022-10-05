@@ -19,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { YoutubeMakingComponent } from './youtube-making/youtube-making.component';
 import { SepttwensevenComponent } from './youtube/Sep2022/septtwenseven/septtwenseven.component';
+import { OctfifthComponent } from './youtube/Oct2022/octfifth/octfifth.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SepttwensevenComponent } from './youtube/Sep2022/septtwenseven/septtwen
     SeptfifteenComponent,
     AboutMeComponent,
     YoutubeMakingComponent,
-    SepttwensevenComponent
+    SepttwensevenComponent,
+    OctfifthComponent
   ],
   imports: [
     BrowserModule,

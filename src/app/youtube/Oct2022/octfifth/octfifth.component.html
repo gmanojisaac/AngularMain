@@ -1,0 +1,18 @@
+<ng-template #termuxsetup>
+    <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+    <markdown mermaid ngPreserveWhitespaces clipboard fxLayoutAlign="center center">
+        <pre class="mermaid">
+          flowchart TD
+            id44([0.Get latest stackblitz env]) -->  id4([1.Prepare Git Environment])
+            id4([1.Prepare Git Environment]) -->  id5([2.Add repo and push in github])
+            id5([2.Add repo and push in github]) -->  id6([3.Prepare Stackblitz Environment])
+            id6([3.Prepare Stackblitz Environment])  -->  id7([4.Prepare for Storybook branch])
+            id7([4.Prepare for Storybook branch]) --> id8([5.Host static pages in gh-pages])
+            id8([5.Host static pages in gh-pages]) -->  id9([6.Run in stackblitz Environment])
+        </pre>
+    </markdown>
+</ng-template>
+<markdown [src]="'../assets/angularsetup.md'" ngPreserveWhitespaces clipboard commandLine [prompt]="'PS C:\Manoj>'"
+    [filterOutput]="'(out)'">
+</markdown>
+<ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext">
