@@ -9,7 +9,7 @@ export const parameters = {
         'AboutMe',
         ['Introduction', 'Career', 'Lecturer', 'Telecom', 'Development'],
         'Youtube05oct22',
-        ['Termux'],
+        ['Termux', 'OneSideView'],
         'Youtube27sep22',
         ['Start','Plan', 'RunNodeJS', 'RunAngular' ],
         'Youtube15sep22',

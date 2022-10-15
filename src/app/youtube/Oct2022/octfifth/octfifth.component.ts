@@ -9,6 +9,9 @@ export class OctfifthComponent implements OnInit, AfterContentInit {
 
   @ViewChild('termuxsetup', { static: true })
   termuxsetup!: TemplateRef<any>;
+  @ViewChild('OneSideView', { static: true })
+  OneSideView!: TemplateRef<any>;
+
   tems: TemplateRef<any> = this.termuxsetup;
 
   @Input()
@@ -21,6 +24,9 @@ export class OctfifthComponent implements OnInit, AfterContentInit {
     switch (this.myselectedtemp) {
       case 'termuxsetup':
         this.tems = this.termuxsetup;
+        break;
+      case 'OneSideView':
+        this.tems = this.OneSideView;
         break;
       }
     }

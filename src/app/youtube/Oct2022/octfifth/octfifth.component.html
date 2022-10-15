@@ -20,4 +20,29 @@
     </markdown>
 </ng-template>
 
+<ng-template #OneSideView>
+    <markdown ngPreserveWhitespaces clipboard> --- </markdown>
+    <markdown mermaid ngPreserveWhitespaces clipboard fxLayoutGap="10%">
+        <pre class="mermaid">
+          flowchart TD
+            id44([0.Locate api key/ secret]) -->  id4([1.check validity])
+            id4([1.check validity]) -->  id5([2.Get request_token])
+            id5([2.Get request_token]) -->  id6([3.Get access_token])
+            id6([3.Get access_token])  -->  id7([4.Select the nifty / Banknifty symbols])
+            id7([4.Select the nifty / Banknifty symbols]) --> id8([5.Get weekly NIFTY/ BANK Symbols])
+            id8([5.Get weekly NIFTY/ BANK Symbols]) -->  id9([6.Prepare Array of adjacent symbols])
+            id9([6.Prepare Array of adjacent symbols]) -->  id10([7.Load the low and hgh points])
+            id10([7.Load the low and hgh points]) -->  id11([8.Wait for 50% volatality])
+            id11([8.Wait for 50% volatality]) -->  id12([9.Save the high and low point on either sides])
+            id12([9.Save the high and low point on either sides]) -->  id13([10.Initiate profit trade of 13% when triggered])
+            id13([10.Initiate profit trade of 13% when triggered])-->  id14([12.Wait for 2 min to book loss])
+            id14([12.Wait for 2 min to book loss]) -->  id15([15.If loss wait for trigger on either side high or low])            
+            id15([15.If loss wait for trigger on either side high or low]) -->  id13([10.Initiate profit trade of 13% when triggered])
+        </pre>
+    </markdown>
+    <markdown [src]="'../assets/Oct2022/onesideview.md'" ngPreserveWhitespaces clipboard commandLine [prompt]="'PS C:\Manoj>'"
+        [filterOutput]="'(out)'">
+    </markdown>
+</ng-template>
+
 <ng-container [ngTemplateOutlet]="tems" [ngTemplateOutletContext]="myContext">
